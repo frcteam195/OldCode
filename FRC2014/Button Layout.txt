@@ -1,0 +1,30 @@
+Driver Joystick
+Axis 3(throttle) - Gyro enable
+Button 1 - 1/3 speed
+Button 2 - +3 Rehome
+Button 3 - +2 Rehome
+Button 4 -
+Button 5 -
+Button 6 - 180 turn
+Button 7 - 180 turn
+Button 8 - Fine turn adjustment
+Button 9 - Fine turn adjustment
+Button 10 - Fire without intake
+Button 11 - Flip axes
+Button 12 - 
+
+
+Arm Joystick
+Axis 6 - Arm adjustment
+Button 1 - Shoot
+Button 2 - Cock winch
+Button 3 - Rollers Out
+Button 4 - Intake Ultrasonic
+Button 5 - Rollers in
+Button 6 - Intake just up
+Button 7 - Arm normal preset
+Button 8 - Intake up
+Button 9 - Arm home
+Button 10 - Intake home
+Button 11 - Arm yolo height
+Button 12 - Arm some other height

@@ -1,0 +1,1 @@
+"C:\Program Files\WinRAR\rar.exe" a -r -ag+YYYY-MM-DD-[HH-MM-SS]- backup.rar ".\F-195 Knighthawk Robot Project"

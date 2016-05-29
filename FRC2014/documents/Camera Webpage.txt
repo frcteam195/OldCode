@@ -1,0 +1,1974 @@
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+
+<meta http-equiv="Expires" content="Tue, 12 May 1962 1:00:00 GMT">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Content-type" CONTENT="text/html; charset=iso-8859-1">
+<meta http-equiv="Content-language" CONTENT="en">
+<title>Video & Audio/Camera Settings - AXIS M1054 Network Camera</title>
+
+<noscript>Your browser has JavaScript turned off.<br>For the user interface to work, you must enable JavaScript in your browser and reload/refresh this page.
+</noscript>
+
+<!-- GLOBAL JAVASCRIPTS -->
+<script language="JavaScript" type="text/javascript"><!--
+
+String.prototype.trim = function() {
+  return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+  return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+  return this.replace(/\s+$/,"");
+}
+String.prototype.crop = function(cropLength, cropMark) {
+  if (typeof(cropMark) != "string")
+    cropMark = "";
+
+  if (this.length > cropLength && this.length > cropMark.length)
+    return this.substr(0, cropLength - cropMark.length) + cropMark;
+  else
+    return this;
+}
+
+function launch(url) {
+  var w = 480, h = 340;
+
+  if (document.all) {
+    /* the following is only available after onLoad */
+    w = document.body.clientWidth;
+    h = document.body.clientHeight;
+  }
+  else if (document.layers) {
+    w = window.innerWidth;
+    h = window.innerHeight;
+  }
+
+  var popW = 475, popH = 590;
+
+  var leftPos = (w-popW)/2, topPos = (h-popH)/2;
+
+  self.name = "opener";
+  remote = open(url, 'helpWin', "resizable,scrollbars,status,width=" + popW + ",height="+popH+",left="+leftPos+",top="+topPos+"");
+
+  //Fix for IE6 to solve problem with video stopping when opening help
+  try {
+    if ((typeof(useAMC) != "undefined")&&(useAMC == "yes") &&(navigator.appVersion.indexOf("MSIE 6") != -1) && (typeof(stopStartStream) == "function") && (typeof(imagepath) == "string"))
+      stopStartStream(imagepath);
+  } catch (e) {}
+}
+
+function openPopUp(thePage, theName, theWidth, theHeight)
+{
+  theWidth = Number( theWidth ) + 10;
+  theHeight = Number( theHeight ) + 20;
+
+  var someFeatures = 'scrollbars=yes,toolbar=0,location=no,directories=0,status=0,menubar=0,resizable=1,width=' + theWidth + ',height=' + theHeight;
+  var aPopUpWin = window.open(thePage, theName, someFeatures);
+
+  if (navigator.appName == "Netscape" && aPopUpWin != null) {
+    aPopUpWin.focus();
+  }
+}
+
+function showStatus(msg)
+{
+  window.status = msg
+  return true
+}
+// -->
+</script><script language="JavaScript">
+<!--
+function CSS ()
+{
+  if ((navigator.appVersion.indexOf("Mac") != -1) && (navigator.appName.indexOf("Netscape") != -1)) {
+    document.write('<link rel="stylesheet" href="/css/mac_ns.css?version=142" type="text/css" />');
+
+  } else if ((navigator.appVersion.indexOf("Mac") != -1) && (navigator.appName.indexOf("Microsoft Internet Explorer") != -1)) {
+    document.write('<link rel="stylesheet" href="/css/mac_ie.css?version=142" type="text/css" />');
+
+  } else if ((navigator.appVersion.indexOf("Win") != -1) && (navigator.appName.indexOf("Netscape") != -1)) {
+    document.write('<link rel="stylesheet" href="/css/win_ns.css?version=142" type="text/css" />');
+
+  } else if ((navigator.appVersion.indexOf("Win") != -1) && (navigator.appName.indexOf("Microsoft Internet Explorer") != -1)) {
+    document.write('<link rel="stylesheet" href="/css/win_ie.css?version=142" type="text/css" />');
+
+  } else if (navigator.appName.indexOf("Netscape") != -1) {
+    // Unix or other system
+    document.write('<link rel="stylesheet" href="/css/win_ns.css?version=142" type="text/css" />');
+  } else {         
+    document.write('<link rel="stylesheet" href="/css/other.css?version=142" type="text/css" />');
+  }
+
+  // Wrapper for old browsers which can't handle getElementById
+  if(!document.getElementById) {
+     document.getElementById = function(element)
+     {
+       return eval("document.all." + element);
+     }
+  }
+}
+// -->
+</script>
+<script language="JavaScript" type="text/javascript"><!--
+CSS ();
+// -->
+</script>
+
+<script language="JavaScript" type="text/javascript">
+<!--
+function SubmitForm()
+{
+  document.WizardForm.submit();
+}
+// -->
+</script>
+
+<!-- END GLOBAL JAVASCRIPTS -->
+
+<script LANGUAGE="JavaScript">
+<!--
+
+function IntegerCheck(value, low, high)
+{
+  if (value.length == 0)
+    return 0
+
+  if (((value.charAt(0)<'0') || (value.charAt(0)>'9')) && value.charAt(0) != '-')
+    return 0
+
+  for (var i=1; i<value.length; i++) {
+    if ((value.charAt(i)<'0') || (value.charAt(i)>'9'))
+      return 0
+  }
+  var integerValue = parseInt(value, 10)
+  if (high == "noUpperLimit") {
+    if (integerValue<low)
+      return 0
+  } else {
+    if ((integerValue<low) || (integerValue>high))
+      return 0
+  }
+
+  return 1
+}
+
+//-->
+</script>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+
+function CheckBoxClicked(theForm, theCheckBox, theVariable, theCheckValueEnable, theCheckValueDisable)
+{
+  if (theCheckBox.checked)
+    theForm.elements[theVariable].value = theCheckValueEnable
+  else
+    theForm.elements[theVariable].value = theCheckValueDisable
+}
+
+function checkbounds(inputValue,maxValue,minValue)
+{
+
+ if(inputValue > maxValue)
+   {
+      inputValue = maxValue  
+   } 
+ 
+ if(inputValue < minValue)
+   {
+      inputValue = minValue  
+   } 
+   return inputValue
+}
+
+
+//-->
+</SCRIPT>
+
+<STYLE TYPE="text/css">
+
+.blacksquare {
+   border: 1px solid #000;
+   width:  160px;
+   height: 120px;
+}
+
+.redsquare {
+   border: 1px solid #990000;
+   width: 100%;
+   height: 100%;
+}
+
+.pirispos { position: absolute; border: red 1px solid; background:red; font-size: 7px; }
+.errorBox { border: red 1px solid; background: #ffebeb; padding: 2px; }
+
+</style>
+
+<script type="text/javascript" src="/incl/pos.js"></script>
+<script type="text/javascript" src="/incl/slider.js"></script>
+<script type="text/javascript" src="/incl/zxml.js"></script><script language="javascript">
+<!--
+if ((navigator.appName == "Microsoft Internet Explorer") && (navigator.platform.substr(0,3) != "Mac")) {
+	var isIE = true;
+} else {
+	var isIE = false;
+}
+
+var waitDiv1 = null;
+var waitDiv2 = null;
+var waitDiv3 = null;
+var waitDiv4 = null;
+
+//Wait_top and wait_width are OPTIONAL
+function wait_init(wait_text, wait_top, wait_width)
+{
+  var top = 200;
+  if(wait_top && wait_top >= 0)
+    top = wait_top;
+  var width = 400;
+  if(wait_width && wait_width > 0)
+    width = wait_width;
+  var padding = 40;
+  var left = parseInt((document.body.clientWidth - width - 2 * padding)/2, 10);
+  var default_message = "Processing...";
+
+  waitDiv1 = document.createElement("DIV");
+  waitDiv1.style.display = "none";
+  waitDiv1.align = "center";
+  waitDiv1.style.backgroundColor = "transparent";
+  waitDiv1.style.position = "absolute";
+  waitDiv1.style.left = 0;
+  waitDiv1.style.top = 0;
+  waitDiv1.style.zIndex = "500";
+  waitDiv1.style.width = "100%";
+  waitDiv1.style.height = "100%";
+  waitDiv1.innerHTML = "<br>";
+  document.body.appendChild(waitDiv1);
+
+  waitDiv2 = document.createElement("DIV");
+  waitDiv2.style.top = top+"px";
+  waitDiv2.style.left = left+"px";
+  waitDiv2.style.width = width+"px";
+  waitDiv2.style.position = "absolute";
+  waitDiv2.style.backgroundColor = "#3366cc";
+  waitDiv2.style.border = "black solid 1px";
+  waitDiv2.style.margin = "0";
+  waitDiv2.style.padding = padding+"px";
+  waitDiv2.style.zIndex = "501";
+  waitDiv2.style.opacity = 0.6;
+  waitDiv2.style.filter = "alpha(opacity=60)";
+  waitDiv2.innerHTML = (typeof(wait_text) != "undefined" ? wait_text : default_message);
+  waitDiv1.appendChild(waitDiv2);
+
+  waitDiv3 = document.createElement("DIV");
+  waitDiv3.style.top = top+"px";
+  waitDiv3.style.left = left+"px";
+  waitDiv3.style.width = width+"px";
+  waitDiv3.style.position = "absolute";
+  waitDiv3.style.backgroundColor = "transparent";
+  waitDiv3.style.border = "black solid 1px";
+  waitDiv3.style.margin = "0";
+  waitDiv3.style.padding = padding+"px";
+  waitDiv3.style.zIndex = "502";
+  waitDiv3.innerHTML = (typeof(wait_text) != "undefined" ? wait_text : default_message);
+  waitDiv1.appendChild(waitDiv3);
+
+  waitDiv4 = document.createElement("DIV");
+  waitDiv4.style.display = "none";
+  waitDiv4.align = "center";
+  waitDiv4.style.backgroundColor = "white";
+  waitDiv4.style.position = "absolute";
+  waitDiv4.style.left = 0;
+  waitDiv4.style.top = 0;
+  waitDiv4.style.zIndex = "499";
+  waitDiv4.style.width = "100%";
+  waitDiv4.style.height = "100%";
+  waitDiv4.style.opacity = 0.1;
+  waitDiv4.style.filter = "alpha(opacity=10)";
+  waitDiv4.innerHTML = "<br>";
+  document.body.appendChild(waitDiv4);
+}
+//Wait_top and wait_width are OPTIONAL
+function wait_start(wait_text, wait_top, wait_width)
+{
+  if (waitDiv1 == null)
+    wait_init(wait_text, wait_top, wait_width);
+
+  if ( document.Player ) {
+    document.Player.style.visibility = "hidden";
+  }
+  waitDiv1.style.display = "block";
+  waitDiv4.style.display = "block";
+}
+function wait_stop()
+{
+  if (waitDiv1 != null) {
+    waitDiv1.style.display = "none";
+    waitDiv4.style.display = "none";
+  }
+
+  if ( document.Player ) {
+    document.Player.style.visibility = "visible";
+  }
+}
+function wait_disableInput(typeToDisable)
+{
+  var inputs = document.getElementsByTagName("INPUT");
+  if (typeToDisable == null)
+    typeToDisable = "";
+  typeToDisable = typeToDisable.toLowerCase();
+  for (var i = 0; i < inputs.length; i++) {
+    if (typeToDisable == inputs[i].type.toLowerCase() || typeToDisable == "") {
+      inputs[i].oldDisabled = inputs[i].disabled;
+      inputs[i].disabled = true;
+    }
+  }
+}
+function wait_enableInput(typeToEnable)
+{
+  var inputs = document.getElementsByTagName("INPUT");
+  if (typeToEnable == null)
+    typeToEnable = "";
+  typeToEnable = typeToEnable.toLowerCase();
+  for (var i = 0; i < inputs.length; i++) {
+    if (typeToEnable == inputs[i].type.toLowerCase() || typeToEnable == "") {
+      inputs[i].disabled = inputs[i].oldDisabled;
+    }
+  }
+}
+-->
+</script>
+
+<script LANGUAGE="JavaScript">
+<!--// Various functions that may be useful
+
+
+// Used to check a formfield for illegal characters.
+// Parameters are:
+// field: The field that should be checked, i.e. document.form.textField
+// chars: Allowed characters in field, example:
+//        "az|AZ|09|.|-"
+//        This means that the function returns true if the field only has
+//        chars from a-z or A-Z or 0-9 or . or -.
+// alertText: If an illegal character is found this text is presented in
+//            an alertbox and we bring focus to the current field. If
+//            you don't specify this the function will return without
+//            presenting any text at all.
+// Return: true if all characters are within the ranges specified, false
+//         if not.
+//
+function checkAllowedChars(field, chars, alertText)
+{
+    var allowed = 1;
+    var allowedArray = chars.split("|");
+    var len = allowedArray.length;
+    var string = unescape(field.value);
+
+    for (pos = 0 ; pos < string.length ; pos++) {
+      var aChar = string.charAt(pos);
+      allowed = 0;
+      for (i = 0 ; i < len ; i++) {
+        if (allowedArray[i].length == 1) {
+          if (aChar == allowedArray[i].charAt(0)) {
+            allowed = 1;
+            break;
+          }
+        } else if (allowedArray[i].length == 2) {
+          if ((aChar >= allowedArray[i].charAt(0)) && (aChar <= allowedArray[i].charAt(1))) {
+            allowed = 1;
+            break;
+          }
+        } else {
+          alert("Error in format");
+          return false;
+        }
+      }
+      if (!allowed)
+        break;
+    }
+
+    if (!allowed) {
+      if(alertText) {
+        alert(alertText);
+      }
+
+      field.focus();
+      field.select();
+      return false;
+    }
+    return true;
+}
+
+// Used to check a formfield for illegal characters.
+//
+// Parameters are:
+//
+// field:        The field that should be checked, i.e. document.form.textField
+// illegalRegex: Regular expression that describes the illegal characters
+// alertText:    If an illegal character is found this text is presented in
+//               an alertbox and we bring focus to the current field. If
+//               you don't specify this the function will return without
+//               presenting any text at all.
+//
+// Return:       false if at least one illegal char was found, true otherwise.
+//
+function hasOnlyValidChars(field, illegalRegex, alertText)
+{
+  var text = unescape(field.value);
+
+  if (text.search(illegalRegex) != -1) {
+    if(alertText) {
+      alert(alertText);
+    }
+
+    field.focus();
+    field.select();
+    return false;
+  }
+
+  return true;
+}
+
+// Helper function to test if a field is a valid ftp upload basename or filename.
+function isValidFtpUploadPath(field, alertErrorText, alertWarnText)
+{
+/****************************
+ Forbid chars:
+  FTP limitation: []\@()'"
+****************************/
+
+  if( hasOnlyValidChars(field, /[\[\]\\@\(\)\'\"]/i, alertErrorText) )
+  {
+    return warnInvalidPath( field, alertWarnText );
+  }
+  else
+  {
+    return false;
+  }
+}
+
+function isValidUploadPath(field, alertErrorText, alertWarnText, alertWarnText2 )
+{
+/****************************
+ Forbid char:
+  Win NTFS/FAT, Mac, UFS: /
+****************************/
+
+  if( hasOnlyValidChars(field, /[\/]/i, alertErrorText) )
+  {
+    return warnInvalidPath( field, alertWarnText, alertWarnText2 );
+  }
+  else
+  {
+    return false;
+  }
+}
+
+// Helper function to test if a field is a valid upload folder or filename.
+function warnInvalidPath(field, confirmText, confirmText2)
+{
+/****************************
+ Warn on chars:
+  Win NTFS/FAT: ?<>:*|"^\ and not only spaces
+  Mac: :
+  UFS: space
+  WEB: åäö¶
+  Other problematic: ;'~"
+****************************/
+
+  var text = unescape(field.value);
+  var unsafeCharsRegExp = /[^a-zA-Z0-9\-_\ \.\#\%]/;
+  var onlyBlanksRegExp = /^[\ ]+$/;
+
+  if ( unsafeCharsRegExp.test(text) )
+  {
+    if(confirmText)
+    {
+      if( confirm( confirmText ) )
+      {
+        return true;
+      }
+    }
+    field.focus();
+    field.select();
+    return false;
+  }
+  else if ( confirmText2 )
+  {
+    if( onlyBlanksRegExp.test(text) )
+    {
+      if( confirmText2 )
+      {
+        if( confirm( confirmText2 ) )
+        {
+          return true;
+        }
+      }
+      field.focus();
+      field.select();
+      return false;
+    }
+  }
+  return true;
+}
+
+function setRadiobutton(theSelectElement, searchValue)
+{
+  for (var i = 0; i < theSelectElement.length; i++) {
+    if (theSelectElement[i].value == searchValue) {
+      theSelectElement[i].checked = true;
+      return;
+    }
+  }
+}
+
+function setSelectlist(theSelectElement, searchValue, createNewEntry)
+{
+  if (theSelectElement.options) {
+    var i;
+    for (i = 0; i < theSelectElement.options.length; i++) {
+      if (theSelectElement.options[i].value == searchValue) {
+        theSelectElement.options[i].selected = true;
+        return;
+      }
+    }
+    // Value not found, add an entry for it:
+    if (createNewEntry != "no") {
+      theSelectElement.options[i] = new Option(searchValue, searchValue, false, true);
+    }
+  }
+}
+
+function setCheckbox(theCheckbox, isEnabled)
+{
+  if (isEnabled == "yes") {
+    theCheckbox.checked = true;
+    theCheckbox.value = "yes";
+  } else {
+    theCheckbox.value = "no";
+    theCheckbox.checked = false;
+  }
+}
+
+
+function trimLeadingTrailing( input )
+{
+  var str = String( input.value );
+  input.value = str.trim();
+}
+
+function postRequest(url, form, maxLength, firstData)
+{
+  // requires zXml.js
+  var isReady = false;
+  var isError = false;
+  var requst = zXmlHttp.createRequest();
+  if( requst.overrideMimeType )
+    requst.overrideMimeType( 'text/plain' );
+  var i = 0, now, url, data, errorMsg, tmpUrl;
+
+  if (!firstData)
+    var firstData = "";
+
+  while (!isReady && !isError) {
+    now = new Date();
+    data = firstData;
+
+    for (; i < form.length; i++) {
+      if (maxLength > 0 && data.length + form[i].name.length + form[i].value.length + 2 >= maxLength)
+        break;
+      data += (data.length > 0 ? "&" : "") + form[i].name + "=" + escape(form[i].value);
+    }
+
+    tmpUrl = url + (url.indexOf("?") < 0 ? "?" : "&") + "timestamp=" + now.getTime();
+    requst.open("POST", url, false);
+    try {
+      requst.send(data);
+      if (requst.status != 200) {
+        errorMsg ="Returned status: : " + requst.status + " - " + requst.statusText;
+        isError = true;
+      }
+    } catch (e) {
+      errorMsg = "An error occurred. Possibly it's unable to connect.";
+      isError = true;
+    }
+    if (i >= form.length)
+      isReady = true;
+  }
+  return {success:!isError, text:errorMsg};
+}
+
+// Returns a string of length 'theMaxLength' from 'theStr'. If theStr is longer than theMaxLength,
+// the end is substituted with '...'.
+// what to use for non breaking space is possible to select when calling this function
+function getPaddedString(theStr, theMaxLength, theNBIndicator, skipTagReplacement, strNBIndicator )
+{
+  var str = "";
+  var isTag = false;
+  var ch = '';
+  var len = 0;
+  var strLen = 0;
+
+  if (!theStr) theStr = "";
+  strLen = theStr.length;
+
+  if( !strNBIndicator )
+  {
+    strNBIndicator = "&nbsp;";
+  }
+
+  if( skipTagReplacement)
+  {
+     strLen = ( theStr.replace(/<.*?>/g, "") ).length;
+  }
+  for(var i = 0; i < theStr.length; i++)
+  {
+    ch = theStr.charAt(i); 
+
+    if( skipTagReplacement)
+    {
+      if (ch == '<')
+      {
+        isTag = true;
+        str += ch;
+        continue;
+      }
+      if (ch == '>')
+      {
+        isTag = false;
+        str += ch;
+        continue;
+      }
+      if (isTag)
+      {
+        str += ch;
+        continue;
+      }
+    }
+
+    if (strLen > theMaxLength)
+    {
+      if (len > theMaxLength)
+      {
+        continue;
+      }
+      else if (len > theMaxLength - 3)
+      {
+        str += ".";
+        len++;
+        continue;
+      }
+    }
+
+    if (ch == ' ')
+    {
+      if (theNBIndicator)
+        str += strNBIndicator;
+      else
+        str += " ";
+    }
+    else if (ch == '<')
+    {
+      str += "&lt;";
+    }
+    else if (ch == '>')
+    {
+      str += "&gt;";
+    }
+    else
+    {
+      str += ch;
+    }
+    len++;
+  }
+
+  for (i = len; i < (theMaxLength+1); i++)
+  {
+    if (theNBIndicator)
+    {
+      str += strNBIndicator;
+    }
+    else
+    {
+      str += " ";
+    }
+  }
+
+  return str;
+}
+
+// ********************************************************
+// Regular expression for validating most of the valid email addresses. This is not a complete test.
+// Thanks to: http://www.hm2k.com/posts/what-is-a-valid-email-address
+// ********************************************************
+function is_valid_email(str)
+{
+  var re_valid_email = /^[\w!#$%&\'*+\/=?^`{|}~.-]+@(?:[a-z\d][a-z\d-]*(?:\.[a-z\d][a-z\d-]*)?)+\.(?:[a-z][a-z\d-]+)$/i;
+  var emails = str.replace(/ /g, "").split(";");
+  for (var i = 0; i < emails.length; i++)
+  {
+    if ( !re_valid_email.test(String(emails[i]).trim()) )
+    {
+      return false;
+    }
+  }
+  return true;
+}
+
+if ((navigator.appName == "Microsoft Internet Explorer") && (navigator.platform != "MacPPC") && (navigator.platform != "Mac68k")) {
+  var browser = "IE"
+} else {
+  var browser = "Netscape"
+}
+
+function openPopUpTest(thePage, theName, theWidth, theHeight)
+{
+  var someFeatures = 'scrollbars=yes,toolbar=0,location=no,directories=0,status=0,menubar=0,resizable=1,width=' + theWidth + ',height=' + theHeight;
+
+  thePage += 'id=8&standalone=yes&imagepath=/axis-cgi/mjpg/video.cgi';
+  thePage += "%3Fcamera%3D1%26overview%3D1%26resolution%3D640x360";
+  var aPopUpWin = window.open(thePage, theName, someFeatures);
+
+  if (browser == "Netscape") {
+    aPopUpWin.focus();
+  }
+}
+
+
+var maxFPS = 30
+
+var fromSsid='<input type="text" name="FPSdummy" value="10"  size=5 maxlength=2 > [0..30]'
+var fpsIdx1=fromSsid.lastIndexOf("..")
+var fpsIdx2=fromSsid.lastIndexOf("]")
+if ((fpsIdx1 != -1) || (fpsIdx2 != -1 )) {
+  maxFPS = fromSsid.substring(fpsIdx1+2,fpsIdx2)
+}
+
+
+function setExposureTimeAndGain()
+{
+
+  var form = document.WizardForm
+
+  if (maxFPS == 60) {
+    if (form.root_ImageSource_I0_Sensor_Exposure.value == "flickerfree50") {
+      form.root_ImageSource_I0_Sensor_MaxExposureTime.options[2].text = "1/50"
+      form.root_ImageSource_I0_Sensor_MaxExposureTime.options[3].text = "1/25"
+      form.root_ImageSource_I0_Sensor_MaxExposureTime.options[4].text = "2/25"
+      form.root_ImageSource_I0_Sensor_MaxExposureTime.options[5].text = "1/5"
+    } else {
+      form.root_ImageSource_I0_Sensor_MaxExposureTime.options[2].text = "1/60"
+      form.root_ImageSource_I0_Sensor_MaxExposureTime.options[3].text = "1/30"
+      form.root_ImageSource_I0_Sensor_MaxExposureTime.options[4].text = "1/15"
+      form.root_ImageSource_I0_Sensor_MaxExposureTime.options[5].text = "1/6"
+    }
+  } else if (maxFPS != 10)
+ {
+    var len, i, ExposureTimeValue, ExposureTimeText;
+    if (form.root_ImageSource_I0_Sensor_Exposure.value == "auto" || form.root_ImageSource_I0_Sensor_Exposure.value == "hold" || form.root_ImageSource_I0_Sensor_Exposure.value == "flickerreduced50"  || form.root_ImageSource_I0_Sensor_Exposure.value == "flickerreduced60") {
+      ExposureTimeValue = [41,81,161,250,500,1000,2000,4000,8333,10000,16666,20000,33333,40000,83333,100000,159514]
+      ExposureTimeText = "1/24500,1/12500,1/6000,1/4000,1/2000,1/1000,1/500,1/250,1/120,1/100,1/60,1/50,1/30,1/25,1/12,1/10,1/6".split(",");
+    } else if (form.root_ImageSource_I0_Sensor_Exposure.value == "flickerfree50") {
+      ExposureTimeValue = [10000,20000,40000,100000]
+      ExposureTimeText = "1/100,1/50,1/25,1/10".split(",");
+    } else {
+      ExposureTimeValue = [8333,16666,33333,83333]
+      ExposureTimeText = "1/120,1/60,1/30,1/12".split(",");
+    }
+    len = ExposureTimeValue.length;
+    form.root_ImageSource_I0_Sensor_MinExposureTime.length = len;
+      for( i=len-1; i>=0; i--) {
+        form.root_ImageSource_I0_Sensor_MinExposureTime.options[i].value = ExposureTimeValue[i]
+        form.root_ImageSource_I0_Sensor_MinExposureTime.options[i].text = ExposureTimeText[i]
+        if (ExposureTimeValue[i] >= "81")
+          form.root_ImageSource_I0_Sensor_MinExposureTime.selectedIndex = i;
+      }
+    form.root_ImageSource_I0_Sensor_MaxExposureTime.length = len;
+      for (i=0; i<len; i++) {
+        form.root_ImageSource_I0_Sensor_MaxExposureTime.options[i].value = ExposureTimeValue[i]
+        form.root_ImageSource_I0_Sensor_MaxExposureTime.options[i].text = ExposureTimeText[i]
+        if (ExposureTimeValue[i] <= "100000")
+          form.root_ImageSource_I0_Sensor_MaxExposureTime.selectedIndex = i;
+      }
+    GainValue = [0,8,15,23,31,38,46,54,62,69,77,85,92,100]
+    GainText  = [0,3,6,9,12,15,18,21,24,27,30,33,36,39]
+
+    form.root_ImageSource_I0_Sensor_MinGain.length = GainValue.length
+    for (i=0; i<GainValue.length; i++) {
+      form.root_ImageSource_I0_Sensor_MinGain.options[i].value = GainValue[i]
+      form.root_ImageSource_I0_Sensor_MinGain.options[i].text = GainText[i]
+      if (GainValue[i] == "0")
+        form.root_ImageSource_I0_Sensor_MinGain.selectedIndex = i;
+    }
+
+    form.root_ImageSource_I0_Sensor_MaxGain.length = GainValue.length
+    var lastGainValue = GainValue[0];
+    for (i=0; i<GainValue.length; i++) {
+      form.root_ImageSource_I0_Sensor_MaxGain.options[i].value = GainValue[i]
+      form.root_ImageSource_I0_Sensor_MaxGain.options[i].text = GainText[i]
+      if (parseInt(GainValue[i], 10) == 8 || 
+	 (parseInt(GainValue[i], 10) > 8 && 
+	  parseInt(lastGainValue, 10) < 8))
+        form.root_ImageSource_I0_Sensor_MaxGain.selectedIndex = i;
+      lastGainValue = GainValue[i];
+    }
+  }
+}
+
+function callToggleShutter()
+{
+}
+
+function toggleShutter(child, isHidden)
+{
+  var form = document.WizardForm
+
+  if (isHidden) {
+    child.className = "shownItems";
+  } else {
+    child.className = "collapsed";
+  }
+}
+
+
+function showShutterGain()
+{
+      if (document.WizardForm.root_ImageSource_I0_Sensor_ExposurePriority.selectedIndex == 0) {
+        document.getElementById("shutter").style.display = "none"
+        document.getElementById("gain").style.display = "none"
+      } else {
+        document.getElementById("shutter").style.display = ""
+        document.getElementById("gain").style.display = ""
+      }
+  ableMaxExpTimeAndPrio()
+  updateSliders()
+}
+
+function ableMaxExpTimeAndPrio()
+{
+}
+
+
+function callToggleExpArea()
+{
+  var form = document.WizardForm
+  var selection = form.root_ImageSource_I0_Sensor_ExposureWindow.selectedIndex
+
+  if (selection != 0) {
+    document.getElementById("exposureZones").style.display = ""
+    switchExpAreaPic()
+  } else {
+    document.getElementById("exposureZones").style.display = "none"
+  }
+}
+
+function switchExpAreaPic()
+{
+  var selection = document.WizardForm.root_ImageSource_I0_Sensor_ExposureWindow.selectedIndex
+  var table1 = "<table border=0 cellpadding=0 cellspacing=0 width=158 height=118><tr>";
+  var table2 = "<table border=0 cellpadding=0 cellspacing=0 width=100% height=100%><tr>";
+  var activeval = new Array();
+  var inactiveval = new Array();
+  activeval[1] = "75%"; // center
+  activeval[2] = "100%"; // spot
+  activeval[3] = "86%"; // upper
+  activeval[4] = "86%"; // lower
+  activeval[5] = "86%"; // left
+  activeval[6] = "86%"; // right
+  inactiveval[1] = "25%"; // center
+  inactiveval[2] = ""; // spot
+  inactiveval[3] = "14%"; // upper
+  inactiveval[4] = "14%"; // lower
+  inactiveval[5] = "14%"; // left
+  inactiveval[6] = "14%"; // right
+
+  if (selection == 1) // Center
+    document.getElementById("ExpAreaSquare").innerHTML = '<div class="blacksquare">' + table1 + '<td height=29></td></tr><tr><td height=60 align="center"><table border=0 cellpadding=0 cellspacing=0><tr><td align="center" height=60 width=80><div class="redsquare">' + table2 + '<td align="center">'+activeval[selection]+'</td></tr></table></div></td></tr></table></td></tr><tr><td height=29 align="center">'+inactiveval[selection]+'</td></tr></table></div>'
+  else if (selection == 2) // Spot
+    document.getElementById("ExpAreaSquare").innerHTML = '<div class="blacksquare">' + table1 + '<td align="center"><table border=0 cellpadding=0 cellspacing=0 width=40><tr><td align="center" height=30 width=40><div class="redsquare">' + table2 + '<td align="center">'+activeval[selection]+'</td></tr></table></div></td></tr></table></td></tr></table></div>'
+  else if (selection == 3) // Upper
+    document.getElementById("ExpAreaSquare").innerHTML = '<div class="blacksquare">' + table1 + '<td align="center" height=41><div class="redsquare">' + table2 + '<td align="center">'+activeval[selection]+'</td></tr></table></div></td></tr><tr><td align="center" height=77>'+inactiveval[selection]+'</td></tr></table></div>'
+  else if (selection == 4) // Lower
+    document.getElementById("ExpAreaSquare").innerHTML = '<div class="blacksquare">' + table1 + '<td align="center" height=77>'+inactiveval[selection]+'</td></tr><tr><td align="center" height=41><div class="redsquare">' + table2 + '<td align="center">'+activeval[selection]+'</td></tr></table></div></td></tr></table></div>'
+  else if (selection == 5) // Left
+    document.getElementById("ExpAreaSquare").innerHTML = '<div class="blacksquare">' + table1 + '<td align="center" width=54 height=118><div class="redsquare">' + table2 + '<td align="center">'+activeval[selection]+'</td></tr></table></div></td><td align="center" width=104>'+inactiveval[selection]+'</td></tr></table></div>'
+  else if (selection == 6) // Right
+    document.getElementById("ExpAreaSquare").innerHTML = '<div class="blacksquare">' + table1 + '<td align="center" width=104>'+inactiveval[selection]+'</td><td align="center" width=54 height=118><div class="redsquare">' + table2 + '<td align="center">'+activeval[selection]+'</td></tr></table></div></td></tr></table></div>'
+}
+
+var colorlevelSlider = null;
+var brightnessSlider = null;
+var sharpnessSlider = null;
+var contrastSlider = null;
+var exposurevalSlider = null;
+function setFields()
+{
+  var form = document.WizardForm
+  document.getElementById("colorlevel-handle").style.display = "inline";
+    colorlevelSlider = new Slider('colorlevel', 0, 100, form.root_ImageSource_I0_Sensor_ColorLevel.value, validateColorLevel);
+  document.getElementById("brightness-handle").style.display = "inline";
+  brightnessSlider = new Slider('brightness', 0, 100, form.root_ImageSource_I0_Sensor_Brightness.value, validateBrightness);
+  document.getElementById("sharpness-handle").style.display = "inline";
+  sharpnessSlider = new Slider('sharpness', 0, 100, form.root_ImageSource_I0_Sensor_Sharpness.value, validateSharpness);
+  document.getElementById("contrast-handle").style.display = "inline";
+    contrastSlider = new Slider('contrast', 0, 100, form.root_ImageSource_I0_Sensor_Contrast.value, validateContrast);
+  document.getElementById("exposureval-handle").style.display = "inline";
+  exposurevalSlider = new Slider('exposureval', 0, 100, form.root_ImageSource_I0_Sensor_ExposureValue.value, validateExposure);
+}
+
+function updateSliders()
+{
+  colorlevelSlider.moveTo();
+  brightnessSlider.moveTo();
+  sharpnessSlider.moveTo();
+  contrastSlider.moveTo();
+  exposurevalSlider.moveTo();
+}
+
+
+function ableExpWin()
+{
+  var form = document.WizardForm
+
+  if (form.zoneType[0].checked) {
+    document.getElementById("adv_EditBtn").disabled = true
+  } else {
+    document.getElementById("adv_EditBtn").disabled = false
+  }
+}
+
+function setDefExpWin(theValue)
+{
+  var txt;
+  if (theValue == "auto")        txt = "center";
+  else if (theValue == "spot")   txt = "spot";
+  else if (theValue == "upper")  txt = "upper";
+  else if (theValue == "lower")  txt = "lower";
+  else if (theValue == "left")   txt = "left";
+  else if (theValue == "right")  txt = "right";
+  else if (theValue == "custom") txt = "custom";
+  else txt = theValue;
+
+  document.getElementById("defExpWin").innerHTML = txt
+}
+
+function saveData()
+{
+  var form = document.WizardForm
+  var errorMessage = "Invalid value.";
+
+  if (form.zoneType[0].checked) {
+    form.root_ImageSource_I0_Sensor_ExposureWindow.value = "auto";
+  } else {
+    form.root_ImageSource_I0_Sensor_ExposureWindow.value = "auto";
+  }
+  if (parseInt(form.root_ImageSource_I0_Sensor_MinExposureTime.value,10) > parseInt(form.root_ImageSource_I0_Sensor_MaxExposureTime.value,10)) {
+    alert("Max shutter time must be longer than or equal to min shutter time.")
+    return;
+  }
+  if (parseInt(form.root_ImageSource_I0_Sensor_MinGain.value,10) > parseInt(form.root_ImageSource_I0_Sensor_MaxGain.value,10)) {
+    alert("Max gain must be higher than or equal to min gain.")
+    return;
+  }
+
+    if(!validateColorLevel()) {
+      alert(errorMessage);
+      colorlevelSlider.text.focus();
+      colorlevelSlider.text.select();
+      return false;
+    }
+    if(!validateBrightness()) {
+      alert(errorMessage);
+      brightnessSlider.text.focus();
+      brightnessSlider.text.select();
+      return false;
+    }
+    if(!validateContrast()) {
+      alert(errorMessage);
+      contrastSlider.text.focus();
+      contrastSlider.text.select();
+      return false;
+    }
+    if(!validateSharpness()) {
+      alert(errorMessage);
+      sharpnessSlider.text.focus();
+      sharpnessSlider.text.select();
+      return false;
+    }
+
+    if(!validateExposure()) {
+      alert(errorMessage);
+      exposurevalSlider.text.focus();
+      exposurevalSlider.text.select();
+      return false;
+    }
+
+
+
+  form.submit();
+}
+
+var request
+request = zXmlHttp.createRequest();
+
+function sendAction(action, method)
+{
+  request.open(method, action, false);
+  try{
+    request.send(null);
+  }
+  catch(e) {
+    delete e;
+  }
+  var result = (request.status == 200 ? request.responseText : null);
+  return result;
+}
+
+
+function reloadPage()
+{
+  document.location = "/operator/advanced.shtml?nbr=0&id=8";
+}
+function applyDPTZ( enableEl )
+{
+  var changed = false;
+  var url = "/sm/sm.srv?action=modify&root_PTZ_ImageSource_I0_PTZEnabled=";
+  var msg = "Reconfiguring, please wait..."
+    if( enableEl.checked )
+    {
+      changed = true;
+    }
+
+  if( changed )
+  {
+      var reload_timeout = 6000;
+
+      wait_start(msg);
+      wait_disableInput("button");
+
+      sendAction(url + ( ( enableEl.checked )?"true":"false" ), "get");
+      setTimeout("reloadPage();", reload_timeout);
+  }
+
+  return changed;
+}
+
+function bodyonload() {
+  setExposureTimeAndGain();
+  ableExpWin();
+  setDefExpWin('auto');
+  callToggleShutter();
+  setFields();
+  showShutterGain();
+}
+
+function filterSelector(selector, filter)
+{
+  if( selector && (filter != "[none]" && filter != "") ){
+    var i = 0;
+    var set_selected = "";
+    while (i < selector.length) {
+      // Remove all options that does not begin with the filter string.
+      if (selector.options[i].text.substr(0,filter.length) != filter) {
+        if (selector.selectedIndex == i) {
+          set_selected = selector.options[i].value;
+        }
+        selector.options[i] = null;
+      } else {
+        // Remove filter string from option text.
+        selector.options[i].text = selector.options[i].text.substr(filter.length);
+        i++;
+      }
+    }
+    if (set_selected != "") {
+      // Select a remaining option with same value, if posible.
+      for (i = 0 ; i < selector.length ; i++) {
+        if (selector.options[i].value == set_selected) {
+          selector.options[i].selected = true;
+          break;
+        }
+      }
+    }
+  }
+}
+
+function reloadPage()
+{
+  document.location.reload(true);
+}
+function validate(o, min, max, last_value)
+{
+  var value = parseInt(o.value, 10);
+  var r = false;
+  if (isNaN(value))
+    o.value = last_value;
+  else if (value < min)
+    o.value = min;
+  else if (value > max)
+    o.value = max;
+  else
+    r = true;
+
+  return r;
+}
+  var colorlevel_last_valid = 50;
+
+function validateColorLevel() {
+  var o = document.getElementById("colorlevel");
+  var isValid = validate(o, 0, 100, colorlevel_last_valid);
+  if (isValid)
+    colorlevel_last_valid = parseInt(o.value, 10);
+  return isValid;
+}
+var brightness_last_valid = 50;
+function validateBrightness() {
+  var o = document.getElementById("brightness");
+  var isValid = validate(o, 0, 100, brightness_last_valid);
+  if (isValid)
+    brightness_last_valid = parseInt(o.value, 10);
+  return isValid;
+}
+  var contrast_last_valid = 50;
+
+function validateContrast() {
+  var o = document.getElementById("contrast");
+  var isValid = validate(o, 0, 100, contrast_last_valid);
+  if (isValid)
+    contrast_last_valid = parseInt(o.value, 10);
+  return isValid;
+}
+var sharpness_last_valid = 50;
+function validateSharpness() {
+  var o = document.getElementById("sharpness");
+  var isValid = validate(o, 0, 100, sharpness_last_valid);
+  if (isValid)
+    sharpness_last_valid = parseInt(o.value, 10);
+  return isValid;
+}
+
+var exposure_last_valid = 50;
+
+function validateExposure() {
+  var o = document.getElementById("exposureval");
+  var isValid = validate(o, 0, 100, exposure_last_valid);
+  if (isValid)
+    exposure_last_valid = parseInt(o.value, 10);
+  return isValid;
+}
+
+
+ var OpenImgWinTxt = "Open an image window";
+ var SaveAdvBtnStatTxt = "Save advanced settings";
+ var ResBtnStatTxt = "Revert to last saved settings";
+
+//-->
+</script>
+
+</head>
+<body class="bodyBg" topmargin="0" leftmargin="15" marginwidth="0" marginheight="0" bgcolor="white" onLoad="bodyonload();" onResize="setFields()">
+
+  <form name="UploadedFilesForm">
+  </form>
+
+<a name="top"></a>
+<table width="100%" cellspacing=0 cellpadding=0 border=0><tr><td align="center">
+<form name="WizardForm" action="/sm/sm.srv" method="POST" onSubmit="return false;">
+<br>
+<table width=700 cellspacing=0 cellpadding=0 border=0>
+  <tr>
+    <td colspan=2><img src="/pics/line_corner_lt_5x5px.gif" width=5 height=5 border=0 alt=""></td>
+    <td colspan=5 background="/pics/line_t_100x5px.gif"><img src="/pics/line_t_100x5px.gif" width=1 height=5 border=0 alt=""></td>
+    <td colspan=2><img src="/pics/line_corner_rt_5x5px.gif" width=5 height=5 border=0 alt=""></td>
+  </tr>
+  <tr>
+    <td class="lineBg"><img src="/pics/blank.gif" width="1" border=0 alt=""></td>
+    <td><img src="/pics/blank.gif" width="4" height=1 border=0 alt=""></td>
+    <td colspan=5 valign="middle" align="left">
+      <table border=0 cellspacing=5 cellpadding=0 width="100%">
+        <tr>
+          <td width="10%" align="left" nowrap>
+  <script language="JavaScript" type="text/javascript">
+  <!--
+    if( typeof(document.UploadedFilesForm) != "undefined" )
+    for (i=0; i<document.UploadedFilesForm.length; i++) {
+      if (document.UploadedFilesForm.elements[i].value.indexOf("viewer/extraLogo_left.") != -1) {
+        document.write('<img src="/local/'+document.UploadedFilesForm.elements[i].value+'">&nbsp;');
+        break;
+      }
+    }
+  -->
+  </script>
+          <a href="http://www.axis.com/" target=_blank><img src="/pics/logo_70x29px.gif" width=70 height=29 border=0 alt="AXIS"></a>
+  <script language="JavaScript" type="text/javascript">
+  <!--
+    if( typeof(document.UploadedFilesForm) != "undefined" )
+    for (i=0; i<document.UploadedFilesForm.length; i++) {
+      if (document.UploadedFilesForm.elements[i].value.indexOf("viewer/extraLogo_right.") != -1) {
+        document.write('&nbsp;<img src="/local/'+document.UploadedFilesForm.elements[i].value+'">');
+        break;
+      }
+    }
+  -->
+  </script>
+        </td>
+
+          <td class="topTitle" nowrap width="70%" align="center" id="tincl_prodName">AXIS M1054 Network Camera</td>
+
+          <td nowrap align="right">
+            <table border="0" cellspacing="5" cellpadding="0">
+              <tr>
+                <td nowrap><a href="/" class="linkInActive" target="_top" id="tincl_LViewTxt">Live View</A></td>
+                <td>|</td>
+                <td nowrap><a href="/operator/basic.shtml?id=8" class="linkActive" id="tincl_SetTxt">Setup</a></td>
+                <td>|</td>
+                <td nowrap><a href="javascript:launch('/help/toc.shtml')" class="linkInActive" id="tincl_HelpTxt">Help</a></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+    <td><img src="/pics/blank.gif" width="4" border=0 alt=""></td>	
+    <td class="lineBg"><img src="/pics/blank.gif" width=1 height=1 alt=""></td>
+  </tr>
+  <tr>
+    <td colspan=9 class="lineBg"><img src="/pics/blank.gif" width=1 height=1 border=0 alt=""></td>
+  </tr>
+  <tr>
+    <td class="lineBg"><img src="/pics/blank.gif" width=1 height=1 alt=""></td>
+    <td colspan=2 valign="top" align="left" class="topTitle">
+      <table cellpadding=0 cellspacing=0 border=0 width="100%">
+        <tr>
+          <td width=4 class="menuActive"></td>
+          <td valign="middle" align="left" width=169 class="menuActive" id="mainMenu" nowrap>
+
+
+
+
+
+<script language="javascript" type="text/javascript">
+<!--
+  var user_realm = 1;
+
+var grView = "http";
+var grOper = "http";
+var grAdmin = "http";
+var hostV = getHost(grView);
+var hostO = getHost(grOper);
+var hostA = getHost(grAdmin);
+
+function getMenu(arr, level)
+{
+  if (arr.length < 0)
+    return null;
+
+  var ulEl = document.createElement("UL");
+  var liEl = document.createElement("LI");
+
+  if (arr[6].length > 0)
+    liEl.className = 'subMenuMarker'+(arr[4] ? 'A' : 'Ina' )+'ctive';
+
+  var aEl = document.createElement("A");
+  aEl.href = getUrl( arr );
+  aEl.innerHTML = arr[0];
+  aEl.className = (level == 0 ? 'menu' : 'subMenu') +  (arr[4] && arr[6].length == 0 ? 'In' : '') + 'Active';
+
+  if (arr[5] != null)
+    aEl.onclick= function(){ eval( arr[5]) };
+  aEl.target="_top";
+
+  liEl.appendChild( aEl );
+
+  var childEl;
+
+  if (arr[6].length > 0 && arr[4]) {
+    for (var i = 0; i < arr[6].length; i++) {
+      if (arr[6][i] && arr[6][i].length > 0) {
+        childEl = getMenu(arr[6][i], level+1);
+        if( childEl )
+        {
+          liEl.appendChild( childEl );
+        }
+      }
+    }
+  }
+
+  ulEl.appendChild( liEl );
+  return ulEl;
+}
+
+function getUrl( arr )
+{
+  var host = hostV;
+  if (user_realm == 1 || arr[3] == 1)
+    host = hostA;
+  else if (user_realm == 2 || arr[3] == 2)
+    host = hostO;
+
+  if( arr[1] == "" && arr[6].length > 0 )
+  {
+    return getUrl( arr[6][ 0 ] );
+  }
+
+  return host + arr[1] + '?' + arr[2] + "id=8";
+}
+
+function writeMenu()
+{
+  var elMenu = document.getElementById("mainMenu");
+  if( elMenu )
+  {
+    var el;
+    for (var i = 0; i < oMenu.length; i++) {
+      if ( oMenu[i].length <= 0)
+        continue;
+      el = getMenu(oMenu[i], 0);
+      if( el )
+      {
+        elMenu.appendChild( el );
+      }
+    }
+  }
+
+}
+
+
+function getHost(group) {
+  var httpPort = 80;
+  if( location.protocol == "http:" )
+  {
+    httpPort = (location.port > 0 ?':' + location.port : "");
+  }
+  else
+  {
+    httpPort = (httpPort == 80 ? "" : ":" + httpPort);
+  }
+
+  var httpsPort = 443;
+  if (location.protocol == "https:")
+  {
+    httpsPort = (location.port > 0 ? ':' + location.port : "");
+  }
+  else
+  {
+    httpsPort = (httpsPort == 443 ? "" : ":" + httpsPort);
+  }
+
+  var preUrl;
+  if (group == "http")
+    preUrl = "http://" + getIPv6HostName(location.hostname) + httpPort;
+  else if (group == "https")
+    preUrl = "https://" + getIPv6HostName(location.hostname) + httpsPort;
+  else
+    preUrl = location.protocol + "//" + getIPv6HostName(location.hostname) + (location.protocol == "http:" ? httpPort : httpsPort);
+  return preUrl;
+}
+
+function getIPv6HostName(hostname)
+{
+  if (hostname.split(":").length > 1 && hostname.indexOf("[") < 0)
+    hostname = "[" + hostname + "]";
+  return hostname;
+}
+
+
+var bol = 0; //basic menu list numbering
+
+var oMenu =
+[
+
+
+  [ "Basic Setup", "/operator/basic.shtml", "", 2, false, null,
+    [
+      ["Instructions", "/operator/basic.shtml", "", 2, false, null, []],
+      [(++bol) + "  " + "Users", "/admin/users.shtml", "basic=yes&", 1, false, null, []],
+      [(++bol) + "  " + "TCP/IP", "/admin/tcpip.shtml", "basic=yes&", 1, false, null, []],
+      [(++bol) + "  " + "Date & Time", "/admin/date.shtml", "basic=yes&", 1, false, null, []],
+      [(++bol) + "  " + "Video Stream", "/operator/videostream.shtml", "nbr=0&basic=yes&", 2, false, null,
+        [
+        ]
+      ],
+
+
+    [(++bol) + "  " + "Audio Settings", "/operator/audio_settings.shtml", "basic=yes&nbr=0&", 2, false, null,
+      [
+      ]
+    ],
+      []
+    ]
+  ],
+
+
+
+
+  [ "Video & Audio", "", "", 2, true, null,
+    [
+      [ "Video Stream", "/operator/videostream.shtml", "nbr=0&", 2, false, null,
+        [
+        ]
+      ],
+      [ "Stream Profiles", "/operator/streamprofilelist.shtml", "", 2, false, null, []],
+        [ "Camera Settings", "/operator/advanced.shtml", "nbr=0&", 2, true, null, []],
+
+        ["Overlay Image", "/operator/overlay.shtml", "", 2, false, null, []],
+        ["Privacy Mask", "/operator/privacy_mask.shtml", "", 2, false, null, []],
+
+
+
+      [ "Audio Settings", "/operator/audio_settings.shtml", "nbr=0&", 2, false, null,
+        [
+        ]
+      ],
+      [ "Audio Clips", "/operator/audioclip.shtml", "", 2, false, null, []],
+
+
+      []
+    ]
+  ],
+
+
+
+
+
+
+
+
+  [ "Live View Config", "", "", 2, false, null,
+    [
+      [ "Layout", "/operator/layout.shtml", "", 2, false, null, []],
+      []
+    ]
+  ], // $ptz = yes
+
+
+
+
+["Detectors", "", "", null, false, null,
+  [
+      [ "Camera Tampering", "/operator/cameraTampering.shtml", "", 2, false, null, []],
+      [ "Motion Detection", "/operator/motionDetection.shtml", "nbr=0&", 2, false, null, []],
+
+      [ "Audio Detection", "/operator/audioDetection.shtml", "", 2, false, null, []],
+
+      [ "PIR Sensor", "/operator/pirPort.shtml", "", 1, false, null, []],
+
+    []
+  ]
+],
+
+
+["Applications", "", "", 1, false, null,
+  [
+    [ "Overview", "/admin/devtools.shtml", "", 1, false, null, [] ],
+  ]
+],
+
+["Events", "", "", 2, false, null,
+  [
+    [ "Action Rules", "/operator/action_rules.shtml", "", 2, false, null, []],
+    [ "Recipients", "/operator/recipients.shtml", "", 2, false, null, []],
+    [ "Schedules", "/operator/schedules.shtml", "", 2, false, null, []],
+    [ "Recurrences", "/operator/recurrences.shtml", "", 2, false, null, []],
+    []
+  ]
+],
+
+
+[ "Recordings", "", "", 2, false, null,
+  [
+    [ "List", "/operator/recList.shtml", "", 2, false, null, []]
+    ,[ "Continuous", "/operator/continuously.shtml", "", 2, false, null, []]
+  ]
+],
+
+
+[ "System Options", "", "", 1, false, null,
+  [
+    [ "Security", "", "", 1, false, null,
+      [
+        ["Users", "/admin/users.shtml", "", 1, false, null, []],
+        [ "ONVIF", "/admin/onvif.shtml", "", 1, false, null, []],
+        [ "IP Address Filter", "/admin/restrictIP.shtml", "", 1, false, null, []],
+        [ "HTTPS", "/admin/https.shtml", "", 1, false, null, []],
+        [ "IEEE 802.1X", "/admin/8021x.shtml", "", 1, false, null, []],
+        [ "Audio Support", "/admin/audio_support.shtml", "", 1, false, null, []],
+        []
+      ]
+    ],
+
+    [ "Date & Time", "/admin/date.shtml", "", 1, false, null, []],
+
+    [ "Network", "", "", 1, false, null,
+      [
+        [ "TCP/IP", "", "", 1, false, null,
+          [
+            [ "Basic", "/admin/tcpip.shtml", "", 1, false, null, []],
+            [ "Advanced", "/admin/advanced_tcpip.shtml", "", 1, false, null, []]
+          ]
+        ],
+
+        [ "SOCKS", "/admin/socks.shtml", "", 1, false, null, []],
+        [ "QoS", "/admin/qos.shtml", "", 1, false, null, []],
+        [ "SMTP (email)", "/admin/smtp.shtml", "", 1, false, null, []],
+        [ "SNMP", "/admin/snmp.shtml", "", 1, false, null, []],
+        [ "UPnP&#8482;", "/admin/UPnP.shtml", "", 1, false, null, []],
+        [ "RTP", "/admin/rtp.shtml", "", 1, false, null, []],
+        [ "Bonjour", "/admin/bonjour.shtml", "", 1, false, null, []],
+        []
+      ]
+    ],
+
+      [ "Storage", "", "", 1, false, null,
+        [
+          [ "Overview", "/admin/storageList.shtml", "", 1, false, null, []],
+          []
+        ]
+      ],
+
+
+    [ "Ports & Devices", "", "", 1, false, null,
+      [
+        [ "I/O Ports", "/admin/ioPorts.shtml", "", 1, false, null, []],
+
+        [ "LED", "/admin/ledSettings.shtml", "", 1, false, null, []],
+        [ "Port Status", "/operator/portStatus.shtml", "", 2, false, null, []],
+        []
+      ]
+    ],
+    [ "Maintenance", "/admin/maintenance.shtml", "", 1, false, null, []],
+    [ "Support", "", "", 1, false, null,
+      [
+        [ "Support Overview", "/admin/supportOverview.shtml", "", 1, false, null, []],
+        [ "System Overview", "/admin/overview.shtml", "", 1, false, "openPopUp('/admin/collectingData.shtml', 'Data', 300, 130)", []],
+        [ "Logs & Reports", "", "", 1, false, null,
+          [
+            [ "Information", "/admin/logs.shtml", "", 1, false, null, []],
+            [ "Configuration", "/admin/logconfig.shtml", "", 1, false, null, []]
+          ]
+        ]
+      ]
+    ],
+    [ "Advanced", "", "", 1, false, null,
+      [
+        [ "Scripting", "/admin/scripting.shtml", "", 1, false, null, []],
+        [ "File Upload", "/admin/fileUpload.shtml", "", 1, false, null, []],
+        [ "Plain Config", "/admin/config.shtml", "", 1, false, null, []]
+      ]
+    ]
+  ]
+],
+
+
+[ "About", "/admin/about.shtml", "", 1, false, null, []]
+];
+writeMenu();
+//-->
+</script>
+          </td>
+        </tr>
+      </table>
+    </td>
+    <td class="lineBg"><img src="/pics/blank.gif" width=1 height=5 alt=""></td>
+    <td valign="top"><img src="/pics/blank.gif" width=4 height=1 alt=""></td>
+    <td valign="top" colspan=2>
+
+<table border="0" cellpadding="3" cellspacing="0" width="100%" class="alternateRows">
+  <tr class="topTitle">
+    <td nowrap align="left" colspan="4">Camera Settings</td>
+    <td width="10%">
+      <div align="right"><a href="javascript:launch%28%27/help/advanced_h.shtml%27%29"><img height="27" width="27" src="/pics/help.gif" border="0" alt="Click here for help on this page"></a></div>
+    </td>
+  </tr>
+
+
+    <tr class="subTitle">
+      <td align="left" colspan="5" nowrap>View Area</td>
+    </tr>
+    <tr>
+      <td class="oddItem" valign="top" align="left" nowrap><input type="hidden" name="root_PTZ_ImageSource_I0_PTZEnabled" value="false" ><input type="checkbox" name="root_PTZ_ImageSource_I0_PTZEnabled" value="true" id="PTZEnabled" onclick="applyDPTZ(this)">Enable View Area
+      </td>
+    </tr>
+
+  <tr class="subTitle">
+    <td align="left" colspan="5">Image Appearance</td>
+  </tr>
+  <tr>
+    <td>Color level:</td>
+    <td colspan="4">
+      <table border=0 cellpadding=0 cellspacing=0>
+        <tr>
+          <td valign="middle">
+            <img src="/pics/slider_left.gif" width="14" height="14" id="colorlevel-left"><img src="/pics/slider_bg_151x14px.gif" width="151" height="14" id="colorlevel-bg"><img src="/pics/slider_handle.gif" width="5" height="14" id="colorlevel-handle" style="display: none"><img src="/pics/slider_right.gif" width="14" height="14" id="colorlevel-right">
+          </td>
+          <td>
+              &nbsp;<input type="text" name="root_ImageSource_I0_Sensor_ColorLevel" value="50" id="colorlevel" size=5 maxlength=3> [0..100]
+	    
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <tr>
+    <td>Brightness:</td>
+    <td colspan="4">
+      <table border=0 cellpadding=0 cellspacing=0>
+        <tr>
+          <td valign="middle">
+            <img src="/pics/slider_left.gif" width="14" height="14" id="brightness-left"><img src="/pics/slider_bg_151x14px.gif" width="151" height="14" id="brightness-bg"><img src="/pics/slider_handle.gif" width="5" height="14" id="brightness-handle" style="display: none"><img src="/pics/slider_right.gif" width="14" height="14" id="brightness-right">
+          </td>
+          <td>
+            &nbsp;<input type="text" name="root_ImageSource_I0_Sensor_Brightness" value="50" id="brightness" size=5 maxlength=3> [0..100]
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td width="20%">Sharpness:</td>
+    <td colspan="4" width="80%">
+      <table border=0 cellpadding=0 cellspacing=0>
+        <tr>
+          <td valign="middle">
+            <img src="/pics/slider_left.gif" width="14" height="14" id="sharpness-left"><img src="/pics/slider_bg_151x14px.gif" width="151" height="14" id="sharpness-bg"><img src="/pics/slider_handle.gif" width="5" height="14" id="sharpness-handle" style="display: none"><img src="/pics/slider_right.gif" width="14" height="14" id="sharpness-right">
+          </td>
+          <td>
+            &nbsp;<input type="text" name="root_ImageSource_I0_Sensor_Sharpness" value="50" id="sharpness" size=5 maxlength=3> [0..100]
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+<tr>
+    <td width="20%">Contrast:</td>
+    <td colspan="4" width="80%">
+      <table border=0 cellpadding=0 cellspacing=0>
+        <tr>
+          <td valign="middle">
+            <img src="/pics/slider_left.gif" width="14" height="14" id="contrast-left"><img src="/pics/slider_bg_151x14px.gif" width="151" height="14" id="contrast-bg"><img src="/pics/slider_handle.gif" width="5" height="14" id="contrast-handle" style="display: none"><img src="/pics/slider_right.gif" width="14" height="14" id="contrast-right">
+          </td>
+          <td>
+              &nbsp;<input type="text" name="root_ImageSource_I0_Sensor_Contrast" value="50" id="contrast" size=5 maxlength=3> [0..100]
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <tr class="subTitle">
+    <td align="left" colspan="5">White Balance</td>
+  </tr>
+  <tr>
+    <td nowrap width="25%">White balance:</td>
+    <td nowrap colspan="4"><select name="root_ImageSource_I0_Sensor_WhiteBalance" ><option value="auto" selected>Automatic</option><option value="hold">Hold current</option><option value="fixed_outdoor1">Fixed Outdoor 1</option><option value="fixed_outdoor2">Fixed Outdoor 2</option><option value="fixed_indoor">Fixed Indoor</option><option value="fixed_fluor1">Fixed Fluorescent 1</option><option value="fixed_fluor2">Fixed Fluorescent 2</option></select>
+    </td>
+  </tr>
+
+  <tr class="subTitle">
+    <td align="left" colspan="5">Exposure Settings</td>
+  </tr>
+  <tr id="expoVal" style="display:visible">
+    <td>Exposure value:</td>
+    <td colspan="4">
+      <table border=0 cellpadding=0 cellspacing=0>
+        <tr>
+          <td valign="middle">
+            <img src="/pics/slider_left.gif" width="14" height="14" id="exposureval-left"><img src="/pics/slider_bg_151x14px.gif" width="151" height="14" id="exposureval-bg"><img src="/pics/slider_handle.gif" width="5" height="14" id="exposureval-handle" style="display: none"><img src="/pics/slider_right.gif" width="14" height="14" id="exposureval-right">
+          </td>
+          <td>
+            &nbsp;<input type="text" name="root_ImageSource_I0_Sensor_ExposureValue" value="50" id="exposureval" size=5 maxlength=3> [0..100]
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+    <input type="hidden" name="root_ImageSource_I0_Sensor_Exposure" id="root_ImageSource_I0_Sensor_Exposure" value="auto" />
+
+    <tr>
+      <td nowrap>Enable Backlight compensation:
+      </td>
+      <td colspan="4"><input type="hidden" name="root_ImageSource_I0_Sensor_BacklightCompensation" value="no" ><input type="checkbox" name="root_ImageSource_I0_Sensor_BacklightCompensation" value="yes" checked >
+      </td>
+    </tr>
+
+
+  <tr>
+    <td align="left">Exposure zones:</td>
+          <td colspan="4" nowrap align="left">
+            <input type="radio" name="zoneType" value="auto" onClick="ableExpWin()" checked>Auto
+            <input type="hidden" name="root_ImageSource_I0_Sensor_ExposureWindow" value="auto">
+          </td>
+        </tr>
+        <tr class="reuseLast">
+          <td><br></td>
+          <td colspan="3" nowrap align="left">
+            <input type="radio" name="zoneType" value="other" onClick="ableExpWin()">Defined [<span id="defExpWin"></span>]
+          </td>
+          <td align="right">
+            <script language="javascript" type="text/javascript">
+            <!--
+              document.write("<input type=\"button\" width=\"75\" class=\"btnNormal\" id=\"adv_EditBtn\" value=\"Edit...\" onClick=\"openPopUp('exposure_windows.shtml?nbr=0&id=8")
+              if (browser != "IE")
+                document.write("&viewer=java");
+              else if ("" == "java")
+                document.write("&viewer=java");
+              document.write("', 'exposure_windows', 690, 630)\">");
+            //-->
+            </script>
+          </td>
+        </tr>
+
+
+  <tr>
+    <td align="left">Exposure priority:</td>
+    <td colspan="4" nowrap align="left"><select name="root_ImageSource_I0_Sensor_ExposurePriority" onChange="showShutterGain()"><option value="50">Default</option><option value="100">Motion</option><option value="0" selected>Low noise</option></select>
+    </td>
+  </tr>
+
+  <tr style="display:visible" id="shutter">
+    <td align="left" width="20%">Shutter:
+    </td>
+    <td colspan="2">Min:&nbsp;<select name="root_ImageSource_I0_Sensor_MinExposureTime" id="MinExposureTime">
+        <option value="63">1/16000</option>
+        <option value="125">1/8000</option>
+        <option value="250">1/4000</option>
+        <option value="500">1/2000</option>
+        <option value="1000">1/1000</option>
+        <option value="2000">1/500</option>
+        <option value="4000">1/250</option>
+        <option value="8333">1/120</option>
+        <option value="10000">1/100</option>
+        <option value="20000">1/60</option>
+        <option value="20000">1/50</option>
+        <option value="33333">1/30</option>
+        <option value="40000">1/25</option>
+        <option value="83333">1/12</option>
+        <option value="100000">1/10</option>
+        <option value="166667">1/6</option>
+        <option value="200000">1/5</option>
+        <option value="250000">1/4</option>
+      </select>&nbsp;s
+    </td>
+    <td colspan="2" nowrap>Max:&nbsp;<select name="root_ImageSource_I0_Sensor_MaxExposureTime">
+        <option value="63">1/16000</option>
+        <option value="125">1/8000</option>
+        <option value="250">1/4000</option>
+        <option value="500">1/2000</option>
+        <option value="1000">1/1000</option>
+        <option value="2000">1/500</option>
+        <option value="4000">1/250</option>
+        <option value="8333">1/120</option>
+        <option value="10000">1/100</option>
+        <option value="20000">1/60</option>
+        <option value="20000">1/50</option>
+        <option value="33333">1/30</option>
+        <option value="40000">1/25</option>
+        <option value="83333">1/12</option>
+        <option value="100000" selected>1/10</option>
+        <option value="166667">1/6</option>
+        <option value="200000">1/5</option>
+        <option value="250000">1/4</option>
+      </select>&nbsp;s
+    </td>
+  </tr>
+  <tr style="display:visible" id="gain">
+    <td align="left" width="20%">Gain:
+    </td>
+    <td colspan="2">Min:&nbsp;<select name="root_ImageSource_I0_Sensor_MinGain">
+        <option value="0" selected>0</option>
+        <option value="9">3</option>
+        <option value="19">6</option>
+        <option value="28">9</option>
+        <option value="38">12</option>
+        <option value="47">15</option>
+        <option value="56">18</option>
+        <option value="66">21</option>
+        <option value="75">24</option>
+        <option value="84">27</option>
+        <option value="94">30</option>
+        <option value="100">32</option>
+      </select>&nbsp;dB
+    </td>
+    <td colspan="2" nowrap>Max:&nbsp;<select name="root_ImageSource_I0_Sensor_MaxGain">
+        <option value="0">0</option>
+        <option value="9">3</option>
+        <option value="19">6</option>
+        <option value="28">9</option>
+        <option value="38">12</option>
+        <option value="47">15</option>
+        <option value="56">18</option>
+        <option value="66">21</option>
+        <option value="75">24</option>
+        <option value="84">27</option>
+        <option value="94">30</option>
+        <option value="100">32</option>
+      </select>&nbsp;dB
+    </td>
+  </tr>
+
+
+  <tr class="subTitle">
+    <td align="left" colspan="5">View Image Settings</td>
+  </tr>
+  <tr>
+    <td colspan="5">
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+          <td class="oddItem">View image <b>after</b> saving.</td>
+          <td class="button"><br></td>
+          <td class="button" align="right"><input type="button" value="View..." width="75" class="btnNormal" onClick="openPopUpTest('/operator/streampreview.shtml?', 'image_test', 10, 10)" onMouseOver="return showStatus(OpenImgWinTxt)" onMouseOut="return showStatus('')" id="adv_ViewBtn"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td class="topTitle" align="center" colspan="5">
+      <table border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td class="button"><input type="button" value="Save" width="75" class="btnNormal" onClick="saveData()" onMouseOver="return showStatus(SaveAdvBtnStatTxt)" onMouseOut="return showStatus('')" id="adv_SaveBtn"></td>
+          <td class="button"><br></td>
+          <td class="button">
+            <input type="button" value="Reset"  width="75" class="btnNormal" onClick="reloadPage()" onMouseOver="return showStatus(ResBtnStatTxt)" onMouseOut="return showStatus('')" id="adv_ResetBtn">
+            <input type="hidden" name="return_page" value="/operator/advanced.shtml?nbr=0&id=8">
+            <input type="hidden" name="action" value="modify">
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+    </td>
+    <td width=4><img src="/pics/blank.gif" width=1 height=1 border=0 alt=""></td>
+    <td width=1 class="lineBg"><img src="/pics/blank.gif" width=1 height=1 border=0 alt=""></td>
+  </tr>
+
+  <!-- ################################################################ -->
+  <!-- Defines the table width -->
+  <tr>
+    <td colspan=1 width=1 class="lineBg"><img src="/pics/blank.gif" width=1 height=1 alt=""></td>
+    <td colspan=1 width=4><img src="/pics/blank.gif" width=4 height=1 alt=""></td>
+    <td colspan=1 width=180><img src="/pics/blank.gif" width=180 height=1 alt=""></td>
+    <td colspan=1 width=1 class="lineBg"><img src="/pics/blank.gif" width=1 height=1 alt=""></td> 
+    <td colspan=1 width=4><img src="/pics/blank.gif" width=4 height=1 alt=""></td>
+    <td colspan=1 width=164><img src="/pics/blank.gif" width=164 height=1 alt=""></td>
+    <td colspan=1 width=195><img src="/pics/blank.gif" width=295 height=1 alt=""></td>
+    <td colspan=1 width=4><img src="/pics/blank.gif" width=4 height=1 alt=""></td>
+    <td colspan=1 width=1 class="lineBg"><img src="/pics/blank.gif" width=1 height=1 alt=""></td>
+  </tr>
+  <!-- ################################################################ -->
+	
+  <tr>
+    <td colspan=2><img src="/pics/line_corner_lb_5x5px.gif" width=5 height=5 alt=""></td>
+    <td colspan=1 background="/pics/line_b_100x5px.gif"><img src="/pics/blank.gif" width=1 height=1 alt=""></td>
+    <td colspan=1 class="lineBg"><img src="/pics/blank.gif" width=1 height=1 alt=""></td>
+    <td colspan=3 background="/pics/line_b_100x5px.gif"><img src="/pics/blank.gif" width=1 height=1 alt=""></td> 
+    <td colspan=2><img src="/pics/line_corner_rb_5x5px.gif" width=5 height=5 alt=""></td>
+  </tr>
+  <tr>
+    <td colspan=9><img src="/pics/blank.gif" width=1 height=5 border=0 alt=""></td>
+  </tr>
+  <tr>
+    <td width=1><img src="/pics/blank.gif" width="1" height="1" border=0 alt=""></td>
+    <td colspan=7 valign="middle" align="left"></td>
+    <td width=1><img src="/pics/blank.gif" width="1" height="1" border=0 alt=""></td>
+  </tr>
+</table>
+</form>
+</td></tr></table><script language="JavaScript" type="text/javascript">
+<!--
+/*
+	Standards Compliant Script
+	Alternates Table Columns
+	Author : Kevin Cannon
+	http://www.multiblah.com
+	Last Edited: 12.12.2004
+	Version 1.0
+
+	Search through the document for tables with the "alternateRows" class,
+	and set the class of even rows to "even" to appropriate rows <tr>
+
+	Licence:
+	Use as you wish, though it'd be nice if you can leave in the credit in
+	the code.
+
+	Changes:
+	4/10/2004 - Added in AddLoadEvent function which piggybacks code onto
+	window.onLoad
+
+	2005-04-21 - Modified to work with Axis web pages. [pkj]
+*/
+
+// Main function, called when the page loads
+function alternateRows()
+{
+	var i;
+
+	if (!document.getElementById)
+		return
+
+	var tables = document.getElementsByTagName("table");
+
+	// Search through tables in document
+	for (i = 0; i < tables.length; i++) {
+		// If table has the right classname
+		if (tables[i].className == "alternateRows") {
+			applyClassToRows(tables[i]);
+		}
+	}
+}
+
+// Function, which is passed a table reference, applies the class 'evenItem'
+// to each even row and 'oddItem' to each odd row
+function applyClassToRows(table)
+{
+	var rows = table.rows;
+	var row_is_odd = 0;
+	var i;
+
+	// Search through rows
+	for (i = 0; i < rows.length; i++) {
+		if (rows[i].className != "reuseLast")  {
+			row_is_odd = !row_is_odd;
+		}
+
+		if (rows[i].className == "topTitle" ||
+		    rows[i].className == "subTitle")  {
+			row_is_odd = 0;
+		} else if (row_is_odd) {
+			rows[i].setAttribute("className", "oddItem");
+			rows[i].setAttribute("class", "oddItem");
+		} else {
+			rows[i].setAttribute("className", "evenItem");
+			rows[i].setAttribute("class", "evenItem");
+		}
+	}
+}
+
+// Piggy-back function onto onLoad event ......................................
+var oldonload;
+
+function addLoadEvent(func)
+{
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		oldonload = window.onload;
+		window.onload = function() {
+			oldonload();
+			func();
+		}
+	}
+}
+
+addLoadEvent(alternateRows);
+// -->
+</script>
+</body>
+</html>

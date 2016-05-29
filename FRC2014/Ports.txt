@@ -1,0 +1,32 @@
+PWM
+1 - Right Drive
+2 - Arm
+3 - Rollers
+4 - Intake
+5 - Winch
+6 - NA
+7 - NA
+8 - Jew Bar
+9 - Trigger
+10 - Left Drive
+
+Analog
+1 - Intake Pot
+2 - Arm Pot
+3 - NA
+4 - Winch Pot
+5 - Intake Ultrasonic
+
+Digital
+1 - NA
+2 - Winch Limit Switch
+3 - LEDs
+4 - Trigger Limit Switch
+5 - Ball Sensor
+11 - Right Encoder A
+12 - Right Encoder B
+13 - Left Encoder A
+14 - Left Encoder B
+
+I2C
+Gyro

@@ -1,0 +1,3028 @@
+# depslib dependency file v1.0
+1201473840 source:c:\first\projects\frc195_2008\source\adc.c
+	"ifi_frc.h"
+	"adc.h"
+
+1202012940 c:\first\projects\frc195_2008\source\ifi_frc.h
+	<p18cxxx.h>
+
+1201410240 c:\first\projects\frc195_2008\source\adc.h
+
+1201720440 source:c:\first\projects\frc195_2008\source\autonomous.c
+	"ifi_frc.h"
+	"pwm.h"
+	"gyro.h"
+	"timers.h"
+	"interrupts.h"
+	"encoder.h"
+	"serial_ports.h"
+	"ifi_code.h"
+	"autonomous.h"
+
+1200883320 c:\first\projects\frc195_2008\source\pwm.h
+
+1201658520 c:\first\projects\frc195_2008\source\gyro.h
+
+1201188180 c:\first\projects\frc195_2008\source\timers.h
+
+1200883320 c:\first\projects\frc195_2008\source\interrupts.h
+
+1201379220 c:\first\projects\frc195_2008\source\encoder.h
+
+1200959640 c:\first\projects\frc195_2008\source\serial_ports.h
+	<stdio.h>
+
+1202012100 c:\first\projects\frc195_2008\source\ifi_code.h
+
+1200883320 c:\first\projects\frc195_2008\source\autonomous.h
+
+1201720320 source:c:\first\projects\frc195_2008\source\disabled.c
+	"ifi_frc.h"
+	"pwm.h"
+	"gyro.h"
+	"timers.h"
+	"interrupts.h"
+	"serial_ports.h"
+	"ifi_code.h"
+	"disabled.h"
+
+1200883320 c:\first\projects\frc195_2008\source\disabled.h
+
+1201155360 source:c:\first\projects\frc195_2008\source\encoder.c
+	"ifi_frc.h"
+	"encoder.h"
+
+1201657800 source:c:\first\projects\frc195_2008\source\gyro.c
+	"ifi_frc.h"
+	"adc.h"
+	"gyro.h"
+
+1202012100 source:c:\first\projects\frc195_2008\source\ifi_code.c
+	"ifi_frc.h"
+	"ifi_code.h"
+
+1201488840 source:c:\first\projects\frc195_2008\source\ifi_frc.c
+	"ifi_frc.h"
+	"adc.h"
+	"pwm.h"
+	"timers.h"
+	"interrupts.h"
+	"encoder.h"
+	"serial_ports.h"
+	"teleop.h"
+	"autonomous.h"
+	"disabled.h"
+
+1200883320 c:\first\projects\frc195_2008\source\teleop.h
+
+1201155660 source:c:\first\projects\frc195_2008\source\interrupts.c
+	"ifi_frc.h"
+	"interrupts.h"
+
+1200884460 source:c:\first\projects\frc195_2008\source\pwm.c
+	"ifi_frc.h"
+	"pwm.h"
+
+1201155900 source:c:\first\projects\frc195_2008\source\serial_ports.c
+	"ifi_frc.h"
+	"serial_ports.h"
+
+1201720320 source:c:\first\projects\frc195_2008\source\teleop.c
+	"ifi_frc.h"
+	"adc.h"
+	"gyro.h"
+	"pwm.h"
+	"timers.h"
+	"interrupts.h"
+	"encoder.h"
+	"serial_ports.h"
+	"ifi_code.h"
+	"teleop.h"
+
+1201156140 source:c:\first\projects\frc195_2008\source\timers.c
+	"ifi_frc.h"
+	"timers.h"
+
+1201473840 source:c:\first\projects\2-13-08\source\adc.c
+	"ifi_frc.h"
+	"adc.h"
+
+1202012940 c:\first\projects\2-13-08\source\ifi_frc.h
+	<p18cxxx.h>
+
+1201410240 c:\first\projects\2-13-08\source\adc.h
+
+1202681962 source:c:\first\projects\2-13-08\source\arm.c
+	<stdio.h>
+	"pid.h"
+	"encoder.h"
+	"ifi_frc.h"
+	"ifi_code.h"
+	"robot.h"
+	"arm.h"
+
+1202681699 c:\first\projects\2-13-08\source\pid.h
+
+1202682065 c:\first\projects\2-13-08\source\encoder.h
+
+1202012100 c:\first\projects\2-13-08\source\ifi_code.h
+
+1201791930 c:\first\projects\2-13-08\source\robot.h
+
+1202681501 c:\first\projects\2-13-08\source\arm.h
+
+1201720440 source:c:\first\projects\2-13-08\source\autonomous.c
+	"ifi_frc.h"
+	"pwm.h"
+	"gyro.h"
+	"timers.h"
+	"interrupts.h"
+	"encoder.h"
+	"serial_ports.h"
+	"ifi_code.h"
+	"autonomous.h"
+
+1200883320 c:\first\projects\2-13-08\source\pwm.h
+
+1201658520 c:\first\projects\2-13-08\source\gyro.h
+
+1201188180 c:\first\projects\2-13-08\source\timers.h
+
+1200883320 c:\first\projects\2-13-08\source\interrupts.h
+
+1200959640 c:\first\projects\2-13-08\source\serial_ports.h
+	<stdio.h>
+
+1200883320 c:\first\projects\2-13-08\source\autonomous.h
+
+1201720320 source:c:\first\projects\2-13-08\source\disabled.c
+	"ifi_frc.h"
+	"pwm.h"
+	"gyro.h"
+	"timers.h"
+	"interrupts.h"
+	"serial_ports.h"
+	"ifi_code.h"
+	"disabled.h"
+
+1200883320 c:\first\projects\2-13-08\source\disabled.h
+
+1201155360 source:c:\first\projects\2-13-08\source\encoder.c
+	"ifi_frc.h"
+	"encoder.h"
+
+1201657800 source:c:\first\projects\2-13-08\source\gyro.c
+	"ifi_frc.h"
+	"adc.h"
+	"gyro.h"
+
+1202012100 source:c:\first\projects\2-13-08\source\ifi_code.c
+	"ifi_frc.h"
+	"ifi_code.h"
+
+1201488840 source:c:\first\projects\2-13-08\source\ifi_frc.c
+	"ifi_frc.h"
+	"adc.h"
+	"pwm.h"
+	"timers.h"
+	"interrupts.h"
+	"encoder.h"
+	"serial_ports.h"
+	"teleop.h"
+	"autonomous.h"
+	"disabled.h"
+
+1200883320 c:\first\projects\2-13-08\source\teleop.h
+
+1201155660 source:c:\first\projects\2-13-08\source\interrupts.c
+	"ifi_frc.h"
+	"interrupts.h"
+
+1174735890 source:c:\first\projects\2-13-08\source\pid.c
+	<stdio.h>
+	"pid.h"
+
+1200884460 source:c:\first\projects\2-13-08\source\pwm.c
+	"ifi_frc.h"
+	"pwm.h"
+
+1202681700 source:c:\first\projects\2-13-08\source\robot.c
+	<stdio.h>
+	"gyro.h"
+	"encoder.h"
+	"robot.h"
+	"ifi_code.h"
+	"ifi_frc.h"
+
+1201155900 source:c:\first\projects\2-13-08\source\serial_ports.c
+	"ifi_frc.h"
+	"serial_ports.h"
+
+1201720320 source:c:\first\projects\2-13-08\source\teleop.c
+	"ifi_frc.h"
+	"adc.h"
+	"gyro.h"
+	"pwm.h"
+	"timers.h"
+	"interrupts.h"
+	"encoder.h"
+	"serial_ports.h"
+	"ifi_code.h"
+	"teleop.h"
+
+1201156140 source:c:\first\projects\2-13-08\source\timers.c
+	"ifi_frc.h"
+	"timers.h"
+
+1202682702 source:c:\first\projects\2-13-08\source\drive.c
+	"ifi_frc.h"
+	"ifi_code.h"
+	"encoder.h"
+	"gyro.h"
+	"pid.h"
+	"drive.h"
+	<stdio.h>
+
+1202681586 c:\first\projects\2-13-08\source\drive.h
+
+1201473840 source:c:\first\projects\2-14\source\adc.c
+	"ifi_frc.h"
+	"adc.h"
+
+1202012940 c:\first\projects\2-14\source\ifi_frc.h
+	<p18cxxx.h>
+
+1201410240 c:\first\projects\2-14\source\adc.h
+
+1202681962 source:c:\first\projects\2-14\source\arm.c
+	<stdio.h>
+	"pid.h"
+	"encoder.h"
+	"ifi_frc.h"
+	"ifi_code.h"
+	"robot.h"
+	"arm.h"
+
+1202681699 c:\first\projects\2-14\source\pid.h
+
+1202682065 c:\first\projects\2-14\source\encoder.h
+
+1202012100 c:\first\projects\2-14\source\ifi_code.h
+
+1201791930 c:\first\projects\2-14\source\robot.h
+
+1202681501 c:\first\projects\2-14\source\arm.h
+
+1201720440 source:c:\first\projects\2-14\source\autonomous.c
+	"ifi_frc.h"
+	"pwm.h"
+	"gyro.h"
+	"timers.h"
+	"interrupts.h"
+	"encoder.h"
+	"serial_ports.h"
+	"ifi_code.h"
+	"autonomous.h"
+
+1200883320 c:\first\projects\2-14\source\pwm.h
+
+1201658520 c:\first\projects\2-14\source\gyro.h
+
+1201188180 c:\first\projects\2-14\source\timers.h
+
+1200883320 c:\first\projects\2-14\source\interrupts.h
+
+1200959640 c:\first\projects\2-14\source\serial_ports.h
+	<stdio.h>
+
+1200883320 c:\first\projects\2-14\source\autonomous.h
+
+1201720320 source:c:\first\projects\2-14\source\disabled.c
+	"ifi_frc.h"
+	"pwm.h"
+	"gyro.h"
+	"timers.h"
+	"interrupts.h"
+	"serial_ports.h"
+	"ifi_code.h"
+	"disabled.h"
+
+1200883320 c:\first\projects\2-14\source\disabled.h
+
+1203049853 source:c:\first\projects\2-14\source\drive.c
+	"ifi_frc.h"
+	"ifi_code.h"
+	"encoder.h"
+	"gyro.h"
+	"pid.h"
+	"drive.h"
+	<stdio.h>
+
+1203049853 c:\first\projects\2-14\source\drive.h
+
+1201155360 source:c:\first\projects\2-14\source\encoder.c
+	"ifi_frc.h"
+	"encoder.h"
+
+1201657800 source:c:\first\projects\2-14\source\gyro.c
+	"ifi_frc.h"
+	"adc.h"
+	"gyro.h"
+
+1202012100 source:c:\first\projects\2-14\source\ifi_code.c
+	"ifi_frc.h"
+	"ifi_code.h"
+
+1201488840 source:c:\first\projects\2-14\source\ifi_frc.c
+	"ifi_frc.h"
+	"adc.h"
+	"pwm.h"
+	"timers.h"
+	"interrupts.h"
+	"encoder.h"
+	"serial_ports.h"
+	"teleop.h"
+	"autonomous.h"
+	"disabled.h"
+
+1200883320 c:\first\projects\2-14\source\teleop.h
+
+1201155660 source:c:\first\projects\2-14\source\interrupts.c
+	"ifi_frc.h"
+	"interrupts.h"
+
+1174735890 source:c:\first\projects\2-14\source\pid.c
+	<stdio.h>
+	"pid.h"
+
+1200884460 source:c:\first\projects\2-14\source\pwm.c
+	"ifi_frc.h"
+	"pwm.h"
+
+1202681700 source:c:\first\projects\2-14\source\robot.c
+	<stdio.h>
+	"gyro.h"
+	"encoder.h"
+	"robot.h"
+	"ifi_code.h"
+	"ifi_frc.h"
+
+1201155900 source:c:\first\projects\2-14\source\serial_ports.c
+	"ifi_frc.h"
+	"serial_ports.h"
+
+1203049853 source:c:\first\projects\2-14\source\teleop.c
+	"ifi_frc.h"
+	"adc.h"
+	"gyro.h"
+	"pwm.h"
+	"timers.h"
+	"interrupts.h"
+	"encoder.h"
+	"serial_ports.h"
+	"ifi_code.h"
+	"teleop.h"
+
+1201156140 source:c:\first\projects\2-14\source\timers.c
+	"ifi_frc.h"
+	"timers.h"
+
+1201473840 source:c:\first\projects\2-15\source\adc.c
+	"ifi_frc.h"
+	"adc.h"
+
+1202012940 c:\first\projects\2-15\source\ifi_frc.h
+	<p18cxxx.h>
+
+1201410240 c:\first\projects\2-15\source\adc.h
+
+1202681962 source:c:\first\projects\2-15\source\arm.c
+	<stdio.h>
+	"pid.h"
+	"encoder.h"
+	"ifi_frc.h"
+	"ifi_code.h"
+	"robot.h"
+	"arm.h"
+
+1202681699 c:\first\projects\2-15\source\pid.h
+
+1202682065 c:\first\projects\2-15\source\encoder.h
+
+1202012100 c:\first\projects\2-15\source\ifi_code.h
+
+1203181039 c:\first\projects\2-15\source\robot.h
+
+1202681501 c:\first\projects\2-15\source\arm.h
+
+1203198900 source:c:\first\projects\2-15\source\autonomous.c
+	"ifi_frc.h"
+	"pwm.h"
+	"gyro.h"
+	"timers.h"
+	"interrupts.h"
+	"encoder.h"
+	"serial_ports.h"
+	"ifi_code.h"
+	"autonomous.h"
+	"drive.h"
+
+1200883320 c:\first\projects\2-15\source\pwm.h
+
+1201658520 c:\first\projects\2-15\source\gyro.h
+
+1201188180 c:\first\projects\2-15\source\timers.h
+
+1200883320 c:\first\projects\2-15\source\interrupts.h
+
+1200959640 c:\first\projects\2-15\source\serial_ports.h
+	<stdio.h>
+
+1200883320 c:\first\projects\2-15\source\autonomous.h
+
+1201720320 source:c:\first\projects\2-15\source\disabled.c
+	"ifi_frc.h"
+	"pwm.h"
+	"gyro.h"
+	"timers.h"
+	"interrupts.h"
+	"serial_ports.h"
+	"ifi_code.h"
+	"disabled.h"
+
+1200883320 c:\first\projects\2-15\source\disabled.h
+
+1203158207 source:c:\first\projects\2-15\source\drive.c
+	"ifi_frc.h"
+	"ifi_code.h"
+	"encoder.h"
+	"gyro.h"
+	"pid.h"
+	"drive.h"
+	"robot.h"
+	<stdio.h>
+
+1203144264 c:\first\projects\2-15\source\drive.h
+
+1201155360 source:c:\first\projects\2-15\source\encoder.c
+	"ifi_frc.h"
+	"encoder.h"
+
+1201657800 source:c:\first\projects\2-15\source\gyro.c
+	"ifi_frc.h"
+	"adc.h"
+	"gyro.h"
+
+1203183370 source:c:\first\projects\2-15\source\ifi_code.c
+	"ifi_frc.h"
+	"ifi_code.h"
+
+1201488840 source:c:\first\projects\2-15\source\ifi_frc.c
+	"ifi_frc.h"
+	"adc.h"
+	"pwm.h"
+	"timers.h"
+	"interrupts.h"
+	"encoder.h"
+	"serial_ports.h"
+	"teleop.h"
+	"autonomous.h"
+	"disabled.h"
+
+1203124755 c:\first\projects\2-15\source\teleop.h
+
+1201155660 source:c:\first\projects\2-15\source\interrupts.c
+	"ifi_frc.h"
+	"interrupts.h"
+
+1174735890 source:c:\first\projects\2-15\source\pid.c
+	<stdio.h>
+	"pid.h"
+
+1200884460 source:c:\first\projects\2-15\source\pwm.c
+	"ifi_frc.h"
+	"pwm.h"
+
+1203145478 source:c:\first\projects\2-15\source\robot.c
+	<stdio.h>
+	"gyro.h"
+	"encoder.h"
+	"robot.h"
+	"ifi_code.h"
+	"ifi_frc.h"
+
+1201155900 source:c:\first\projects\2-15\source\serial_ports.c
+	"ifi_frc.h"
+	"serial_ports.h"
+
+1201156140 source:c:\first\projects\2-15\source\timers.c
+	"ifi_frc.h"
+	"timers.h"
+
+1203190200 source:c:\first\projects\2-15\source\teleop.c
+	"ifi_frc.h"
+	"adc.h"
+	"gyro.h"
+	"pwm.h"
+	"timers.h"
+	"interrupts.h"
+	"encoder.h"
+	"serial_ports.h"
+	"ifi_code.h"
+	"teleop.h"
+	"drive.h"
+	"robot.h"
+
+1201473840 source:c:\first\projects\2-17\source\adc.c
+	"ifi_frc.h"
+	"adc.h"
+
+1203294570 c:\first\projects\2-17\source\ifi_frc.h
+	<p18cxxx.h>
+
+1203295373 c:\first\projects\2-17\source\adc.h
+
+1202681962 source:c:\first\projects\2-17\source\arm.c
+	<stdio.h>
+	"pid.h"
+	"encoder.h"
+	"ifi_frc.h"
+	"ifi_code.h"
+	"robot.h"
+	"arm.h"
+
+1202681699 c:\first\projects\2-17\source\pid.h
+
+1202682065 c:\first\projects\2-17\source\encoder.h
+
+1202012100 c:\first\projects\2-17\source\ifi_code.h
+
+1203296591 c:\first\projects\2-17\source\robot.h
+
+1202681501 c:\first\projects\2-17\source\arm.h
+
+1203286133 source:c:\first\projects\2-17\source\autonomous.c
+	"ifi_frc.h"
+	"pwm.h"
+	"gyro.h"
+	"timers.h"
+	"interrupts.h"
+	"encoder.h"
+	"serial_ports.h"
+	"ifi_code.h"
+	"autonomous.h"
+	"drive.h"
+
+1200883320 c:\first\projects\2-17\source\pwm.h
+
+1202613120 c:\first\projects\2-17\source\gyro.h
+
+1203289325 c:\first\projects\2-17\source\timers.h
+
+1202607420 c:\first\projects\2-17\source\interrupts.h
+
+1202613120 c:\first\projects\2-17\source\serial_ports.h
+	<stdio.h>
+
+1200883320 c:\first\projects\2-17\source\autonomous.h
+
+1203144264 c:\first\projects\2-17\source\drive.h
+
+1201720320 source:c:\first\projects\2-17\source\disabled.c
+	"ifi_frc.h"
+	"pwm.h"
+	"gyro.h"
+	"timers.h"
+	"interrupts.h"
+	"serial_ports.h"
+	"ifi_code.h"
+	"disabled.h"
+
+1200883320 c:\first\projects\2-17\source\disabled.h
+
+1203302426 source:c:\first\projects\2-17\source\drive.c
+	"ifi_frc.h"
+	"ifi_code.h"
+	"encoder.h"
+	"gyro.h"
+	"pid.h"
+	"drive.h"
+	"robot.h"
+	"adc.h"
+	"teleop.h"
+	<stdio.h>
+
+1201155360 source:c:\first\projects\2-17\source\encoder.c
+	"ifi_frc.h"
+	"encoder.h"
+
+1202613120 source:c:\first\projects\2-17\source\gyro.c
+	"ifi_frc.h"
+	"adc.h"
+	"gyro.h"
+
+1203298144 source:c:\first\projects\2-17\source\ifi_code.c
+	"ifi_frc.h"
+	"ifi_code.h"
+
+1202794560 source:c:\first\projects\2-17\source\ifi_frc.c
+	"ifi_frc.h"
+	"adc.h"
+	"pwm.h"
+	"timers.h"
+	"interrupts.h"
+	"encoder.h"
+	"serial_ports.h"
+	"teleop.h"
+	"autonomous.h"
+	"disabled.h"
+
+1203124755 c:\first\projects\2-17\source\teleop.h
+
+1202609940 source:c:\first\projects\2-17\source\interrupts.c
+	"ifi_frc.h"
+	"interrupts.h"
+
+1174735890 source:c:\first\projects\2-17\source\pid.c
+	<stdio.h>
+	"pid.h"
+
+1200884460 source:c:\first\projects\2-17\source\pwm.c
+	"ifi_frc.h"
+	"pwm.h"
+
+1203145478 source:c:\first\projects\2-17\source\robot.c
+	<stdio.h>
+	"gyro.h"
+	"encoder.h"
+	"robot.h"
+	"ifi_code.h"
+	"ifi_frc.h"
+
+1201155900 source:c:\first\projects\2-17\source\serial_ports.c
+	"ifi_frc.h"
+	"serial_ports.h"
+
+1202609940 source:c:\first\projects\2-17\source\timers.c
+	"ifi_frc.h"
+	"timers.h"
+
+1203297370 source:c:\first\projects\2-17\source\teleop.c
+	"ifi_frc.h"
+	"adc.h"
+	"gyro.h"
+	"pwm.h"
+	"timers.h"
+	"interrupts.h"
+	"encoder.h"
+	"serial_ports.h"
+	"ifi_code.h"
+	"teleop.h"
+	"drive.h"
+	"robot.h"
+
+1201473840 source:c:\first\projects\2-18\source\adc.c
+	"ifi_frc.h"
+	"adc.h"
+
+1203294570 c:\first\projects\2-18\source\ifi_frc.h
+	<p18cxxx.h>
+
+1203295373 c:\first\projects\2-18\source\adc.h
+
+1202681962 source:c:\first\projects\2-18\source\arm.c
+	<stdio.h>
+	"pid.h"
+	"encoder.h"
+	"ifi_frc.h"
+	"ifi_code.h"
+	"robot.h"
+	"arm.h"
+
+1203382744 c:\first\projects\2-18\source\pid.h
+
+1202682065 c:\first\projects\2-18\source\encoder.h
+
+1202012100 c:\first\projects\2-18\source\ifi_code.h
+
+1203383138 c:\first\projects\2-18\source\robot.h
+
+1202681501 c:\first\projects\2-18\source\arm.h
+
+1203286133 source:c:\first\projects\2-18\source\autonomous.c
+	"ifi_frc.h"
+	"pwm.h"
+	"gyro.h"
+	"timers.h"
+	"interrupts.h"
+	"encoder.h"
+	"serial_ports.h"
+	"ifi_code.h"
+	"autonomous.h"
+	"drive.h"
+
+1200883320 c:\first\projects\2-18\source\pwm.h
+
+1202613120 c:\first\projects\2-18\source\gyro.h
+
+1203289325 c:\first\projects\2-18\source\timers.h
+
+1202607420 c:\first\projects\2-18\source\interrupts.h
+
+1202613120 c:\first\projects\2-18\source\serial_ports.h
+	<stdio.h>
+
+1200883320 c:\first\projects\2-18\source\autonomous.h
+
+1203383138 c:\first\projects\2-18\source\drive.h
+
+1201720320 source:c:\first\projects\2-18\source\disabled.c
+	"ifi_frc.h"
+	"pwm.h"
+	"gyro.h"
+	"timers.h"
+	"interrupts.h"
+	"serial_ports.h"
+	"ifi_code.h"
+	"disabled.h"
+
+1200883320 c:\first\projects\2-18\source\disabled.h
+
+1203383138 source:c:\first\projects\2-18\source\drive.c
+	"ifi_frc.h"
+	"ifi_code.h"
+	"encoder.h"
+	"gyro.h"
+	"pid.h"
+	"drive.h"
+	"robot.h"
+	"adc.h"
+	"teleop.h"
+	<stdio.h>
+
+1203124755 c:\first\projects\2-18\source\teleop.h
+
+1201155360 source:c:\first\projects\2-18\source\encoder.c
+	"ifi_frc.h"
+	"encoder.h"
+
+1202613120 source:c:\first\projects\2-18\source\gyro.c
+	"ifi_frc.h"
+	"adc.h"
+	"gyro.h"
+
+1203298144 source:c:\first\projects\2-18\source\ifi_code.c
+	"ifi_frc.h"
+	"ifi_code.h"
+
+1202794560 source:c:\first\projects\2-18\source\ifi_frc.c
+	"ifi_frc.h"
+	"adc.h"
+	"pwm.h"
+	"timers.h"
+	"interrupts.h"
+	"encoder.h"
+	"serial_ports.h"
+	"teleop.h"
+	"autonomous.h"
+	"disabled.h"
+
+1202609940 source:c:\first\projects\2-18\source\interrupts.c
+	"ifi_frc.h"
+	"interrupts.h"
+
+1200884460 source:c:\first\projects\2-18\source\pwm.c
+	"ifi_frc.h"
+	"pwm.h"
+
+1203383138 source:c:\first\projects\2-18\source\robot.c
+	<stdio.h>
+	"gyro.h"
+	"encoder.h"
+	"robot.h"
+	"ifi_code.h"
+	"ifi_frc.h"
+
+1201155900 source:c:\first\projects\2-18\source\serial_ports.c
+	"ifi_frc.h"
+	"serial_ports.h"
+
+1203315622 source:c:\first\projects\2-18\source\teleop.c
+	"ifi_frc.h"
+	"adc.h"
+	"gyro.h"
+	"pwm.h"
+	"timers.h"
+	"interrupts.h"
+	"encoder.h"
+	"serial_ports.h"
+	"ifi_code.h"
+	"teleop.h"
+	"drive.h"
+	"robot.h"
+
+1202609940 source:c:\first\projects\2-18\source\timers.c
+	"ifi_frc.h"
+	"timers.h"
+
+1203384831 source:c:\first\projects\2-18\source\pid.c
+	<stdio.h>
+	"pid.h"
+
+1203385943 source:c:\first\projects\2-18\source\launcher.c
+	"ifi_frc.h"
+	"ifi_code.h"
+	"encoder.h"
+	"gyro.h"
+	"pid.h"
+	"drive.h"
+	"robot.h"
+	"adc.h"
+	"teleop.h"
+	"launcher.h"
+	<stdio.h>
+
+1203384431 c:\first\projects\2-18\source\launcher.h
+
+1201473840 source:c:\first\projects\2-23\source\adc.c
+	"ifi_frc.h"
+	"adc.h"
+
+1203294570 c:\first\projects\2-23\source\ifi_frc.h
+	<p18cxxx.h>
+
+1203295373 c:\first\projects\2-23\source\adc.h
+
+1203286133 source:c:\first\projects\2-23\source\autonomous.c
+	"ifi_frc.h"
+	"pwm.h"
+	"gyro.h"
+	"timers.h"
+	"interrupts.h"
+	"encoder.h"
+	"serial_ports.h"
+	"ifi_code.h"
+	"autonomous.h"
+	"drive.h"
+
+1200883320 c:\first\projects\2-23\source\pwm.h
+
+1202613120 c:\first\projects\2-23\source\gyro.h
+
+1203289325 c:\first\projects\2-23\source\timers.h
+
+1202607420 c:\first\projects\2-23\source\interrupts.h
+
+1202682065 c:\first\projects\2-23\source\encoder.h
+
+1202613120 c:\first\projects\2-23\source\serial_ports.h
+	<stdio.h>
+
+1202012100 c:\first\projects\2-23\source\ifi_code.h
+
+1200883320 c:\first\projects\2-23\source\autonomous.h
+
+1203795060 c:\first\projects\2-23\source\drive.h
+
+1201720320 source:c:\first\projects\2-23\source\disabled.c
+	"ifi_frc.h"
+	"pwm.h"
+	"gyro.h"
+	"timers.h"
+	"interrupts.h"
+	"serial_ports.h"
+	"ifi_code.h"
+	"disabled.h"
+
+1200883320 c:\first\projects\2-23\source\disabled.h
+
+1203794962 source:c:\first\projects\2-23\source\drive.c
+	"ifi_frc.h"
+	"ifi_code.h"
+	"encoder.h"
+	"gyro.h"
+	"pid.h"
+	"drive.h"
+	"robot.h"
+	"adc.h"
+	"teleop.h"
+	<stdio.h>
+
+1203382744 c:\first\projects\2-23\source\pid.h
+
+1203383138 c:\first\projects\2-23\source\robot.h
+
+1203124755 c:\first\projects\2-23\source\teleop.h
+
+1201155360 source:c:\first\projects\2-23\source\encoder.c
+	"ifi_frc.h"
+	"encoder.h"
+
+1202613120 source:c:\first\projects\2-23\source\gyro.c
+	"ifi_frc.h"
+	"adc.h"
+	"gyro.h"
+
+1203298144 source:c:\first\projects\2-23\source\ifi_code.c
+	"ifi_frc.h"
+	"ifi_code.h"
+
+1202794560 source:c:\first\projects\2-23\source\ifi_frc.c
+	"ifi_frc.h"
+	"adc.h"
+	"pwm.h"
+	"timers.h"
+	"interrupts.h"
+	"encoder.h"
+	"serial_ports.h"
+	"teleop.h"
+	"autonomous.h"
+	"disabled.h"
+
+1202609940 source:c:\first\projects\2-23\source\interrupts.c
+	"ifi_frc.h"
+	"interrupts.h"
+
+1203385943 source:c:\first\projects\2-23\source\launcher.c
+	"ifi_frc.h"
+	"ifi_code.h"
+	"encoder.h"
+	"gyro.h"
+	"pid.h"
+	"drive.h"
+	"robot.h"
+	"adc.h"
+	"teleop.h"
+	"launcher.h"
+	<stdio.h>
+
+1203384431 c:\first\projects\2-23\source\launcher.h
+
+1203384831 source:c:\first\projects\2-23\source\pid.c
+	<stdio.h>
+	"pid.h"
+
+1200884460 source:c:\first\projects\2-23\source\pwm.c
+	"ifi_frc.h"
+	"pwm.h"
+
+1203383138 source:c:\first\projects\2-23\source\robot.c
+	<stdio.h>
+	"gyro.h"
+	"encoder.h"
+	"robot.h"
+	"ifi_code.h"
+	"ifi_frc.h"
+
+1201155900 source:c:\first\projects\2-23\source\serial_ports.c
+	"ifi_frc.h"
+	"serial_ports.h"
+
+1203388482 source:c:\first\projects\2-23\source\teleop.c
+	"ifi_frc.h"
+	"adc.h"
+	"gyro.h"
+	"pwm.h"
+	"timers.h"
+	"interrupts.h"
+	"encoder.h"
+	"serial_ports.h"
+	"ifi_code.h"
+	"teleop.h"
+	"drive.h"
+	"robot.h"
+
+1202609940 source:c:\first\projects\2-23\source\timers.c
+	"ifi_frc.h"
+	"timers.h"
+
+1201473840 source:c:\first\projects\2-25\source\adc.c
+	"ifi_frc.h"
+	"adc.h"
+
+1203294570 c:\first\projects\2-25\source\ifi_frc.h
+	<p18cxxx.h>
+
+1203295373 c:\first\projects\2-25\source\adc.h
+
+1203286133 source:c:\first\projects\2-25\source\autonomous.c
+	"ifi_frc.h"
+	"pwm.h"
+	"gyro.h"
+	"timers.h"
+	"interrupts.h"
+	"encoder.h"
+	"serial_ports.h"
+	"ifi_code.h"
+	"autonomous.h"
+	"drive.h"
+
+1200883320 c:\first\projects\2-25\source\pwm.h
+
+1202613120 c:\first\projects\2-25\source\gyro.h
+
+1203289325 c:\first\projects\2-25\source\timers.h
+
+1202607420 c:\first\projects\2-25\source\interrupts.h
+
+1202682065 c:\first\projects\2-25\source\encoder.h
+
+1202613120 c:\first\projects\2-25\source\serial_ports.h
+	<stdio.h>
+
+1202012100 c:\first\projects\2-25\source\ifi_code.h
+
+1200883320 c:\first\projects\2-25\source\autonomous.h
+
+1203795060 c:\first\projects\2-25\source\drive.h
+
+1201720320 source:c:\first\projects\2-25\source\disabled.c
+	"ifi_frc.h"
+	"pwm.h"
+	"gyro.h"
+	"timers.h"
+	"interrupts.h"
+	"serial_ports.h"
+	"ifi_code.h"
+	"disabled.h"
+
+1200883320 c:\first\projects\2-25\source\disabled.h
+
+1203794962 source:c:\first\projects\2-25\source\drive.c
+	"ifi_frc.h"
+	"ifi_code.h"
+	"encoder.h"
+	"gyro.h"
+	"pid.h"
+	"drive.h"
+	"robot.h"
+	"adc.h"
+	"teleop.h"
+	<stdio.h>
+
+1203382744 c:\first\projects\2-25\source\pid.h
+
+1203383138 c:\first\projects\2-25\source\robot.h
+
+1203124755 c:\first\projects\2-25\source\teleop.h
+
+1201155360 source:c:\first\projects\2-25\source\encoder.c
+	"ifi_frc.h"
+	"encoder.h"
+
+1202613120 source:c:\first\projects\2-25\source\gyro.c
+	"ifi_frc.h"
+	"adc.h"
+	"gyro.h"
+
+1203298144 source:c:\first\projects\2-25\source\ifi_code.c
+	"ifi_frc.h"
+	"ifi_code.h"
+
+1202794560 source:c:\first\projects\2-25\source\ifi_frc.c
+	"ifi_frc.h"
+	"adc.h"
+	"pwm.h"
+	"timers.h"
+	"interrupts.h"
+	"encoder.h"
+	"serial_ports.h"
+	"teleop.h"
+	"autonomous.h"
+	"disabled.h"
+
+1202609940 source:c:\first\projects\2-25\source\interrupts.c
+	"ifi_frc.h"
+	"interrupts.h"
+
+1203385943 source:c:\first\projects\2-25\source\launcher.c
+	"ifi_frc.h"
+	"ifi_code.h"
+	"encoder.h"
+	"gyro.h"
+	"pid.h"
+	"drive.h"
+	"robot.h"
+	"adc.h"
+	"teleop.h"
+	"launcher.h"
+	<stdio.h>
+
+1203384431 c:\first\projects\2-25\source\launcher.h
+
+1203384831 source:c:\first\projects\2-25\source\pid.c
+	<stdio.h>
+	"pid.h"
+
+1200884460 source:c:\first\projects\2-25\source\pwm.c
+	"ifi_frc.h"
+	"pwm.h"
+
+1203383138 source:c:\first\projects\2-25\source\robot.c
+	<stdio.h>
+	"gyro.h"
+	"encoder.h"
+	"robot.h"
+	"ifi_code.h"
+	"ifi_frc.h"
+
+1201155900 source:c:\first\projects\2-25\source\serial_ports.c
+	"ifi_frc.h"
+	"serial_ports.h"
+
+1202609940 source:c:\first\projects\2-25\source\timers.c
+	"ifi_frc.h"
+	"timers.h"
+
+1201473840 source:c:\first\projects\2-26\source\adc.c
+	"ifi_frc.h"
+	"adc.h"
+
+1203294570 c:\first\projects\2-26\source\ifi_frc.h
+	<p18cxxx.h>
+
+1204080373 c:\first\projects\2-26\source\adc.h
+
+1203286133 source:c:\first\projects\2-26\source\autonomous.c
+	"ifi_frc.h"
+	"pwm.h"
+	"gyro.h"
+	"timers.h"
+	"interrupts.h"
+	"encoder.h"
+	"serial_ports.h"
+	"ifi_code.h"
+	"autonomous.h"
+	"drive.h"
+
+1200883320 c:\first\projects\2-26\source\pwm.h
+
+1202613120 c:\first\projects\2-26\source\gyro.h
+
+1203289325 c:\first\projects\2-26\source\timers.h
+
+1202607420 c:\first\projects\2-26\source\interrupts.h
+
+1202682065 c:\first\projects\2-26\source\encoder.h
+
+1202613120 c:\first\projects\2-26\source\serial_ports.h
+	<stdio.h>
+
+1202012100 c:\first\projects\2-26\source\ifi_code.h
+
+1200883320 c:\first\projects\2-26\source\autonomous.h
+
+1203795060 c:\first\projects\2-26\source\drive.h
+
+1201720320 source:c:\first\projects\2-26\source\disabled.c
+	"ifi_frc.h"
+	"pwm.h"
+	"gyro.h"
+	"timers.h"
+	"interrupts.h"
+	"serial_ports.h"
+	"ifi_code.h"
+	"disabled.h"
+
+1200883320 c:\first\projects\2-26\source\disabled.h
+
+1203794962 source:c:\first\projects\2-26\source\drive.c
+	"ifi_frc.h"
+	"ifi_code.h"
+	"encoder.h"
+	"gyro.h"
+	"pid.h"
+	"drive.h"
+	"robot.h"
+	"adc.h"
+	"teleop.h"
+	<stdio.h>
+
+1203382744 c:\first\projects\2-26\source\pid.h
+
+1203383138 c:\first\projects\2-26\source\robot.h
+
+1203124755 c:\first\projects\2-26\source\teleop.h
+
+1201155360 source:c:\first\projects\2-26\source\encoder.c
+	"ifi_frc.h"
+	"encoder.h"
+
+1202613120 source:c:\first\projects\2-26\source\gyro.c
+	"ifi_frc.h"
+	"adc.h"
+	"gyro.h"
+
+1203298144 source:c:\first\projects\2-26\source\ifi_code.c
+	"ifi_frc.h"
+	"ifi_code.h"
+
+1202794560 source:c:\first\projects\2-26\source\ifi_frc.c
+	"ifi_frc.h"
+	"adc.h"
+	"pwm.h"
+	"timers.h"
+	"interrupts.h"
+	"encoder.h"
+	"serial_ports.h"
+	"teleop.h"
+	"autonomous.h"
+	"disabled.h"
+
+1202609940 source:c:\first\projects\2-26\source\interrupts.c
+	"ifi_frc.h"
+	"interrupts.h"
+
+1203384831 source:c:\first\projects\2-26\source\pid.c
+	<stdio.h>
+	"pid.h"
+
+1200884460 source:c:\first\projects\2-26\source\pwm.c
+	"ifi_frc.h"
+	"pwm.h"
+
+1203383138 source:c:\first\projects\2-26\source\robot.c
+	<stdio.h>
+	"gyro.h"
+	"encoder.h"
+	"robot.h"
+	"ifi_code.h"
+	"ifi_frc.h"
+
+1201155900 source:c:\first\projects\2-26\source\serial_ports.c
+	"ifi_frc.h"
+	"serial_ports.h"
+
+1202609940 source:c:\first\projects\2-26\source\timers.c
+	"ifi_frc.h"
+	"timers.h"
+
+1204073968 source:c:\first\projects\2-26\source\teleop.c
+	"ifi_frc.h"
+	"adc.h"
+	"gyro.h"
+	"pwm.h"
+	"timers.h"
+	"interrupts.h"
+	"encoder.h"
+	"serial_ports.h"
+	"ifi_code.h"
+	"teleop.h"
+	"drive.h"
+	"robot.h"
+	"launcher.h"
+
+1204086345 source:c:\first\projects\2-26\source\launcher.c
+	"ifi_frc.h"
+	"ifi_code.h"
+	"encoder.h"
+	"gyro.h"
+	"pid.h"
+	"drive.h"
+	"robot.h"
+	"adc.h"
+	"teleop.h"
+	"launcher.h"
+	<stdio.h>
+
+1203384431 c:\first\projects\2-26\source\launcher.h
+
+1201473840 source:c:\first\projects\2-27\source\adc.c
+	"ifi_frc.h"
+	"adc.h"
+
+1203294570 c:\first\projects\2-27\source\ifi_frc.h
+	<p18cxxx.h>
+
+1204080373 c:\first\projects\2-27\source\adc.h
+
+1203286133 source:c:\first\projects\2-27\source\autonomous.c
+	"ifi_frc.h"
+	"pwm.h"
+	"gyro.h"
+	"timers.h"
+	"interrupts.h"
+	"encoder.h"
+	"serial_ports.h"
+	"ifi_code.h"
+	"autonomous.h"
+	"drive.h"
+
+1200883320 c:\first\projects\2-27\source\pwm.h
+
+1202613120 c:\first\projects\2-27\source\gyro.h
+
+1203289325 c:\first\projects\2-27\source\timers.h
+
+1202607420 c:\first\projects\2-27\source\interrupts.h
+
+1202682065 c:\first\projects\2-27\source\encoder.h
+
+1202613120 c:\first\projects\2-27\source\serial_ports.h
+	<stdio.h>
+
+1202012100 c:\first\projects\2-27\source\ifi_code.h
+
+1200883320 c:\first\projects\2-27\source\autonomous.h
+
+1203795060 c:\first\projects\2-27\source\drive.h
+
+1201720320 source:c:\first\projects\2-27\source\disabled.c
+	"ifi_frc.h"
+	"pwm.h"
+	"gyro.h"
+	"timers.h"
+	"interrupts.h"
+	"serial_ports.h"
+	"ifi_code.h"
+	"disabled.h"
+
+1200883320 c:\first\projects\2-27\source\disabled.h
+
+1201155360 source:c:\first\projects\2-27\source\encoder.c
+	"ifi_frc.h"
+	"encoder.h"
+
+1202613120 source:c:\first\projects\2-27\source\gyro.c
+	"ifi_frc.h"
+	"adc.h"
+	"gyro.h"
+
+1203298144 source:c:\first\projects\2-27\source\ifi_code.c
+	"ifi_frc.h"
+	"ifi_code.h"
+
+1202794560 source:c:\first\projects\2-27\source\ifi_frc.c
+	"ifi_frc.h"
+	"adc.h"
+	"pwm.h"
+	"timers.h"
+	"interrupts.h"
+	"encoder.h"
+	"serial_ports.h"
+	"teleop.h"
+	"autonomous.h"
+	"disabled.h"
+
+1203124755 c:\first\projects\2-27\source\teleop.h
+
+1202609940 source:c:\first\projects\2-27\source\interrupts.c
+	"ifi_frc.h"
+	"interrupts.h"
+
+1203384831 source:c:\first\projects\2-27\source\pid.c
+	<stdio.h>
+	"pid.h"
+
+1203382744 c:\first\projects\2-27\source\pid.h
+
+1200884460 source:c:\first\projects\2-27\source\pwm.c
+	"ifi_frc.h"
+	"pwm.h"
+
+1203383138 source:c:\first\projects\2-27\source\robot.c
+	<stdio.h>
+	"gyro.h"
+	"encoder.h"
+	"robot.h"
+	"ifi_code.h"
+	"ifi_frc.h"
+
+1203383138 c:\first\projects\2-27\source\robot.h
+
+1201155900 source:c:\first\projects\2-27\source\serial_ports.c
+	"ifi_frc.h"
+	"serial_ports.h"
+
+1204073968 source:c:\first\projects\2-27\source\teleop.c
+	"ifi_frc.h"
+	"adc.h"
+	"gyro.h"
+	"pwm.h"
+	"timers.h"
+	"interrupts.h"
+	"encoder.h"
+	"serial_ports.h"
+	"ifi_code.h"
+	"teleop.h"
+	"drive.h"
+	"robot.h"
+	"launcher.h"
+
+1203384431 c:\first\projects\2-27\source\launcher.h
+
+1202609940 source:c:\first\projects\2-27\source\timers.c
+	"ifi_frc.h"
+	"timers.h"
+
+1201473840 source:c:\first\projects\2-28\source\adc.c
+	"ifi_frc.h"
+	"adc.h"
+
+1203294570 c:\first\projects\2-28\source\ifi_frc.h
+	<p18cxxx.h>
+
+1204250591 c:\first\projects\2-28\source\adc.h
+
+1203286133 source:c:\first\projects\2-28\source\autonomous.c
+	"ifi_frc.h"
+	"pwm.h"
+	"gyro.h"
+	"timers.h"
+	"interrupts.h"
+	"encoder.h"
+	"serial_ports.h"
+	"ifi_code.h"
+	"autonomous.h"
+	"drive.h"
+
+1200883320 c:\first\projects\2-28\source\pwm.h
+
+1202613120 c:\first\projects\2-28\source\gyro.h
+
+1203289325 c:\first\projects\2-28\source\timers.h
+
+1202607420 c:\first\projects\2-28\source\interrupts.h
+
+1202682065 c:\first\projects\2-28\source\encoder.h
+
+1202613120 c:\first\projects\2-28\source\serial_ports.h
+	<stdio.h>
+
+1202012100 c:\first\projects\2-28\source\ifi_code.h
+
+1200883320 c:\first\projects\2-28\source\autonomous.h
+
+1203795060 c:\first\projects\2-28\source\drive.h
+
+1201720320 source:c:\first\projects\2-28\source\disabled.c
+	"ifi_frc.h"
+	"pwm.h"
+	"gyro.h"
+	"timers.h"
+	"interrupts.h"
+	"serial_ports.h"
+	"ifi_code.h"
+	"disabled.h"
+
+1200883320 c:\first\projects\2-28\source\disabled.h
+
+1201155360 source:c:\first\projects\2-28\source\encoder.c
+	"ifi_frc.h"
+	"encoder.h"
+
+1202613120 source:c:\first\projects\2-28\source\gyro.c
+	"ifi_frc.h"
+	"adc.h"
+	"gyro.h"
+
+1203298144 source:c:\first\projects\2-28\source\ifi_code.c
+	"ifi_frc.h"
+	"ifi_code.h"
+
+1202794560 source:c:\first\projects\2-28\source\ifi_frc.c
+	"ifi_frc.h"
+	"adc.h"
+	"pwm.h"
+	"timers.h"
+	"interrupts.h"
+	"encoder.h"
+	"serial_ports.h"
+	"teleop.h"
+	"autonomous.h"
+	"disabled.h"
+
+1203124755 c:\first\projects\2-28\source\teleop.h
+
+1202609940 source:c:\first\projects\2-28\source\interrupts.c
+	"ifi_frc.h"
+	"interrupts.h"
+
+1204254349 source:c:\first\projects\2-28\source\launcher.c
+	"ifi_frc.h"
+	"ifi_code.h"
+	"encoder.h"
+	"gyro.h"
+	"pid.h"
+	"drive.h"
+	"robot.h"
+	"adc.h"
+	"teleop.h"
+	"launcher.h"
+	<stdio.h>
+
+1203382744 c:\first\projects\2-28\source\pid.h
+
+1203383138 c:\first\projects\2-28\source\robot.h
+
+1203384431 c:\first\projects\2-28\source\launcher.h
+
+1203384831 source:c:\first\projects\2-28\source\pid.c
+	<stdio.h>
+	"pid.h"
+
+1200884460 source:c:\first\projects\2-28\source\pwm.c
+	"ifi_frc.h"
+	"pwm.h"
+
+1203383138 source:c:\first\projects\2-28\source\robot.c
+	<stdio.h>
+	"gyro.h"
+	"encoder.h"
+	"robot.h"
+	"ifi_code.h"
+	"ifi_frc.h"
+
+1201155900 source:c:\first\projects\2-28\source\serial_ports.c
+	"ifi_frc.h"
+	"serial_ports.h"
+
+1204073968 source:c:\first\projects\2-28\source\teleop.c
+	"ifi_frc.h"
+	"adc.h"
+	"gyro.h"
+	"pwm.h"
+	"timers.h"
+	"interrupts.h"
+	"encoder.h"
+	"serial_ports.h"
+	"ifi_code.h"
+	"teleop.h"
+	"drive.h"
+	"robot.h"
+	"launcher.h"
+
+1202609940 source:c:\first\projects\2-28\source\timers.c
+	"ifi_frc.h"
+	"timers.h"
+
+1204250190 source:c:\first\projects\2-28\source\drive.c
+	"ifi_frc.h"
+	"ifi_code.h"
+	"encoder.h"
+	"gyro.h"
+	"pid.h"
+	"drive.h"
+	"robot.h"
+	"adc.h"
+	"teleop.h"
+	<stdio.h>
+
+1201473840 source:c:\first\projects\3-3\source\adc.c
+	"ifi_frc.h"
+	"adc.h"
+
+1203294570 c:\first\projects\3-3\source\ifi_frc.h
+	<p18cxxx.h>
+
+1204250591 c:\first\projects\3-3\source\adc.h
+
+1203286133 source:c:\first\projects\3-3\source\autonomous.c
+	"ifi_frc.h"
+	"pwm.h"
+	"gyro.h"
+	"timers.h"
+	"interrupts.h"
+	"encoder.h"
+	"serial_ports.h"
+	"ifi_code.h"
+	"autonomous.h"
+	"drive.h"
+
+1200883320 c:\first\projects\3-3\source\pwm.h
+
+1202613120 c:\first\projects\3-3\source\gyro.h
+
+1203289325 c:\first\projects\3-3\source\timers.h
+
+1202607420 c:\first\projects\3-3\source\interrupts.h
+
+1202682065 c:\first\projects\3-3\source\encoder.h
+
+1202613120 c:\first\projects\3-3\source\serial_ports.h
+	<stdio.h>
+
+1202012100 c:\first\projects\3-3\source\ifi_code.h
+
+1200883320 c:\first\projects\3-3\source\autonomous.h
+
+1203795060 c:\first\projects\3-3\source\drive.h
+
+1201720320 source:c:\first\projects\3-3\source\disabled.c
+	"ifi_frc.h"
+	"pwm.h"
+	"gyro.h"
+	"timers.h"
+	"interrupts.h"
+	"serial_ports.h"
+	"ifi_code.h"
+	"disabled.h"
+
+1200883320 c:\first\projects\3-3\source\disabled.h
+
+1204250190 source:c:\first\projects\3-3\source\drive.c
+	"ifi_frc.h"
+	"ifi_code.h"
+	"encoder.h"
+	"gyro.h"
+	"pid.h"
+	"drive.h"
+	"robot.h"
+	"adc.h"
+	"teleop.h"
+	<stdio.h>
+
+1203382744 c:\first\projects\3-3\source\pid.h
+
+1203383138 c:\first\projects\3-3\source\robot.h
+
+1203124755 c:\first\projects\3-3\source\teleop.h
+
+1201155360 source:c:\first\projects\3-3\source\encoder.c
+	"ifi_frc.h"
+	"encoder.h"
+
+1202613120 source:c:\first\projects\3-3\source\gyro.c
+	"ifi_frc.h"
+	"adc.h"
+	"gyro.h"
+
+1203298144 source:c:\first\projects\3-3\source\ifi_code.c
+	"ifi_frc.h"
+	"ifi_code.h"
+
+1202794560 source:c:\first\projects\3-3\source\ifi_frc.c
+	"ifi_frc.h"
+	"adc.h"
+	"pwm.h"
+	"timers.h"
+	"interrupts.h"
+	"encoder.h"
+	"serial_ports.h"
+	"teleop.h"
+	"autonomous.h"
+	"disabled.h"
+
+1202609940 source:c:\first\projects\3-3\source\interrupts.c
+	"ifi_frc.h"
+	"interrupts.h"
+
+1204254349 source:c:\first\projects\3-3\source\launcher.c
+	"ifi_frc.h"
+	"ifi_code.h"
+	"encoder.h"
+	"gyro.h"
+	"pid.h"
+	"drive.h"
+	"robot.h"
+	"adc.h"
+	"teleop.h"
+	"launcher.h"
+	<stdio.h>
+
+1203384431 c:\first\projects\3-3\source\launcher.h
+
+1203384831 source:c:\first\projects\3-3\source\pid.c
+	<stdio.h>
+	"pid.h"
+
+1200884460 source:c:\first\projects\3-3\source\pwm.c
+	"ifi_frc.h"
+	"pwm.h"
+
+1203383138 source:c:\first\projects\3-3\source\robot.c
+	<stdio.h>
+	"gyro.h"
+	"encoder.h"
+	"robot.h"
+	"ifi_code.h"
+	"ifi_frc.h"
+
+1201155900 source:c:\first\projects\3-3\source\serial_ports.c
+	"ifi_frc.h"
+	"serial_ports.h"
+
+1204592670 source:c:\first\projects\3-3\source\teleop.c
+	"ifi_frc.h"
+	"adc.h"
+	"gyro.h"
+	"pwm.h"
+	"timers.h"
+	"interrupts.h"
+	"encoder.h"
+	"serial_ports.h"
+	"ifi_code.h"
+	"teleop.h"
+	"drive.h"
+	"robot.h"
+	"launcher.h"
+
+1202609940 source:c:\first\projects\3-3\source\timers.c
+	"ifi_frc.h"
+	"timers.h"
+
+1201473840 source:c:\first\projects\3-4\source\adc.c
+	"ifi_frc.h"
+	"adc.h"
+
+1203294570 c:\first\projects\3-4\source\ifi_frc.h
+	<p18cxxx.h>
+
+1204250591 c:\first\projects\3-4\source\adc.h
+
+1203286133 source:c:\first\projects\3-4\source\autonomous.c
+	"ifi_frc.h"
+	"pwm.h"
+	"gyro.h"
+	"timers.h"
+	"interrupts.h"
+	"encoder.h"
+	"serial_ports.h"
+	"ifi_code.h"
+	"autonomous.h"
+	"drive.h"
+
+1200883320 c:\first\projects\3-4\source\pwm.h
+
+1202613120 c:\first\projects\3-4\source\gyro.h
+
+1203289325 c:\first\projects\3-4\source\timers.h
+
+1202607420 c:\first\projects\3-4\source\interrupts.h
+
+1202682065 c:\first\projects\3-4\source\encoder.h
+
+1202613120 c:\first\projects\3-4\source\serial_ports.h
+	<stdio.h>
+
+1202012100 c:\first\projects\3-4\source\ifi_code.h
+
+1200883320 c:\first\projects\3-4\source\autonomous.h
+
+1203795060 c:\first\projects\3-4\source\drive.h
+
+1201720320 source:c:\first\projects\3-4\source\disabled.c
+	"ifi_frc.h"
+	"pwm.h"
+	"gyro.h"
+	"timers.h"
+	"interrupts.h"
+	"serial_ports.h"
+	"ifi_code.h"
+	"disabled.h"
+
+1200883320 c:\first\projects\3-4\source\disabled.h
+
+1204250190 source:c:\first\projects\3-4\source\drive.c
+	"ifi_frc.h"
+	"ifi_code.h"
+	"encoder.h"
+	"gyro.h"
+	"pid.h"
+	"drive.h"
+	"robot.h"
+	"adc.h"
+	"teleop.h"
+	<stdio.h>
+
+1203382744 c:\first\projects\3-4\source\pid.h
+
+1203383138 c:\first\projects\3-4\source\robot.h
+
+1203124755 c:\first\projects\3-4\source\teleop.h
+
+1201155360 source:c:\first\projects\3-4\source\encoder.c
+	"ifi_frc.h"
+	"encoder.h"
+
+1202613120 source:c:\first\projects\3-4\source\gyro.c
+	"ifi_frc.h"
+	"adc.h"
+	"gyro.h"
+
+1203298144 source:c:\first\projects\3-4\source\ifi_code.c
+	"ifi_frc.h"
+	"ifi_code.h"
+
+1204684613 source:c:\first\projects\3-4\source\ifi_frc.c
+	"ifi_frc.h"
+	"adc.h"
+	"pwm.h"
+	"timers.h"
+	"interrupts.h"
+	"encoder.h"
+	"serial_ports.h"
+	"teleop.h"
+	"autonomous.h"
+	"disabled.h"
+
+1202609940 source:c:\first\projects\3-4\source\interrupts.c
+	"ifi_frc.h"
+	"interrupts.h"
+
+1203384831 source:c:\first\projects\3-4\source\pid.c
+	<stdio.h>
+	"pid.h"
+
+1200884460 source:c:\first\projects\3-4\source\pwm.c
+	"ifi_frc.h"
+	"pwm.h"
+
+1203383138 source:c:\first\projects\3-4\source\robot.c
+	<stdio.h>
+	"gyro.h"
+	"encoder.h"
+	"robot.h"
+	"ifi_code.h"
+	"ifi_frc.h"
+
+1201155900 source:c:\first\projects\3-4\source\serial_ports.c
+	"ifi_frc.h"
+	"serial_ports.h"
+
+1204686318 source:c:\first\projects\3-4\source\teleop.c
+	"ifi_frc.h"
+	"adc.h"
+	"gyro.h"
+	"pwm.h"
+	"timers.h"
+	"interrupts.h"
+	"encoder.h"
+	"serial_ports.h"
+	"ifi_code.h"
+	"teleop.h"
+	"drive.h"
+	"robot.h"
+	"launcher.h"
+
+1203384431 c:\first\projects\3-4\source\launcher.h
+
+1202609940 source:c:\first\projects\3-4\source\timers.c
+	"ifi_frc.h"
+	"timers.h"
+
+1204686392 source:c:\first\projects\3-4\source\launcher.c
+	"ifi_frc.h"
+	"ifi_code.h"
+	"encoder.h"
+	"gyro.h"
+	"pid.h"
+	"drive.h"
+	"robot.h"
+	"adc.h"
+	"teleop.h"
+	"launcher.h"
+	<stdio.h>
+
+1201473840 source:c:\first\projects\3-7\source\adc.c
+	"ifi_frc.h"
+	"adc.h"
+
+1203294572 c:\first\projects\3-7\source\ifi_frc.h
+	<p18cxxx.h>
+
+1204250592 c:\first\projects\3-7\source\adc.h
+
+1203286134 source:c:\first\projects\3-7\source\autonomous.c
+	"ifi_frc.h"
+	"pwm.h"
+	"gyro.h"
+	"timers.h"
+	"interrupts.h"
+	"encoder.h"
+	"serial_ports.h"
+	"ifi_code.h"
+	"autonomous.h"
+	"drive.h"
+
+1200883320 c:\first\projects\3-7\source\pwm.h
+
+1202613120 c:\first\projects\3-7\source\gyro.h
+
+1203289326 c:\first\projects\3-7\source\timers.h
+
+1202607420 c:\first\projects\3-7\source\interrupts.h
+
+1202682066 c:\first\projects\3-7\source\encoder.h
+
+1202613120 c:\first\projects\3-7\source\serial_ports.h
+	<stdio.h>
+
+1202012100 c:\first\projects\3-7\source\ifi_code.h
+
+1200883320 c:\first\projects\3-7\source\autonomous.h
+
+1203795062 c:\first\projects\3-7\source\drive.h
+
+1201720320 source:c:\first\projects\3-7\source\disabled.c
+	"ifi_frc.h"
+	"pwm.h"
+	"gyro.h"
+	"timers.h"
+	"interrupts.h"
+	"serial_ports.h"
+	"ifi_code.h"
+	"disabled.h"
+
+1200883320 c:\first\projects\3-7\source\disabled.h
+
+1201155360 source:c:\first\projects\3-7\source\encoder.c
+	"ifi_frc.h"
+	"encoder.h"
+
+1202613120 source:c:\first\projects\3-7\source\gyro.c
+	"ifi_frc.h"
+	"adc.h"
+	"gyro.h"
+
+1203298146 source:c:\first\projects\3-7\source\ifi_code.c
+	"ifi_frc.h"
+	"ifi_code.h"
+
+1204684614 source:c:\first\projects\3-7\source\ifi_frc.c
+	"ifi_frc.h"
+	"adc.h"
+	"pwm.h"
+	"timers.h"
+	"interrupts.h"
+	"encoder.h"
+	"serial_ports.h"
+	"teleop.h"
+	"autonomous.h"
+	"disabled.h"
+
+1203124756 c:\first\projects\3-7\source\teleop.h
+
+1202609940 source:c:\first\projects\3-7\source\interrupts.c
+	"ifi_frc.h"
+	"interrupts.h"
+
+1203384832 source:c:\first\projects\3-7\source\pid.c
+	<stdio.h>
+	"pid.h"
+
+1203382746 c:\first\projects\3-7\source\pid.h
+
+1200884460 source:c:\first\projects\3-7\source\pwm.c
+	"ifi_frc.h"
+	"pwm.h"
+
+1203383140 source:c:\first\projects\3-7\source\robot.c
+	<stdio.h>
+	"gyro.h"
+	"encoder.h"
+	"robot.h"
+	"ifi_code.h"
+	"ifi_frc.h"
+
+1203383140 c:\first\projects\3-7\source\robot.h
+
+1201155900 source:c:\first\projects\3-7\source\serial_ports.c
+	"ifi_frc.h"
+	"serial_ports.h"
+
+1204942790 source:c:\first\projects\3-7\source\teleop.c
+	"ifi_frc.h"
+	"adc.h"
+	"gyro.h"
+	"pwm.h"
+	"timers.h"
+	"interrupts.h"
+	"encoder.h"
+	"serial_ports.h"
+	"ifi_code.h"
+	"teleop.h"
+	"drive.h"
+	"robot.h"
+	"launcher.h"
+	"ir.h"
+
+1203384432 c:\first\projects\3-7\source\launcher.h
+
+1202609940 source:c:\first\projects\3-7\source\timers.c
+	"ifi_frc.h"
+	"timers.h"
+
+1204740756 source:c:\first\projects\3-7\source\drive.c
+	"ifi_frc.h"
+	"ifi_code.h"
+	"encoder.h"
+	"gyro.h"
+	"pid.h"
+	"drive.h"
+	"robot.h"
+	"adc.h"
+	"teleop.h"
+	<stdio.h>
+
+1204944222 source:c:\first\projects\3-7\source\ir.c
+	"ifi_code.h"
+	<stdio.h>
+	"ifi_frc.h"
+	"ir.h"
+
+1204942755 source:c:\first\projects\3-7\source\launcher.c
+	"ifi_frc.h"
+	"ifi_code.h"
+	"encoder.h"
+	"gyro.h"
+	"pid.h"
+	"drive.h"
+	"robot.h"
+	"adc.h"
+	"teleop.h"
+	"launcher.h"
+	<stdio.h>
+
+1204944203 c:\first\projects\3-7\source\ir.h
+
+1201473840 source:c:\first\projects\3-8\source\adc.c
+	"ifi_frc.h"
+	"adc.h"
+
+1203294572 c:\first\projects\3-8\source\ifi_frc.h
+	<p18cxxx.h>
+
+1204993391 c:\first\projects\3-8\source\adc.h
+
+1203286134 source:c:\first\projects\3-8\source\autonomous.c
+	"ifi_frc.h"
+	"pwm.h"
+	"gyro.h"
+	"timers.h"
+	"interrupts.h"
+	"encoder.h"
+	"serial_ports.h"
+	"ifi_code.h"
+	"autonomous.h"
+	"drive.h"
+
+1200883320 c:\first\projects\3-8\source\pwm.h
+
+1204993839 c:\first\projects\3-8\source\gyro.h
+
+1203289326 c:\first\projects\3-8\source\timers.h
+
+1202607420 c:\first\projects\3-8\source\interrupts.h
+
+1202682066 c:\first\projects\3-8\source\encoder.h
+
+1202613120 c:\first\projects\3-8\source\serial_ports.h
+	<stdio.h>
+
+1202012100 c:\first\projects\3-8\source\ifi_code.h
+
+1200883320 c:\first\projects\3-8\source\autonomous.h
+
+1204993454 c:\first\projects\3-8\source\drive.h
+
+1201720320 source:c:\first\projects\3-8\source\disabled.c
+	"ifi_frc.h"
+	"pwm.h"
+	"gyro.h"
+	"timers.h"
+	"interrupts.h"
+	"serial_ports.h"
+	"ifi_code.h"
+	"disabled.h"
+
+1200883320 c:\first\projects\3-8\source\disabled.h
+
+1204740756 source:c:\first\projects\3-8\source\drive.c
+	"ifi_frc.h"
+	"ifi_code.h"
+	"encoder.h"
+	"gyro.h"
+	"pid.h"
+	"drive.h"
+	"robot.h"
+	"adc.h"
+	"teleop.h"
+	<stdio.h>
+
+1203382746 c:\first\projects\3-8\source\pid.h
+
+1205001536 c:\first\projects\3-8\source\robot.h
+
+1203124756 c:\first\projects\3-8\source\teleop.h
+
+1201155360 source:c:\first\projects\3-8\source\encoder.c
+	"ifi_frc.h"
+	"encoder.h"
+
+1202613120 source:c:\first\projects\3-8\source\gyro.c
+	"ifi_frc.h"
+	"adc.h"
+	"gyro.h"
+
+1203298146 source:c:\first\projects\3-8\source\ifi_code.c
+	"ifi_frc.h"
+	"ifi_code.h"
+
+1204684614 source:c:\first\projects\3-8\source\ifi_frc.c
+	"ifi_frc.h"
+	"adc.h"
+	"pwm.h"
+	"timers.h"
+	"interrupts.h"
+	"encoder.h"
+	"serial_ports.h"
+	"teleop.h"
+	"autonomous.h"
+	"disabled.h"
+
+1202609940 source:c:\first\projects\3-8\source\interrupts.c
+	"ifi_frc.h"
+	"interrupts.h"
+
+1205012056 source:c:\first\projects\3-8\source\launcher.c
+	"ifi_frc.h"
+	"ifi_code.h"
+	"encoder.h"
+	"gyro.h"
+	"pid.h"
+	"drive.h"
+	"robot.h"
+	"adc.h"
+	"teleop.h"
+	"launcher.h"
+	<stdio.h>
+
+1203384432 c:\first\projects\3-8\source\launcher.h
+
+1203384832 source:c:\first\projects\3-8\source\pid.c
+	<stdio.h>
+	"pid.h"
+
+1200884460 source:c:\first\projects\3-8\source\pwm.c
+	"ifi_frc.h"
+	"pwm.h"
+
+1205001675 source:c:\first\projects\3-8\source\robot.c
+	<stdio.h>
+	"gyro.h"
+	"encoder.h"
+	"robot.h"
+	"ifi_code.h"
+	"ifi_frc.h"
+
+1201155900 source:c:\first\projects\3-8\source\serial_ports.c
+	"ifi_frc.h"
+	"serial_ports.h"
+
+1202609940 source:c:\first\projects\3-8\source\timers.c
+	"ifi_frc.h"
+	"timers.h"
+
+1204991784 source:c:\first\projects\3-8\source\ir.c
+	"ifi_code.h"
+	<stdio.h>
+	"ifi_frc.h"
+	"ir.h"
+
+1204944203 c:\first\projects\3-8\source\ir.h
+
+1205007774 source:c:\first\projects\3-8\source\teleop.c
+	"ifi_frc.h"
+	"adc.h"
+	"gyro.h"
+	"pwm.h"
+	"timers.h"
+	"interrupts.h"
+	"encoder.h"
+	"serial_ports.h"
+	"ifi_code.h"
+	"teleop.h"
+	"drive.h"
+	"robot.h"
+	"launcher.h"
+	"ir.h"
+
+1201477440 source:c:\first\projects\3-9\source\adc.c
+	"ifi_frc.h"
+	"adc.h"
+
+1203298172 c:\first\projects\3-9\source\ifi_frc.h
+	<p18cxxx.h>
+
+1204996991 c:\first\projects\3-9\source\adc.h
+
+1205116946 source:c:\first\projects\3-9\source\autonomous.c
+	"ifi_frc.h"
+	"pwm.h"
+	"gyro.h"
+	"timers.h"
+	"interrupts.h"
+	"encoder.h"
+	"serial_ports.h"
+	"ifi_code.h"
+	"autonomous.h"
+	"drive.h"
+	"ir.h"
+	"launcher.h"
+
+1200886920 c:\first\projects\3-9\source\pwm.h
+
+1204997439 c:\first\projects\3-9\source\gyro.h
+
+1203292926 c:\first\projects\3-9\source\timers.h
+
+1202611020 c:\first\projects\3-9\source\interrupts.h
+
+1202685666 c:\first\projects\3-9\source\encoder.h
+
+1202616720 c:\first\projects\3-9\source\serial_ports.h
+	<stdio.h>
+
+1202015700 c:\first\projects\3-9\source\ifi_code.h
+
+1200886920 c:\first\projects\3-9\source\autonomous.h
+
+1204997054 c:\first\projects\3-9\source\drive.h
+
+1205095938 source:c:\first\projects\3-9\source\disabled.c
+	"ifi_frc.h"
+	"pwm.h"
+	"gyro.h"
+	"timers.h"
+	"interrupts.h"
+	"serial_ports.h"
+	"ifi_code.h"
+	"disabled.h"
+
+1200886920 c:\first\projects\3-9\source\disabled.h
+
+1205112199 source:c:\first\projects\3-9\source\drive.c
+	"ifi_frc.h"
+	"ifi_code.h"
+	"encoder.h"
+	"gyro.h"
+	"pid.h"
+	"drive.h"
+	"robot.h"
+	"adc.h"
+	"teleop.h"
+	<stdio.h>
+
+1203386346 c:\first\projects\3-9\source\pid.h
+
+1205005136 c:\first\projects\3-9\source\robot.h
+
+1203128356 c:\first\projects\3-9\source\teleop.h
+
+1201158960 source:c:\first\projects\3-9\source\encoder.c
+	"ifi_frc.h"
+	"encoder.h"
+
+1202616720 source:c:\first\projects\3-9\source\gyro.c
+	"ifi_frc.h"
+	"adc.h"
+	"gyro.h"
+
+1203301746 source:c:\first\projects\3-9\source\ifi_code.c
+	"ifi_frc.h"
+	"ifi_code.h"
+
+1204688214 source:c:\first\projects\3-9\source\ifi_frc.c
+	"ifi_frc.h"
+	"adc.h"
+	"pwm.h"
+	"timers.h"
+	"interrupts.h"
+	"encoder.h"
+	"serial_ports.h"
+	"teleop.h"
+	"autonomous.h"
+	"disabled.h"
+
+1202613540 source:c:\first\projects\3-9\source\interrupts.c
+	"ifi_frc.h"
+	"interrupts.h"
+
+1204995384 source:c:\first\projects\3-9\source\ir.c
+	"ifi_code.h"
+	<stdio.h>
+	"ifi_frc.h"
+	"ir.h"
+
+1204947803 c:\first\projects\3-9\source\ir.h
+
+1205106382 source:c:\first\projects\3-9\source\launcher.c
+	"ifi_frc.h"
+	"ifi_code.h"
+	"encoder.h"
+	"gyro.h"
+	"pid.h"
+	"drive.h"
+	"robot.h"
+	"adc.h"
+	"teleop.h"
+	"launcher.h"
+	<stdio.h>
+
+1205117228 c:\first\projects\3-9\source\launcher.h
+
+1203388432 source:c:\first\projects\3-9\source\pid.c
+	<stdio.h>
+	"pid.h"
+
+1200888060 source:c:\first\projects\3-9\source\pwm.c
+	"ifi_frc.h"
+	"pwm.h"
+
+1205005275 source:c:\first\projects\3-9\source\robot.c
+	<stdio.h>
+	"gyro.h"
+	"encoder.h"
+	"robot.h"
+	"ifi_code.h"
+	"ifi_frc.h"
+
+1201159500 source:c:\first\projects\3-9\source\serial_ports.c
+	"ifi_frc.h"
+	"serial_ports.h"
+
+1205112141 source:c:\first\projects\3-9\source\teleop.c
+	"ifi_frc.h"
+	"adc.h"
+	"gyro.h"
+	"pwm.h"
+	"timers.h"
+	"interrupts.h"
+	"encoder.h"
+	"serial_ports.h"
+	"ifi_code.h"
+	"teleop.h"
+	"drive.h"
+	"robot.h"
+	"launcher.h"
+	"ir.h"
+
+1202613540 source:c:\first\projects\3-9\source\timers.c
+	"ifi_frc.h"
+	"timers.h"
+
+1201477440 source:c:\first\projects\3-11\source\adc.c
+	"ifi_frc.h"
+	"adc.h"
+
+1203298172 c:\first\projects\3-11\source\ifi_frc.h
+	<p18cxxx.h>
+
+1204996991 c:\first\projects\3-11\source\adc.h
+
+1205117466 source:c:\first\projects\3-11\source\autonomous.c
+	"ifi_frc.h"
+	"pwm.h"
+	"gyro.h"
+	"timers.h"
+	"interrupts.h"
+	"encoder.h"
+	"serial_ports.h"
+	"ifi_code.h"
+	"autonomous.h"
+	"drive.h"
+	"ir.h"
+	"launcher.h"
+
+1200886920 c:\first\projects\3-11\source\pwm.h
+
+1204997439 c:\first\projects\3-11\source\gyro.h
+
+1203292926 c:\first\projects\3-11\source\timers.h
+
+1202611020 c:\first\projects\3-11\source\interrupts.h
+
+1202685666 c:\first\projects\3-11\source\encoder.h
+
+1202616720 c:\first\projects\3-11\source\serial_ports.h
+	<stdio.h>
+
+1202015700 c:\first\projects\3-11\source\ifi_code.h
+
+1200886920 c:\first\projects\3-11\source\autonomous.h
+
+1204997054 c:\first\projects\3-11\source\drive.h
+
+1204947803 c:\first\projects\3-11\source\ir.h
+
+1205117228 c:\first\projects\3-11\source\launcher.h
+
+1205095938 source:c:\first\projects\3-11\source\disabled.c
+	"ifi_frc.h"
+	"pwm.h"
+	"gyro.h"
+	"timers.h"
+	"interrupts.h"
+	"serial_ports.h"
+	"ifi_code.h"
+	"disabled.h"
+
+1200886920 c:\first\projects\3-11\source\disabled.h
+
+1201158960 source:c:\first\projects\3-11\source\encoder.c
+	"ifi_frc.h"
+	"encoder.h"
+
+1202616720 source:c:\first\projects\3-11\source\gyro.c
+	"ifi_frc.h"
+	"adc.h"
+	"gyro.h"
+
+1203301746 source:c:\first\projects\3-11\source\ifi_code.c
+	"ifi_frc.h"
+	"ifi_code.h"
+
+1204688214 source:c:\first\projects\3-11\source\ifi_frc.c
+	"ifi_frc.h"
+	"adc.h"
+	"pwm.h"
+	"timers.h"
+	"interrupts.h"
+	"encoder.h"
+	"serial_ports.h"
+	"teleop.h"
+	"autonomous.h"
+	"disabled.h"
+
+1203128356 c:\first\projects\3-11\source\teleop.h
+
+1202613540 source:c:\first\projects\3-11\source\interrupts.c
+	"ifi_frc.h"
+	"interrupts.h"
+
+1204995384 source:c:\first\projects\3-11\source\ir.c
+	"ifi_code.h"
+	<stdio.h>
+	"ifi_frc.h"
+	"ir.h"
+
+1205117466 source:c:\first\projects\3-11\source\launcher.c
+	"ifi_frc.h"
+	"ifi_code.h"
+	"encoder.h"
+	"gyro.h"
+	"pid.h"
+	"drive.h"
+	"robot.h"
+	"adc.h"
+	"teleop.h"
+	"launcher.h"
+	<stdio.h>
+
+1203386346 c:\first\projects\3-11\source\pid.h
+
+1205005136 c:\first\projects\3-11\source\robot.h
+
+1203388432 source:c:\first\projects\3-11\source\pid.c
+	<stdio.h>
+	"pid.h"
+
+1200888060 source:c:\first\projects\3-11\source\pwm.c
+	"ifi_frc.h"
+	"pwm.h"
+
+1205005275 source:c:\first\projects\3-11\source\robot.c
+	<stdio.h>
+	"gyro.h"
+	"encoder.h"
+	"robot.h"
+	"ifi_code.h"
+	"ifi_frc.h"
+
+1201159500 source:c:\first\projects\3-11\source\serial_ports.c
+	"ifi_frc.h"
+	"serial_ports.h"
+
+1205117412 source:c:\first\projects\3-11\source\teleop.c
+	"ifi_frc.h"
+	"adc.h"
+	"gyro.h"
+	"pwm.h"
+	"timers.h"
+	"interrupts.h"
+	"encoder.h"
+	"serial_ports.h"
+	"ifi_code.h"
+	"teleop.h"
+	"drive.h"
+	"robot.h"
+	"launcher.h"
+	"ir.h"
+
+1202613540 source:c:\first\projects\3-11\source\timers.c
+	"ifi_frc.h"
+	"timers.h"
+
+1205279772 source:c:\first\projects\3-11\source\drive.c
+	"ifi_frc.h"
+	"ifi_code.h"
+	"encoder.h"
+	"gyro.h"
+	"pid.h"
+	"drive.h"
+	"robot.h"
+	"adc.h"
+	"teleop.h"
+	<stdio.h>
+
+1201477440 source:c:\first\projects\ct day 1\source\adc.c
+	"ifi_frc.h"
+	"adc.h"
+
+1203298172 c:\first\projects\ct day 1\source\ifi_frc.h
+	<p18cxxx.h>
+
+1204996991 c:\first\projects\ct day 1\source\adc.h
+
+1205513634 source:c:\first\projects\ct day 1\source\autonomous.c
+	"ifi_frc.h"
+	"pwm.h"
+	"gyro.h"
+	"timers.h"
+	"interrupts.h"
+	"encoder.h"
+	"serial_ports.h"
+	"ifi_code.h"
+	"autonomous.h"
+	"drive.h"
+	"ir.h"
+	"launcher.h"
+
+1200886920 c:\first\projects\ct day 1\source\pwm.h
+
+1204997439 c:\first\projects\ct day 1\source\gyro.h
+
+1203292926 c:\first\projects\ct day 1\source\timers.h
+
+1202611020 c:\first\projects\ct day 1\source\interrupts.h
+
+1202685666 c:\first\projects\ct day 1\source\encoder.h
+
+1202616720 c:\first\projects\ct day 1\source\serial_ports.h
+	<stdio.h>
+
+1202015700 c:\first\projects\ct day 1\source\ifi_code.h
+
+1200886920 c:\first\projects\ct day 1\source\autonomous.h
+
+1204997054 c:\first\projects\ct day 1\source\drive.h
+
+1205438967 c:\first\projects\ct day 1\source\ir.h
+
+1205513634 c:\first\projects\ct day 1\source\launcher.h
+
+1205441429 source:c:\first\projects\ct day 1\source\disabled.c
+	"ifi_frc.h"
+	"pwm.h"
+	"gyro.h"
+	"timers.h"
+	"interrupts.h"
+	"serial_ports.h"
+	"ifi_code.h"
+	"disabled.h"
+	"robot.h"
+	"ir.h"
+
+1200886920 c:\first\projects\ct day 1\source\disabled.h
+
+1201158960 source:c:\first\projects\ct day 1\source\encoder.c
+	"ifi_frc.h"
+	"encoder.h"
+
+1202616720 source:c:\first\projects\ct day 1\source\gyro.c
+	"ifi_frc.h"
+	"adc.h"
+	"gyro.h"
+
+1203301746 source:c:\first\projects\ct day 1\source\ifi_code.c
+	"ifi_frc.h"
+	"ifi_code.h"
+
+1204688214 source:c:\first\projects\ct day 1\source\ifi_frc.c
+	"ifi_frc.h"
+	"adc.h"
+	"pwm.h"
+	"timers.h"
+	"interrupts.h"
+	"encoder.h"
+	"serial_ports.h"
+	"teleop.h"
+	"autonomous.h"
+	"disabled.h"
+
+1203128356 c:\first\projects\ct day 1\source\teleop.h
+
+1202613540 source:c:\first\projects\ct day 1\source\interrupts.c
+	"ifi_frc.h"
+	"interrupts.h"
+
+1204995384 source:c:\first\projects\ct day 1\source\ir.c
+	"ifi_code.h"
+	<stdio.h>
+	"ifi_frc.h"
+	"ir.h"
+
+1203388432 source:c:\first\projects\ct day 1\source\pid.c
+	<stdio.h>
+	"pid.h"
+
+1203386346 c:\first\projects\ct day 1\source\pid.h
+
+1200888060 source:c:\first\projects\ct day 1\source\pwm.c
+	"ifi_frc.h"
+	"pwm.h"
+
+1205005275 source:c:\first\projects\ct day 1\source\robot.c
+	<stdio.h>
+	"gyro.h"
+	"encoder.h"
+	"robot.h"
+	"ifi_code.h"
+	"ifi_frc.h"
+
+1205425985 c:\first\projects\ct day 1\source\robot.h
+
+1201159500 source:c:\first\projects\ct day 1\source\serial_ports.c
+	"ifi_frc.h"
+	"serial_ports.h"
+
+1205425924 source:c:\first\projects\ct day 1\source\teleop.c
+	"ifi_frc.h"
+	"adc.h"
+	"gyro.h"
+	"pwm.h"
+	"timers.h"
+	"interrupts.h"
+	"encoder.h"
+	"serial_ports.h"
+	"ifi_code.h"
+	"teleop.h"
+	"drive.h"
+	"robot.h"
+	"launcher.h"
+	"ir.h"
+
+1202613540 source:c:\first\projects\ct day 1\source\timers.c
+	"ifi_frc.h"
+	"timers.h"
+
+1205435351 source:c:\first\projects\ct day 1\source\drive.c
+	"ifi_frc.h"
+	"ifi_code.h"
+	"encoder.h"
+	"gyro.h"
+	"pid.h"
+	"drive.h"
+	"robot.h"
+	"adc.h"
+	"teleop.h"
+	<stdio.h>
+
+1205587787 source:c:\first\projects\ct day 1\source\launcher.c
+	"ifi_frc.h"
+	"ifi_code.h"
+	"encoder.h"
+	"gyro.h"
+	"pid.h"
+	"drive.h"
+	"robot.h"
+	"adc.h"
+	"teleop.h"
+	"launcher.h"
+	<stdio.h>
+
+1201477440 source:c:\first\projects\post ct changes\source\adc.c
+	"ifi_frc.h"
+	"adc.h"
+
+1203298172 c:\first\projects\post ct changes\source\ifi_frc.h
+	<p18cxxx.h>
+
+1204996992 c:\first\projects\post ct changes\source\adc.h
+
+1205441430 source:c:\first\projects\post ct changes\source\disabled.c
+	"ifi_frc.h"
+	"pwm.h"
+	"gyro.h"
+	"timers.h"
+	"interrupts.h"
+	"serial_ports.h"
+	"ifi_code.h"
+	"disabled.h"
+	"robot.h"
+	"ir.h"
+
+1200886920 c:\first\projects\post ct changes\source\pwm.h
+
+1204997440 c:\first\projects\post ct changes\source\gyro.h
+
+1203292926 c:\first\projects\post ct changes\source\timers.h
+
+1202611020 c:\first\projects\post ct changes\source\interrupts.h
+
+1202616720 c:\first\projects\post ct changes\source\serial_ports.h
+	<stdio.h>
+
+1202015700 c:\first\projects\post ct changes\source\ifi_code.h
+
+1200886920 c:\first\projects\post ct changes\source\disabled.h
+
+1207269959 c:\first\projects\post ct changes\source\robot.h
+
+1205438968 c:\first\projects\post ct changes\source\ir.h
+
+1201158960 source:c:\first\projects\post ct changes\source\encoder.c
+	"ifi_frc.h"
+	"encoder.h"
+
+1202685666 c:\first\projects\post ct changes\source\encoder.h
+
+1202616720 source:c:\first\projects\post ct changes\source\gyro.c
+	"ifi_frc.h"
+	"adc.h"
+	"gyro.h"
+
+1203301746 source:c:\first\projects\post ct changes\source\ifi_code.c
+	"ifi_frc.h"
+	"ifi_code.h"
+
+1204688214 source:c:\first\projects\post ct changes\source\ifi_frc.c
+	"ifi_frc.h"
+	"adc.h"
+	"pwm.h"
+	"timers.h"
+	"interrupts.h"
+	"encoder.h"
+	"serial_ports.h"
+	"teleop.h"
+	"autonomous.h"
+	"disabled.h"
+
+1203128356 c:\first\projects\post ct changes\source\teleop.h
+
+1200886920 c:\first\projects\post ct changes\source\autonomous.h
+
+1202613540 source:c:\first\projects\post ct changes\source\interrupts.c
+	"ifi_frc.h"
+	"interrupts.h"
+
+1204995386 source:c:\first\projects\post ct changes\source\ir.c
+	"ifi_code.h"
+	<stdio.h>
+	"ifi_frc.h"
+	"ir.h"
+
+1207270404 source:c:\first\projects\post ct changes\source\launcher.c
+	"ifi_frc.h"
+	"ifi_code.h"
+	"encoder.h"
+	"gyro.h"
+	"pid.h"
+	"drive.h"
+	"robot.h"
+	"adc.h"
+	"teleop.h"
+	"launcher.h"
+	<stdio.h>
+
+1203386346 c:\first\projects\post ct changes\source\pid.h
+
+1204997056 c:\first\projects\post ct changes\source\drive.h
+
+1205513636 c:\first\projects\post ct changes\source\launcher.h
+
+1203388432 source:c:\first\projects\post ct changes\source\pid.c
+	<stdio.h>
+	"pid.h"
+
+1200888060 source:c:\first\projects\post ct changes\source\pwm.c
+	"ifi_frc.h"
+	"pwm.h"
+
+1205005276 source:c:\first\projects\post ct changes\source\robot.c
+	<stdio.h>
+	"gyro.h"
+	"encoder.h"
+	"robot.h"
+	"ifi_code.h"
+	"ifi_frc.h"
+
+1201159500 source:c:\first\projects\post ct changes\source\serial_ports.c
+	"ifi_frc.h"
+	"serial_ports.h"
+
+1205425926 source:c:\first\projects\post ct changes\source\teleop.c
+	"ifi_frc.h"
+	"adc.h"
+	"gyro.h"
+	"pwm.h"
+	"timers.h"
+	"interrupts.h"
+	"encoder.h"
+	"serial_ports.h"
+	"ifi_code.h"
+	"teleop.h"
+	"drive.h"
+	"robot.h"
+	"launcher.h"
+	"ir.h"
+
+1202613540 source:c:\first\projects\post ct changes\source\timers.c
+	"ifi_frc.h"
+	"timers.h"
+
+1207273451 source:c:\first\projects\post ct changes\source\autonomous.c
+	"ifi_frc.h"
+	"pwm.h"
+	"gyro.h"
+	"timers.h"
+	"interrupts.h"
+	"encoder.h"
+	"serial_ports.h"
+	"ifi_code.h"
+	"autonomous.h"
+	"drive.h"
+	"ir.h"
+	"launcher.h"
+	"robot.h"
+
+1207269875 source:c:\first\projects\post ct changes\source\drive.c
+	"ifi_frc.h"
+	"ifi_code.h"
+	"encoder.h"
+	"gyro.h"
+	"pid.h"
+	"drive.h"
+	"robot.h"
+	"adc.h"
+	"teleop.h"
+	<stdio.h>
+
+1201477440 source:c:\first\projects\4-9\source\adc.c
+	"ifi_frc.h"
+	"adc.h"
+
+1203298172 c:\first\projects\4-9\source\ifi_frc.h
+	<p18cxxx.h>
+
+1204996992 c:\first\projects\4-9\source\adc.h
+
+1205441430 source:c:\first\projects\4-9\source\disabled.c
+	"ifi_frc.h"
+	"pwm.h"
+	"gyro.h"
+	"timers.h"
+	"interrupts.h"
+	"serial_ports.h"
+	"ifi_code.h"
+	"disabled.h"
+	"robot.h"
+	"ir.h"
+
+1200886920 c:\first\projects\4-9\source\pwm.h
+
+1204997440 c:\first\projects\4-9\source\gyro.h
+
+1203292926 c:\first\projects\4-9\source\timers.h
+
+1202611020 c:\first\projects\4-9\source\interrupts.h
+
+1202616720 c:\first\projects\4-9\source\serial_ports.h
+	<stdio.h>
+
+1202015700 c:\first\projects\4-9\source\ifi_code.h
+
+1200886920 c:\first\projects\4-9\source\disabled.h
+
+1207269959 c:\first\projects\4-9\source\robot.h
+
+1205438968 c:\first\projects\4-9\source\ir.h
+
+1207269875 source:c:\first\projects\4-9\source\drive.c
+	"ifi_frc.h"
+	"ifi_code.h"
+	"encoder.h"
+	"gyro.h"
+	"pid.h"
+	"drive.h"
+	"robot.h"
+	"adc.h"
+	"teleop.h"
+	<stdio.h>
+
+1202685666 c:\first\projects\4-9\source\encoder.h
+
+1203386346 c:\first\projects\4-9\source\pid.h
+
+1204997056 c:\first\projects\4-9\source\drive.h
+
+1203128356 c:\first\projects\4-9\source\teleop.h
+
+1201158960 source:c:\first\projects\4-9\source\encoder.c
+	"ifi_frc.h"
+	"encoder.h"
+
+1202616720 source:c:\first\projects\4-9\source\gyro.c
+	"ifi_frc.h"
+	"adc.h"
+	"gyro.h"
+
+1203301746 source:c:\first\projects\4-9\source\ifi_code.c
+	"ifi_frc.h"
+	"ifi_code.h"
+
+1204688214 source:c:\first\projects\4-9\source\ifi_frc.c
+	"ifi_frc.h"
+	"adc.h"
+	"pwm.h"
+	"timers.h"
+	"interrupts.h"
+	"encoder.h"
+	"serial_ports.h"
+	"teleop.h"
+	"autonomous.h"
+	"disabled.h"
+
+1200886920 c:\first\projects\4-9\source\autonomous.h
+
+1202613540 source:c:\first\projects\4-9\source\interrupts.c
+	"ifi_frc.h"
+	"interrupts.h"
+
+1204995386 source:c:\first\projects\4-9\source\ir.c
+	"ifi_code.h"
+	<stdio.h>
+	"ifi_frc.h"
+	"ir.h"
+
+1207784533 source:c:\first\projects\4-9\source\launcher.c
+	"ifi_frc.h"
+	"ifi_code.h"
+	"encoder.h"
+	"gyro.h"
+	"pid.h"
+	"drive.h"
+	"robot.h"
+	"adc.h"
+	"teleop.h"
+	"launcher.h"
+	<stdio.h>
+
+1205513636 c:\first\projects\4-9\source\launcher.h
+
+1203388432 source:c:\first\projects\4-9\source\pid.c
+	<stdio.h>
+	"pid.h"
+
+1200888060 source:c:\first\projects\4-9\source\pwm.c
+	"ifi_frc.h"
+	"pwm.h"
+
+1205005276 source:c:\first\projects\4-9\source\robot.c
+	<stdio.h>
+	"gyro.h"
+	"encoder.h"
+	"robot.h"
+	"ifi_code.h"
+	"ifi_frc.h"
+
+1201159500 source:c:\first\projects\4-9\source\serial_ports.c
+	"ifi_frc.h"
+	"serial_ports.h"
+
+1205425926 source:c:\first\projects\4-9\source\teleop.c
+	"ifi_frc.h"
+	"adc.h"
+	"gyro.h"
+	"pwm.h"
+	"timers.h"
+	"interrupts.h"
+	"encoder.h"
+	"serial_ports.h"
+	"ifi_code.h"
+	"teleop.h"
+	"drive.h"
+	"robot.h"
+	"launcher.h"
+	"ir.h"
+
+1202613540 source:c:\first\projects\4-9\source\timers.c
+	"ifi_frc.h"
+	"timers.h"
+
+1207781272 source:c:\first\projects\4-9\source\autonomous.c
+	"ifi_frc.h"
+	"pwm.h"
+	"gyro.h"
+	"timers.h"
+	"interrupts.h"
+	"encoder.h"
+	"serial_ports.h"
+	"ifi_code.h"
+	"autonomous.h"
+	"drive.h"
+	"ir.h"
+	"launcher.h"
+	"robot.h"
+

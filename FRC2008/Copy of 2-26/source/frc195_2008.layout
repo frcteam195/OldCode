@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Normal" />
+	<File name="adc.h" open="0" top="0" tabpos="6">
+		<Cursor position="4408" topLine="77" />
+	</File>
+	<File name="autonomous.c" open="0" top="0" tabpos="9">
+		<Cursor position="2901" topLine="80" />
+	</File>
+	<File name="disabled.c" open="0" top="0" tabpos="10">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="drive.c" open="0" top="0" tabpos="4">
+		<Cursor position="3573" topLine="129" />
+	</File>
+	<File name="drive.h" open="0" top="0" tabpos="6">
+		<Cursor position="3170" topLine="92" />
+	</File>
+	<File name="encoder.c" open="0" top="0" tabpos="9">
+		<Cursor position="0" topLine="365" />
+	</File>
+	<File name="encoder.h" open="0" top="0" tabpos="10">
+		<Cursor position="2890" topLine="6" />
+	</File>
+	<File name="gyro.c" open="0" top="0" tabpos="8">
+		<Cursor position="6834" topLine="180" />
+	</File>
+	<File name="ifi_code.c" open="0" top="0" tabpos="5">
+		<Cursor position="4860" topLine="107" />
+	</File>
+	<File name="ifi_frc.c" open="0" top="0" tabpos="8">
+		<Cursor position="0" topLine="100" />
+	</File>
+	<File name="ifi_frc.h" open="0" top="0" tabpos="7">
+		<Cursor position="2475" topLine="38" />
+	</File>
+	<File name="interrupts.c" open="0" top="0" tabpos="2">
+		<Cursor position="0" topLine="75" />
+	</File>
+	<File name="launcher.c" open="1" top="1" tabpos="1">
+		<Cursor position="2375" topLine="92" />
+	</File>
+	<File name="launcher.h" open="0" top="0" tabpos="8">
+		<Cursor position="158" topLine="0" />
+	</File>
+	<File name="pid.c" open="0" top="0" tabpos="2">
+		<Cursor position="895" topLine="5" />
+	</File>
+	<File name="pid.h" open="0" top="0" tabpos="3">
+		<Cursor position="641" topLine="6" />
+	</File>
+	<File name="pwm.c" open="0" top="0" tabpos="4">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="readme.txt" open="0" top="0" tabpos="1">
+		<Cursor position="905" topLine="0" />
+	</File>
+	<File name="robot.c" open="0" top="0" tabpos="5">
+		<Cursor position="479" topLine="9" />
+	</File>
+	<File name="robot.h" open="0" top="0" tabpos="7">
+		<Cursor position="943" topLine="13" />
+	</File>
+	<File name="teleop.c" open="0" top="0" tabpos="9">
+		<Cursor position="4722" topLine="188" />
+	</File>
+	<File name="teleop.h" open="0" top="0" tabpos="5">
+		<Cursor position="967" topLine="9" />
+	</File>
+</CodeBlocks_layout_file>

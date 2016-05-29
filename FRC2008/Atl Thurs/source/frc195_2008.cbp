@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="frc195_2008" />
+		<Option pch_mode="2" />
+		<Option compiler="microchip_c18_compiler" />
+		<Build>
+			<Target title="Normal">
+				<Option output="..\build\frc195_2008.cof" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="..\build" />
+				<Option object_output="..\build\obj" />
+				<Option type="1" />
+				<Option compiler="microchip_c18_compiler" />
+				<Option use_console_runner="0" />
+				<Compiler>
+					<Add option="-p=18F8722" />
+					<Add option="-Ou-" />
+					<Add option="-Ot" />
+					<Add option="-Ob-" />
+					<Add option="-Op-" />
+					<Add option="-Or-" />
+					<Add option="-Od-" />
+					<Add option="-Opa-" />
+				</Compiler>
+				<Linker>
+					<Add option="/w" />
+					<Add library='&quot;$(PROJECT_DIRECTORY)18f8722.lkr&quot;' />
+					<Add library='&quot;$(PROJECT_DIRECTORY)ifi_frc_8722.lib&quot;' />
+				</Linker>
+			</Target>
+			<Target title="Optimized">
+				<Option output="..\build\frc195_2008.cof" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="..\build" />
+				<Option object_output="..\build\obj" />
+				<Option type="1" />
+				<Option compiler="microchip_c18_compiler" />
+				<Option use_console_runner="0" />
+				<Compiler>
+					<Add option="-p=18F8722" />
+				</Compiler>
+				<Linker>
+					<Add option="/w" />
+					<Add library='&quot;$(PROJECT_DIRECTORY)18f8722.lkr&quot;' />
+					<Add library='&quot;$(PROJECT_DIRECTORY)ifi_frc_8722.lib&quot;' />
+				</Linker>
+			</Target>
+			<Target title="COD">
+				<Option output="..\build\frc195_2008.cof" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="..\build" />
+				<Option object_output="..\build\obj" />
+				<Option type="1" />
+				<Option compiler="microchip_c18_compiler" />
+				<Option use_console_runner="0" />
+				<Compiler>
+					<Add option="-p=18F8722" />
+					<Add option="-Ou-" />
+					<Add option="-Ot" />
+					<Add option="-Ob-" />
+					<Add option="-Op-" />
+					<Add option="-Or-" />
+					<Add option="-Od-" />
+					<Add option="-Opa-" />
+				</Compiler>
+				<Linker>
+					<Add library='&quot;$(PROJECT_DIRECTORY)18f8722.lkr&quot;' />
+					<Add library='&quot;$(PROJECT_DIRECTORY)ifi_frc_8722.lib&quot;' />
+				</Linker>
+			</Target>
+			<Target title="8520">
+				<Option output="..\build\frc195_2008.cof" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="..\build" />
+				<Option object_output="..\build\obj" />
+				<Option type="1" />
+				<Option compiler="microchip_c18_compiler" />
+				<Option use_console_runner="0" />
+				<Compiler>
+					<Add option="-p=18F8520" />
+					<Add option="-Ou-" />
+					<Add option="-Ot" />
+					<Add option="-Ob-" />
+					<Add option="-Op-" />
+					<Add option="-Or-" />
+					<Add option="-Od-" />
+					<Add option="-Opa-" />
+				</Compiler>
+				<Linker>
+					<Add option="/w" />
+					<Add library='&quot;$(PROJECT_DIRECTORY)18f8520.lkr&quot;' />
+					<Add library='&quot;$(PROJECT_DIRECTORY)ifi_frc_8520.lib&quot;' />
+				</Linker>
+			</Target>
+			<Target title="8520 Optimized">
+				<Option output="..\build\frc195_2008.cof" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="..\build" />
+				<Option object_output="..\build\obj" />
+				<Option type="1" />
+				<Option compiler="microchip_c18_compiler" />
+				<Option use_console_runner="0" />
+				<Compiler>
+					<Add option="-p=18F8520" />
+				</Compiler>
+				<Linker>
+					<Add option="/w" />
+					<Add library='&quot;$(PROJECT_DIRECTORY)18f8520.lkr&quot;' />
+					<Add library='&quot;$(PROJECT_DIRECTORY)ifi_frc_8520.lib&quot;' />
+				</Linker>
+			</Target>
+			<Target title="8520 COD">
+				<Option output="..\build\frc195_2008.cof" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="..\build" />
+				<Option object_output="..\build\obj" />
+				<Option type="1" />
+				<Option compiler="microchip_c18_compiler" />
+				<Option use_console_runner="0" />
+				<Compiler>
+					<Add option="-p=18F8520" />
+					<Add option="-Ou-" />
+					<Add option="-Ot" />
+					<Add option="-Ob-" />
+					<Add option="-Op-" />
+					<Add option="-Or-" />
+					<Add option="-Od-" />
+					<Add option="-Opa-" />
+				</Compiler>
+				<Linker>
+					<Add library='&quot;$(PROJECT_DIRECTORY)18f8520.lkr&quot;' />
+					<Add library='&quot;$(PROJECT_DIRECTORY)ifi_frc_8520.lib&quot;' />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-k" />
+			<Add option="-mL" />
+		</Compiler>
+		<Linker>
+			<Add option='/m &quot;$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).map&quot;' />
+		</Linker>
+		<Unit filename="adc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="adc.h" />
+		<Unit filename="autonomous.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="autonomous.h" />
+		<Unit filename="disabled.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="disabled.h" />
+		<Unit filename="drive.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="drive.h" />
+		<Unit filename="encoder.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="encoder.h" />
+		<Unit filename="gyro.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="gyro.h" />
+		<Unit filename="ifi_code.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ifi_code.h" />
+		<Unit filename="ifi_frc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ifi_frc.h" />
+		<Unit filename="interrupts.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="interrupts.h" />
+		<Unit filename="ir.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ir.h" />
+		<Unit filename="launcher.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="launcher.h" />
+		<Unit filename="pid.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="pid.h" />
+		<Unit filename="pwm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="pwm.h" />
+		<Unit filename="readme.txt">
+			<Option target="Normal" />
+		</Unit>
+		<Unit filename="robot.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="robot.h" />
+		<Unit filename="serial_ports.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="serial_ports.h" />
+		<Unit filename="teleop.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="teleop.h" />
+		<Unit filename="timers.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="timers.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

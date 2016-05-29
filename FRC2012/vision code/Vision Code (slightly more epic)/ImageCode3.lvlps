@@ -1,0 +1,59 @@
+[AB_Cache_{CA70723E-2082-4BB4-B417-FCAE5255BB1E}]
+Cache_ProjSymbolChksum[String] = "7dea362b3fac8e00956a4952a3d4f474"
+Cache_TargetSymbolChksum[String] = "7dea362b3fac8e00956a4952a3d4f474"
+Cache_MyCompChksum[String] = "016e0ea160cc69f264faef65e8dbc3b9"
+Cache_GenFile_Count[Integer] = 3
+Cache_GenFile[0][Path] = "/D/FRC Vision/Vision/vision track.exe"
+Cache_GenFile[1][Path] = "/D/FRC Vision/Vision/vision track.aliases"
+Cache_GenFile[2][Path] = "/D/FRC Vision/Vision/vision track.ini"
+Cache_GenGUID_Count[Integer] = 3
+Cache_GenGUID[0][String] = "{C14402CF-9F4D-4762-9CBB-CB404AF2EA72}"
+Cache_GenGUID[1][String] = "{D5BC984D-715F-4535-B98F-CE73ECA70440}"
+Cache_GenGUID[2][String] = "{D23075D8-CE04-4C12-9C3A-3AE6166B57DE}"
+Cache_OutputDir[Path] = "/D/FRC Vision/Vision"
+
+[AB_Cache_{424836B7-F475-45B3-9B1A-C907834989CD}]
+Cache_ProjSymbolChksum[String] = "7dea362b3fac8e00956a4952a3d4f474"
+Cache_TargetSymbolChksum[String] = "7dea362b3fac8e00956a4952a3d4f474"
+Cache_MyCompChksum[String] = "016e0ea160cc69f264faef65e8dbc3b9"
+Cache_GenFile_Count[Integer] = 3
+Cache_GenFile[0][Path] = "/D/FRC Vision/Vision/vision track.exe"
+Cache_GenFile[1][Path] = "/D/FRC Vision/Vision/vision track.aliases"
+Cache_GenFile[2][Path] = "/D/FRC Vision/Vision/vision track.ini"
+Cache_GenGUID_Count[Integer] = 3
+Cache_GenGUID[0][String] = "{C14402CF-9F4D-4762-9CBB-CB404AF2EA72}"
+Cache_GenGUID[1][String] = "{D5BC984D-715F-4535-B98F-CE73ECA70440}"
+Cache_GenGUID[2][String] = "{D23075D8-CE04-4C12-9C3A-3AE6166B57DE}"
+Cache_OutputDir[Path] = "/D/FRC Vision/Vision"
+
+[AB_Cache_{2092DBE5-794B-4B48-B884-99DC88A9227A}]
+Cache_ProjSymbolChksum[String] = "7dea362b3fac8e00956a4952a3d4f474"
+Cache_TargetSymbolChksum[String] = "7dea362b3fac8e00956a4952a3d4f474"
+Cache_MyCompChksum[String] = "016e0ea160cc69f264faef65e8dbc3b9"
+Cache_GenFile_Count[Integer] = 3
+Cache_GenFile[0][Path] = "/D/FRC Vision/Vision/vision/Application.exe"
+Cache_GenFile[1][Path] = "/D/FRC Vision/Vision/vision/Application.aliases"
+Cache_GenFile[2][Path] = "/D/FRC Vision/Vision/vision/Application.ini"
+Cache_GenGUID_Count[Integer] = 3
+Cache_GenGUID[0][String] = "{FC46D12E-1787-4275-928D-12D83DE76226}"
+Cache_GenGUID[1][String] = "{922CFB81-D8BC-463A-AD0F-FE2BE7271EA2}"
+Cache_GenGUID[2][String] = "{AF0681FB-4602-485F-9EA1-7B6A5E78EF69}"
+Cache_OutputDir[Path] = "/D/FRC Vision/Vision/vision"
+
+[AB_Cache_{3512BAA5-6405-46CE-BEF9-618D3B391690}]
+Cache_ProjSymbolChksum[String] = "7dea362b3fac8e00956a4952a3d4f474"
+Cache_TargetSymbolChksum[String] = "7dea362b3fac8e00956a4952a3d4f474"
+Cache_MyCompChksum[String] = "016e0ea160cc69f264faef65e8dbc3b9"
+Cache_GenFile_Count[Integer] = 3
+Cache_GenFile[0][Path] = "/D/FRC Vision/Vision/vision/Application.exe"
+Cache_GenFile[1][Path] = "/D/FRC Vision/Vision/vision/Application.aliases"
+Cache_GenFile[2][Path] = "/D/FRC Vision/Vision/vision/Application.ini"
+Cache_GenGUID_Count[Integer] = 3
+Cache_GenGUID[0][String] = "{FC46D12E-1787-4275-928D-12D83DE76226}"
+Cache_GenGUID[1][String] = "{922CFB81-D8BC-463A-AD0F-FE2BE7271EA2}"
+Cache_GenGUID[2][String] = "{AF0681FB-4602-485F-9EA1-7B6A5E78EF69}"
+Cache_OutputDir[Path] = "/D/FRC Vision/Vision/vision"
+
+[ProjectWindow_Data]
+ProjectExplorer.ClassicPosition[String] = "64,42,464,414"
+

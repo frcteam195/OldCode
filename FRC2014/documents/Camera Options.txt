@@ -1,0 +1,74 @@
+<td colspan="2">Min:&nbsp;<select name="root_ImageSource_I0_Sensor_MinExposureTime" id="MinExposureTime">
+        <option value="63">1/16000</option>
+        <option value="125">1/8000</option>
+        <option value="250">1/4000</option>
+        <option value="500">1/2000</option>
+        <option value="1000">1/1000</option>
+        <option value="2000">1/500</option>
+        <option value="4000">1/250</option>
+        <option value="8333">1/120</option>
+        <option value="10000">1/100</option>
+        <option value="20000">1/60</option>
+        <option value="20000">1/50</option>
+        <option value="33333">1/30</option>
+        <option value="40000">1/25</option>
+        <option value="83333">1/12</option>
+        <option value="100000">1/10</option>
+        <option value="166667">1/6</option>
+        <option value="200000">1/5</option>
+        <option value="250000">1/4</option>
+      </select>&nbsp;s
+    </td>
+    <td colspan="2" nowrap>Max:&nbsp;<select name="root_ImageSource_I0_Sensor_MaxExposureTime">
+        <option value="63">1/16000</option>
+        <option value="125">1/8000</option>
+        <option value="250">1/4000</option>
+        <option value="500">1/2000</option>
+        <option value="1000">1/1000</option>
+        <option value="2000">1/500</option>
+        <option value="4000">1/250</option>
+        <option value="8333">1/120</option>
+        <option value="10000">1/100</option>
+        <option value="20000">1/60</option>
+        <option value="20000">1/50</option>
+        <option value="33333">1/30</option>
+        <option value="40000">1/25</option>
+        <option value="83333">1/12</option>
+        <option value="100000" selected>1/10</option>
+        <option value="166667">1/6</option>
+        <option value="200000">1/5</option>
+        <option value="250000">1/4</option>
+      </select>&nbsp;s
+    </td>
+
+
+<td colspan="2">Min:&nbsp;<select name="root_ImageSource_I0_Sensor_MinGain">
+        <option value="0" selected>0</option>
+        <option value="9">3</option>
+        <option value="19">6</option>
+        <option value="28">9</option>
+        <option value="38">12</option>
+        <option value="47">15</option>
+        <option value="56">18</option>
+        <option value="66">21</option>
+        <option value="75">24</option>
+        <option value="84">27</option>
+        <option value="94">30</option>
+        <option value="100">32</option>
+      </select>&nbsp;dB
+    </td>
+    <td colspan="2" nowrap>Max:&nbsp;<select name="root_ImageSource_I0_Sensor_MaxGain">
+        <option value="0">0</option>
+        <option value="9">3</option>
+        <option value="19">6</option>
+        <option value="28">9</option>
+        <option value="38">12</option>
+        <option value="47">15</option>
+        <option value="56">18</option>
+        <option value="66">21</option>
+        <option value="75">24</option>
+        <option value="84">27</option>
+        <option value="94">30</option>
+        <option value="100">32</option>
+      </select>&nbsp;dB
+    </td>

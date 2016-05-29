@@ -1,0 +1,1725 @@
+MPLINK 4.1, Linker
+Linker Map File - Created Wed Apr 09 19:42:16 2008
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+               _entry_scn       code   0x000800    program   0x000006
+        .idata_stdout.o_i    romdata   0x000806    program   0x000002
+    Interrupt_Vector_High       code   0x000808    program   0x000006
+         .idata_robot.o_i    romdata   0x00080e    program   0x000007
+          .idata_gyro.o_i    romdata   0x000815    program   0x000002
+           .idata_adc.o_i    romdata   0x000817    program   0x000001
+     Interrupt_Vector_Low       code   0x000818    program   0x000006
+                   .cinit    romdata   0x00081e    program   0x000092
+         .code_vfprintf.o       code   0x0008b0    program   0x000c22
+            .code_drive.o       code   0x0014d2    program   0x00089a
+  .code_ifi_frc_library.o       code   0x001d6c    program   0x0006d4
+         .code_launcher.o       code   0x002440    program   0x00056a
+            .code_robot.o       code   0x0029aa    program   0x00053c
+         .code_ifi_code.o       code   0x002ee6    program   0x00053a
+              .code_pid.o       code   0x003420    program   0x000522
+             .code_gyro.o       code   0x003942    program   0x000414
+                     PROG       code   0x003d56    program   0x00040a
+              .code_adc.o       code   0x004160    program   0x00038c
+     .code_serial_ports.o       code   0x0044ec    program   0x000382
+       .code_autonomous.o       code   0x00486e    program   0x00037e
+          .code_ifi_frc.o       code   0x004bec    program   0x000236
+          .code_encoder.o       code   0x004e22    program   0x0001d6
+         .code_disabled.o       code   0x004ff8    program   0x0001cc
+             .stringtable    romdata   0x0051c4    program   0x000178
+              .code_pwm.o       code   0x00533c    program   0x000164
+               _cinit_scn       code   0x0054a0    program   0x0000e4
+           .code_teleop.o       code   0x005584    program   0x0000e4
+               .code_ir.o       code   0x005668    program   0x0000aa
+           .code_printf.o       code   0x005712    program   0x000098
+             .code_putc.o       code   0x0057aa    program   0x000084
+          .code_fxm3232.o       code   0x00582e    program   0x000070
+                   STRING       code   0x00589e    program   0x000066
+         .code_fxd3232u.o       code   0x005904    program   0x000048
+.romdata_ifi_frc_library.o    romdata   0x00594c    program   0x00003a
+         .code_fxd1616u.o       code   0x005986    program   0x00002c
+             _startup_scn       code   0x0059b2    program   0x000024
+                    CTYPE       code   0x0059d6    program   0x000024
+                    STDIO       code   0x0059fa    program   0x00001c
+      .romdata_vfprintf.o    romdata   0x005a16    program   0x000011
+  .idata_serial_ports.o_i    romdata   0x005a27    program   0x000019
+      .idata_launcher.o_i    romdata   0x005a40    program   0x000016
+            .idata_ir.o_i    romdata   0x005a56    program   0x000008
+       .idata_ifi_frc.o_i    romdata   0x005a5e    program   0x000004
+       .idata_encoder.o_i    romdata   0x005a62    program   0x00000c
+         .idata_drive.o_i    romdata   0x005a6e    program   0x000005
+      .idata_disabled.o_i    romdata   0x005a73    program   0x000004
+    .idata_autonomous.o_i    romdata   0x005a77    program   0x000013
+.config_300001_ifi_frc_library.o    romdata   0x300001    program   0x000001
+.config_300002_ifi_frc_library.o    romdata   0x300002    program   0x000001
+.config_300003_ifi_frc_library.o    romdata   0x300003    program   0x000001
+.config_300004_ifi_frc_library.o    romdata   0x300004    program   0x000001
+.config_300005_ifi_frc_library.o    romdata   0x300005    program   0x000001
+.config_300006_ifi_frc_library.o    romdata   0x300006    program   0x000001
+.config_300008_ifi_frc_library.o    romdata   0x300008    program   0x000001
+.config_300009_ifi_frc_library.o    romdata   0x300009    program   0x000001
+.config_30000a_ifi_frc_library.o    romdata   0x30000a    program   0x000001
+.config_30000b_ifi_frc_library.o    romdata   0x30000b    program   0x000001
+.config_30000c_ifi_frc_library.o    romdata   0x30000c    program   0x000001
+.config_30000d_ifi_frc_library.o    romdata   0x30000d    program   0x000001
+                MATH_DATA      udata   0x000000       data   0x000014
+                 .tmpdata      udata   0x000014       data   0x00000c
+          low_isr_tmpdata      udata   0x000020       data   0x000004
+            .udata_gyro.o      udata   0x000060       data   0x00009d
+          .udata_teleop.o      udata   0x0000fd       data   0x000002
+         .udata_encoder.o      udata   0x0000ff       data   0x000001
+ .udata_ifi_frc_library.o      udata   0x000100       data   0x0000cd
+      .udata_autonomous.o      udata   0x0001cd       data   0x00002f
+              .udata_ir.o      udata   0x0001fc       data   0x000004
+    .udata_serial_ports.o      udata   0x000200       data   0x000080
+           .udata_drive.o      udata   0x000280       data   0x000057
+    .idata_serial_ports.o      idata   0x0002d7       data   0x000019
+         .idata_encoder.o      idata   0x0002f0       data   0x00000c
+         .idata_ifi_frc.o      idata   0x0002fc       data   0x000004
+        .udata_launcher.o      udata   0x000300       data   0x000016
+        .idata_launcher.o      idata   0x000316       data   0x000016
+             .udata_adc.o      udata   0x00032c       data   0x000015
+      .idata_autonomous.o      idata   0x000341       data   0x000013
+           .udata_robot.o      udata   0x000354       data   0x00000b
+         .udata_ifi_frc.o      udata   0x00035f       data   0x00000a
+              .idata_ir.o      idata   0x000369       data   0x000008
+           .idata_robot.o      idata   0x000371       data   0x000007
+           .idata_drive.o      idata   0x000378       data   0x000005
+        .idata_disabled.o      idata   0x00037d       data   0x000004
+        .udata_ifi_code.o      udata   0x000381       data   0x000002
+          .idata_stdout.o      idata   0x000383       data   0x000002
+            .idata_gyro.o      idata   0x000385       data   0x000002
+             .idata_adc.o      idata   0x000387       data   0x000001
+                   .stack      udata   0x000e00       data   0x000100
+            SFR_UNBANKED0      udata   0x000f62       data   0x00009e
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000800    0x005a89      
+                            0x300001    0x300006      
+                            0x300008    0x30000d      
+            21142 out of 132120 program addresses used, program memory utilization is 16%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+   Auto_Selection_Handler   0x002a90    program     extern C:\FIRST\projects\Post CT Changes\source\robot.c
+               Autonomous   0x004870    program     extern C:\FIRST\projects\4-9\source\autonomous.c
+          Autonomous_Init   0x00486e    program     extern C:\FIRST\projects\4-9\source\autonomous.c
+          Autonomous_Spin   0x004be0    program     extern C:\FIRST\projects\4-9\source\autonomous.c
+           Button_Handler   0x002ada    program     extern C:\FIRST\projects\Post CT Changes\source\robot.c
+      Calculate_Gyro_Bias   0x002d60    program     extern C:\FIRST\projects\Post CT Changes\source\robot.c
+       Clear_SPIdata_flag   0x001f88    program     extern C:\2008 FRC\frc_library\ifi_frc_library.c
+               CloseBrake   0x002978    program     extern C:\FIRST\projects\4-9\source\launcher.c
+       Compressor_Handler   0x002ebc    program     extern C:\FIRST\projects\Post CT Changes\source\robot.c
+      Compressor_Override   0x002eb4    program     extern C:\FIRST\projects\Post CT Changes\source\robot.c
+      Configuration_Check   0x001f92    program     extern C:\2008 FRC\frc_library\ifi_frc_library.c
+        Convert_ADC_to_mV   0x0042ca    program     extern C:\FIRST\projects\3-9\source\adc.c
+                   D1616S   0x003f1a    program     static C:\MCC18\SRC\TRADIT~1\MATH\fxd1616s.asm
+                D1616SNEG   0x003f28    program     static C:\MCC18\SRC\TRADIT~1\MATH\fxd1616s.asm
+                 D1616SOK   0x003f24    program     static C:\MCC18\SRC\TRADIT~1\MATH\fxd1616s.asm
+                  D1616SX   0x003f3a    program     static C:\MCC18\SRC\TRADIT~1\MATH\fxd1616s.asm
+                   D3232S   0x003f74    program     static C:\MCC18\SRC\TRADIT~1\MATH\fxd3232s.asm
+                D3232SNEG   0x003f82    program     static C:\MCC18\SRC\TRADIT~1\MATH\fxd3232s.asm
+                 D3232SOK   0x003f7e    program     static C:\MCC18\SRC\TRADIT~1\MATH\fxd3232s.asm
+                  D3232SX   0x003fa2    program     static C:\MCC18\SRC\TRADIT~1\MATH\fxd3232s.asm
+                  DA1616S   0x003f0a    program     static C:\MCC18\SRC\TRADIT~1\MATH\fxd1616s.asm
+                  DA3232S   0x003f5e    program     static C:\MCC18\SRC\TRADIT~1\MATH\fxd3232s.asm
+          Default_Routine   0x002ee6    program     extern C:\FIRST\projects\3-9\source\ifi_code.c
+        DifferentialDrive   0x00181e    program     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+              Disable_ADC   0x004246    program     extern C:\FIRST\projects\3-9\source\adc.c
+   Disable_Drive_Encoders   0x002ed4    program     extern C:\FIRST\projects\Post CT Changes\source\robot.c
+        Disable_Encoder_1   0x002eda    program     extern C:\FIRST\projects\Post CT Changes\source\robot.c
+        Disable_Encoder_2   0x002ede    program     extern C:\FIRST\projects\Post CT Changes\source\robot.c
+      Disable_Encoder_3_6   0x002ee2    program     extern C:\FIRST\projects\Post CT Changes\source\robot.c
+                 Disabled   0x004ffa    program     extern C:\FIRST\projects\Post CT Changes\source\disabled.c
+            Disabled_Init   0x004ff8    program     extern C:\FIRST\projects\Post CT Changes\source\disabled.c
+            Disabled_Spin   0x0051b8    program     extern C:\FIRST\projects\Post CT Changes\source\disabled.c
+                    Drive   0x0016a2    program     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+            DriveDistance   0x001af2    program     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+             DriveHandler   0x001cd2    program     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+            DriveOverride   0x001cca    program     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+            DriveStraight   0x001a8e    program     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+        Enable_Compressor   0x002eae    program     extern C:\FIRST\projects\Post CT Changes\source\robot.c
+             EngageBrakes   0x001c1a    program     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+                 FLO0832S   0x003d5a    program     extern C:\MCC18\SRC\TRADIT~1\MATH\cast08FP.asm
+                 FLO0832U   0x003d56    program     extern C:\MCC18\SRC\TRADIT~1\MATH\cast08FP.asm
+                    FPD32   0x003d78    program     extern C:\MCC18\SRC\TRADIT~1\MATH\divFP.asm
+                    FPM32   0x003e1e    program     extern C:\MCC18\SRC\TRADIT~1\MATH\mulFP.asm
+                 FXD1616S   0x003ef8    program     extern C:\MCC18\SRC\TRADIT~1\MATH\fxd1616s.asm
+                 FXD1616U   0x005986    program     extern C:\MCC18\src\TRADIT~1\math\fxd1616u.c
+                 FXD3232S   0x003f44    program     extern C:\MCC18\SRC\TRADIT~1\MATH\fxd3232s.asm
+                 FXD3232U   0x005904    program     extern C:\MCC18\src\TRADIT~1\math\fxd3232u.c
+                 FXM1616S   0x003fac    program     extern C:\MCC18\SRC\TRADIT~1\MATH\fxm1616s.asm
+                  FXM3232   0x00582e    program     extern C:\MCC18\src\TRADIT~1\math\fxm3232.c
+                   GetPID   0x003420    program     extern C:\FIRST\projects\3-9\source\pid.c
+           Get_ADC_Result   0x004260    program     extern C:\FIRST\projects\3-9\source\adc.c
+     Get_ADC_Result_Count   0x004352    program     extern C:\FIRST\projects\3-9\source\adc.c
+            Get_Auto_Mode   0x0029fa    program     extern C:\FIRST\projects\Post CT Changes\source\robot.c
+      Get_Encoder_1_Count   0x004e4a    program     extern C:\FIRST\projects\3-9\source\encoder.c
+      Get_Encoder_2_Count   0x004eca    program     extern C:\FIRST\projects\3-9\source\encoder.c
+      Get_Encoder_3_Count   0x004f4a    program     extern C:\FIRST\projects\3-9\source\encoder.c
+           Get_Gyro_Angle   0x003a8e    program     extern C:\FIRST\projects\3-9\source\gyro.c
+            Get_Gyro_Bias   0x003c28    program     extern C:\FIRST\projects\3-9\source\gyro.c
+     Get_Gyro_Bias_Status   0x003c20    program     extern C:\FIRST\projects\3-9\source\gyro.c
+            Get_Gyro_Rate   0x00397e    program     extern C:\FIRST\projects\3-9\source\gyro.c
+            Get_IR_Result   0x005668    program     extern C:\FIRST\projects\CT Day 1\source\ir.c
+                  Getdata   0x001e5c    program     extern C:\2008 FRC\frc_library\ifi_frc_library.c
+      Human_Brake_Handler   0x001c02    program     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+       IFI_Initialization   0x001d6c    program     extern C:\2008 FRC\frc_library\ifi_frc_library.c
+                  INT3208   0x004006    program     extern C:\MCC18\SRC\TRADIT~1\MATH\castFP08.asm
+                  InitPID   0x003882    program     extern C:\FIRST\projects\3-9\source\pid.c
+     Init_Serial_Port_One   0x0044ec    program     extern C:\FIRST\projects\3-9\source\serial_ports.c
+     Init_Serial_Port_Two   0x004576    program     extern C:\FIRST\projects\3-9\source\serial_ports.c
+           Initialization   0x005584    program     extern C:\FIRST\projects\Post CT Changes\source\teleop.c
+           Initialize_ADC   0x004160    program     extern C:\FIRST\projects\3-9\source\adc.c
+         Initialize_Drive   0x0014d2    program     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+     Initialize_Encoder_1   0x004e22    program     extern C:\FIRST\projects\3-9\source\encoder.c
+     Initialize_Encoder_2   0x004e2e    program     extern C:\FIRST\projects\3-9\source\encoder.c
+   Initialize_Encoder_3_6   0x004e3a    program     extern C:\FIRST\projects\3-9\source\encoder.c
+          Initialize_Gyro   0x003942    program     extern C:\FIRST\projects\3-9\source\gyro.c
+      Initialize_Launcher   0x00297e    program     extern C:\FIRST\projects\4-9\source\launcher.c
+           Initialize_PWM   0x00533c    program     extern C:\FIRST\projects\3-9\source\pwm.c
+     Initialize_Registers   0x001de6    program     extern C:\2008 FRC\frc_library\ifi_frc_library.c
+                Int_1_ISR   0x004eaa    program     extern C:\FIRST\projects\3-9\source\encoder.c
+                Int_2_ISR   0x004f2a    program     extern C:\FIRST\projects\3-9\source\encoder.c
+                Int_3_ISR   0x004faa    program     extern C:\FIRST\projects\3-9\source\encoder.c
+   Interrupt_Handler_High   0x00236c    program     extern C:\2008 FRC\frc_library\ifi_frc_library.c
+    Interrupt_Handler_Low   0x004d44    program     extern C:\FIRST\projects\3-9\source\ifi_frc.c
+    Interrupt_Vector_High   0x000808    program     extern C:\2008 FRC\frc_library\ifi_frc_library.c
+     Interrupt_Vector_Low   0x000818    program     extern C:\FIRST\projects\3-9\source\ifi_frc.c
+      Launcher_Autonomous   0x002440    program     extern C:\FIRST\projects\4-9\source\launcher.c
+         Launcher_Handler   0x002466    program     extern C:\FIRST\projects\4-9\source\launcher.c
+   Launcher_State_Machine   0x0024d2    program     extern C:\FIRST\projects\4-9\source\launcher.c
+                LimitChar   0x002a02    program     extern C:\FIRST\projects\Post CT Changes\source\robot.c
+               LimitSpeed   0x001c28    program     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+                Limit_Mix   0x0033a4    program     extern C:\FIRST\projects\3-9\source\ifi_code.c
+         Limit_Switch_Max   0x003330    program     extern C:\FIRST\projects\3-9\source\ifi_code.c
+         Limit_Switch_Min   0x003368    program     extern C:\FIRST\projects\3-9\source\ifi_code.c
+                OpenBrake   0x002972    program     extern C:\FIRST\projects\4-9\source\launcher.c
+           OrientationFwd   0x0019a2    program     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+           OrientationRev   0x0019aa    program     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+                      PWM   0x005354    program     extern C:\FIRST\projects\3-9\source\pwm.c
+        Process_Gyro_Data   0x003c5c    program     extern C:\FIRST\projects\3-9\source\gyro.c
+                  Putdata   0x001ece    program     extern C:\2008 FRC\frc_library\ifi_frc_library.c
+     Read_Serial_Port_One   0x004640    program     extern C:\FIRST\projects\3-9\source\serial_ports.c
+     Read_Serial_Port_Two   0x00468c    program     extern C:\FIRST\projects\3-9\source\serial_ports.c
+   ResetDriveDependancies   0x001584    program     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+   Reset_ADC_Result_Count   0x004372    program     extern C:\FIRST\projects\3-9\source\adc.c
+    Reset_Encoder_1_Count   0x004e9a    program     extern C:\FIRST\projects\3-9\source\encoder.c
+    Reset_Encoder_2_Count   0x004f1a    program     extern C:\FIRST\projects\3-9\source\encoder.c
+    Reset_Encoder_3_Count   0x004f9a    program     extern C:\FIRST\projects\3-9\source\encoder.c
+         Reset_Gyro_Angle   0x003c50    program     extern C:\FIRST\projects\3-9\source\gyro.c
+            Reset_Outputs   0x00553e    program     extern C:\FIRST\projects\3-9\source\ifi_frc.c
+                 Rx_1_ISR   0x00475c    program     extern C:\FIRST\projects\3-9\source\serial_ports.c
+                 Rx_2_ISR   0x00479a    program     extern C:\FIRST\projects\3-9\source\serial_ports.c
+Serial_Port_One_Byte_Count   0x004600    program     extern C:\FIRST\projects\3-9\source\serial_ports.c
+Serial_Port_Two_Byte_Count   0x004620    program     extern C:\FIRST\projects\3-9\source\serial_ports.c
+               SetGripper   0x0024b6    program     extern C:\FIRST\projects\4-9\source\launcher.c
+                SetTilter   0x00294a    program     extern C:\FIRST\projects\4-9\source\launcher.c
+            Set_Gyro_Bias   0x003c34    program     extern C:\FIRST\projects\3-9\source\gyro.c
+                ShiftHigh   0x001974    program     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+                 ShiftLow   0x00196e    program     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+     Start_Gyro_Bias_Calc   0x003b8c    program     extern C:\FIRST\projects\3-9\source\gyro.c
+               StopBrakes   0x001c22    program     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+      Stop_Gyro_Bias_Calc   0x003ba8    program     extern C:\FIRST\projects\3-9\source\gyro.c
+               SwitchGear   0x00198c    program     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+              SwitchGears   0x00197c    program     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+               TSIGN1616A   0x003ff8    program     static C:\MCC18\SRC\TRADIT~1\MATH\fxm1616s.asm
+                TankDrive   0x001590    program     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+                   Teleop   0x005604    program     extern C:\FIRST\projects\Post CT Changes\source\teleop.c
+              Teleop_Init   0x005602    program     extern C:\FIRST\projects\Post CT Changes\source\teleop.c
+              Teleop_Spin   0x00565c    program     extern C:\FIRST\projects\Post CT Changes\source\teleop.c
+              Timer_4_ISR   0x00437c    program     extern C:\FIRST\projects\3-9\source\adc.c
+             ToggleTilter   0x00293a    program     extern C:\FIRST\projects\4-9\source\launcher.c
+            TurnToHeading   0x0019b0    program     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+                 Tx_1_ISR   0x0047d8    program     extern C:\FIRST\projects\3-9\source\serial_ports.c
+                 Tx_2_ISR   0x004808    program     extern C:\FIRST\projects\3-9\source\serial_ports.c
+           Update_OI_LEDs   0x0031d8    program     extern C:\FIRST\projects\3-9\source\ifi_code.c
+       User_Proc_Is_Ready   0x001e52    program     extern C:\2008 FRC\frc_library\ifi_frc_library.c
+    Write_Serial_Port_One   0x0046d8    program     extern C:\FIRST\projects\3-9\source\serial_ports.c
+    Write_Serial_Port_Two   0x00471a    program     extern C:\FIRST\projects\3-9\source\serial_ports.c
+                   _2jEnd   0x0058ee    program     static C:\MCC18\SRC\TRADIT~1\STDCLIB\slenpgm.asm
+                 __FpExit   0x004060    program     extern C:\MCC18\SRC\TRADIT~1\MATH\packFP.asm
+                 __FpPack   0x00408c    program     extern C:\MCC18\SRC\TRADIT~1\MATH\packFP.asm
+            __FpReturnNaN   0x004054    program     extern C:\MCC18\SRC\TRADIT~1\MATH\packFP.asm
+         __FpReturnNegInf   0x004066    program     extern C:\MCC18\SRC\TRADIT~1\MATH\packFP.asm
+        __FpReturnNegZero   0x00407e    program     extern C:\MCC18\SRC\TRADIT~1\MATH\packFP.asm
+         __FpReturnPosInf   0x00406c    program     extern C:\MCC18\SRC\TRADIT~1\MATH\packFP.asm
+        __FpReturnPosZero   0x004086    program     extern C:\MCC18\SRC\TRADIT~1\MATH\packFP.asm
+        __FpReturnSignInf   0x004062    program     extern C:\MCC18\SRC\TRADIT~1\MATH\packFP.asm
+       __FpReturnSignZero   0x00407a    program     extern C:\MCC18\SRC\TRADIT~1\MATH\packFP.asm
+              __FpReturnW   0x0040e4    program     extern C:\MCC18\SRC\TRADIT~1\MATH\packFP.asm
+              __FpUnPackA   0x004104    program     extern C:\MCC18\SRC\TRADIT~1\MATH\UnpackFP.asm
+              __FpUnPackB   0x004134    program     extern C:\MCC18\SRC\TRADIT~1\MATH\UnpackFP.asm
+       ___return_lbl00000   0x0059b0    program     static                          
+       ___return_lbl00000   0x00594a    program     static                          
+       ___return_lbl00000   0x00589c    program     static                          
+       ___return_lbl00013   0x00081c    program     static                          
+       ___return_lbl00029   0x000804    program     static                          
+       ___return_lbl00030   0x0059d4    program     static                          
+       ___return_lbl00031   0x00553c    program     static                          
+       ___return_lbl00058   0x00080c    program     static                          
+               __config_0   0x300001    program     static C:\2008 FRC\frc_library\ifi_frc_library.c
+               __config_1   0x300002    program     static C:\2008 FRC\frc_library\ifi_frc_library.c
+              __config_10   0x30000c    program     static C:\2008 FRC\frc_library\ifi_frc_library.c
+              __config_11   0x30000d    program     static C:\2008 FRC\frc_library\ifi_frc_library.c
+               __config_2   0x300003    program     static C:\2008 FRC\frc_library\ifi_frc_library.c
+               __config_3   0x300004    program     static C:\2008 FRC\frc_library\ifi_frc_library.c
+               __config_4   0x300005    program     static C:\2008 FRC\frc_library\ifi_frc_library.c
+               __config_5   0x300006    program     static C:\2008 FRC\frc_library\ifi_frc_library.c
+               __config_6   0x300008    program     static C:\2008 FRC\frc_library\ifi_frc_library.c
+               __config_7   0x300009    program     static C:\2008 FRC\frc_library\ifi_frc_library.c
+               __config_8   0x30000a    program     static C:\2008 FRC\frc_library\ifi_frc_library.c
+               __config_9   0x30000b    program     static C:\2008 FRC\frc_library\ifi_frc_library.c
+                   __pa_0   0x0011f0    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                   __pa_1   0x0011f8    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_10   0x0012ac    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_11   0x0012ba    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_12   0x0012d0    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_13   0x0012ea    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_14   0x001302    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_15   0x001312    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_16   0x001328    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_17   0x00133a    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_18   0x00134c    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_19   0x001356    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                   __pa_2   0x001202    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_20   0x001366    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_21   0x001376    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_22   0x001386    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_23   0x001392    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_24   0x0013a0    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_25   0x0013a8    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_26   0x0013b2    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_27   0x0013bc    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_28   0x0013c4    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_29   0x0013d2    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                   __pa_3   0x00120c    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_30   0x0013ee    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_31   0x001408    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_32   0x001422    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_33   0x00143a    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_34   0x001444    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_35   0x001452    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_36   0x00145a    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_37   0x001464    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_38   0x001474    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_39   0x001482    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                   __pa_4   0x001224    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_40   0x00148e    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_41   0x00149a    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_42   0x0014a2    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_43   0x0014ac    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_44   0x0014b2    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_45   0x0014bc    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_46   0x0014c8    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                   __pa_5   0x001238    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                   __pa_6   0x001254    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                   __pa_7   0x00125e    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                   __pa_8   0x00126a    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                   __pa_9   0x00128c    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+               __string_0   0x005254    program     static C:\FIRST\projects\Post CT Changes\source\disabled.c
+               __string_0   0x005271    program     static C:\FIRST\projects\4-9\source\launcher.c
+               __string_0   0x0052ef    program     static C:\FIRST\projects\Post CT Changes\source\robot.c
+               __string_0   0x0051c4    program     static C:\FIRST\projects\4-9\source\autonomous.c
+               __string_0   0x00532e    program     static C:\FIRST\projects\Post CT Changes\source\teleop.c
+               __string_1   0x005245    program     static C:\FIRST\projects\Post CT Changes\source\disabled.c
+               __string_1   0x005309    program     static C:\FIRST\projects\Post CT Changes\source\teleop.c
+               __string_1   0x0052e9    program     static C:\FIRST\projects\Post CT Changes\source\robot.c
+               __string_2   0x005236    program     static C:\FIRST\projects\Post CT Changes\source\disabled.c
+               __string_2   0x0052d9    program     static C:\FIRST\projects\Post CT Changes\source\robot.c
+               __string_3   0x0052c9    program     static C:\FIRST\projects\Post CT Changes\source\robot.c
+               __string_3   0x005226    program     static C:\FIRST\projects\Post CT Changes\source\disabled.c
+               __string_4   0x0051ef    program     static C:\FIRST\projects\Post CT Changes\source\disabled.c
+               __string_4   0x0052b7    program     static C:\FIRST\projects\Post CT Changes\source\robot.c
+               __string_5   0x0051d1    program     static C:\FIRST\projects\Post CT Changes\source\disabled.c
+              __tmplbl_42   0x001386    program     static                          
+              __tmplbl_43   0x0011ce    program     static                          
+              __tmplbl_44   0x0011b4    program     static                          
+              __tmplbl_85   0x000906    program     static                          
+                _do_cinit   0x0054a0    program     extern C:\FIRST\projects\3-9\source\ifi_frc.c
+                   _entry   0x000800    program     extern C:\FIRST\projects\3-9\source\ifi_frc.c
+                   _false   0x005946    program     static                          
+                 _startup   0x0059b2    program     extern C:\FIRST\projects\3-9\source\ifi_frc.c
+              _usart_putc   0x0059fa    program     extern C:\MCC18\SRC\TRADIT~1\PMC\USART\_usartpc.asm
+               _user_putc   0x004838    program     extern C:\FIRST\projects\3-9\source\serial_ports.c
+                      abs   0x0029aa    program     extern C:\FIRST\projects\Post CT Changes\source\robot.c
+               clear_loop   0x0059c4    program     static                          
+                copy_loop   0x005512    program     static                          
+            copy_one_byte   0x005518    program     static                          
+                copyright   0x00594c    program     extern C:\2008 FRC\frc_library\ifi_frc_library.c
+                     done   0x00553c    program     static                          
+             done_copying   0x005526    program     static                          
+                  endloop   0x0059ac    program     static                          
+                get_entry   0x0054c2    program     static                          
+                  isdigit   0x0059d6    program     extern C:\MCC18\SRC\TRADIT~1\STDCLIB\isdigit.asm
+                 jANotInf   0x003d96    program     static C:\MCC18\SRC\TRADIT~1\MATH\divFP.asm
+                 jANotInf   0x003e3c    program     static C:\MCC18\SRC\TRADIT~1\MATH\mulFP.asm
+                jANotZero   0x003daa    program     static C:\MCC18\SRC\TRADIT~1\MATH\divFP.asm
+              jBothFinite   0x003e4a    program     static C:\MCC18\SRC\TRADIT~1\MATH\mulFP.asm
+             jBothNotZero   0x003e56    program     static C:\MCC18\SRC\TRADIT~1\MATH\mulFP.asm
+                     jEnd   0x0058f0    program     static C:\MCC18\SRC\TRADIT~1\STDCLIB\slenpgm.asm
+                     jEnd   0x0058b8    program     static C:\MCC18\SRC\TRADIT~1\STDCLIB\strlen.asm
+                    jExit   0x004052    program     static C:\MCC18\SRC\TRADIT~1\MATH\castFP08.asm
+                jHaveZero   0x003e52    program     static C:\MCC18\SRC\TRADIT~1\MATH\mulFP.asm
+                jI2F08Beg   0x003d64    program     static C:\MCC18\SRC\TRADIT~1\MATH\cast08FP.asm
+                    jLoop   0x003dd2    program     static C:\MCC18\SRC\TRADIT~1\MATH\divFP.asm
+                    jLoop   0x0058d8    program     static C:\MCC18\SRC\TRADIT~1\STDCLIB\slenpgm.asm
+                    jLoop   0x0058ae    program     static C:\MCC18\SRC\TRADIT~1\STDCLIB\strlen.asm
+                    jLoop   0x00403a    program     static C:\MCC18\SRC\TRADIT~1\MATH\castFP08.asm
+                jLoopExit   0x004048    program     static C:\MCC18\SRC\TRADIT~1\MATH\castFP08.asm
+                   jMatch   0x0059f6    program     static C:\MCC18\SRC\TRADIT~1\STDCLIB\isdigit.asm
+                     jMax   0x004016    program     static C:\MCC18\SRC\TRADIT~1\MATH\castFP08.asm
+                  jMaxNeg   0x004020    program     static C:\MCC18\SRC\TRADIT~1\MATH\castFP08.asm
+                  jMaxPos   0x00401a    program     static C:\MCC18\SRC\TRADIT~1\MATH\castFP08.asm
+                    jNext   0x003df8    program     static C:\MCC18\SRC\TRADIT~1\MATH\divFP.asm
+                jNoAdjust   0x003df6    program     static C:\MCC18\SRC\TRADIT~1\MATH\divFP.asm
+                 jNoMatch   0x0059f8    program     static C:\MCC18\SRC\TRADIT~1\STDCLIB\isdigit.asm
+                  jNotInf   0x00402a    program     static C:\MCC18\SRC\TRADIT~1\MATH\castFP08.asm
+                  jPkLoop   0x00409a    program     static C:\MCC18\SRC\TRADIT~1\MATH\packFP.asm
+             jPkRoundDone   0x0040e4    program     static C:\MCC18\SRC\TRADIT~1\MATH\packFP.asm
+               jPkRoundIt   0x0040cc    program     static C:\MCC18\SRC\TRADIT~1\MATH\packFP.asm
+             jPkShiftDone   0x0040b6    program     static C:\MCC18\SRC\TRADIT~1\MATH\packFP.asm
+           jReturnPosInf0   0x004070    program     static C:\MCC18\SRC\TRADIT~1\MATH\packFP.asm
+              jSignedZero   0x003da0    program     static C:\MCC18\SRC\TRADIT~1\MATH\divFP.asm
+                  jUnpkA1   0x00410e    program     static C:\MCC18\SRC\TRADIT~1\MATH\UnpackFP.asm
+                  jUnpkA2   0x004126    program     static C:\MCC18\SRC\TRADIT~1\MATH\UnpackFP.asm
+                 jUnpkANZ   0x00411c    program     static C:\MCC18\SRC\TRADIT~1\MATH\UnpackFP.asm
+                  jUnpkB1   0x00413e    program     static C:\MCC18\SRC\TRADIT~1\MATH\UnpackFP.asm
+                  jUnpkB2   0x004156    program     static C:\MCC18\SRC\TRADIT~1\MATH\UnpackFP.asm
+                 jUnpkBNZ   0x00414c    program     static C:\MCC18\SRC\TRADIT~1\MATH\UnpackFP.asm
+                 jUnpkNaN   0x004130    program     static C:\MCC18\SRC\TRADIT~1\MATH\UnpackFP.asm
+                    jZero   0x004026    program     static C:\MCC18\SRC\TRADIT~1\MATH\castFP08.asm
+               jZero1and2   0x004074    program     static C:\MCC18\SRC\TRADIT~1\MATH\packFP.asm
+                     loop   0x005912    program     static                          
+                     loop   0x005990    program     static                          
+                     loop   0x0059ce    program     static                          
+                     loop   0x005a0a    program     static C:\MCC18\SRC\TRADIT~1\PMC\USART\_usartpc.asm
+                     main   0x004bec    program     extern C:\FIRST\projects\3-9\source\ifi_frc.c
+                   printf   0x005712    program     extern C:\MCC18\src\TRADIT~1\stdclib\printf.c
+                     putc   0x0057aa    program     extern C:\MCC18\src\TRADIT~1\stdclib\putc.c
+                 s_digits   0x005a16    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+            s_put_n_chars   0x0008b0    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                   strlen   0x00589e    program     extern C:\MCC18\SRC\TRADIT~1\STDCLIB\strlen.asm
+                strlenpgm   0x0058ba    program     extern C:\MCC18\SRC\TRADIT~1\STDCLIB\slenpgm.asm
+                 vfprintf   0x0008dc    program     extern C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                zero_test   0x0054ba    program     static                          
+                   ADCON0   0x000fc2       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+               ADCON0bits   0x000fc2       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   ADCON1   0x000fc1       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+               ADCON1bits   0x000fc1       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   ADCON2   0x000fc0       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+               ADCON2bits   0x000fc0       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    ADRES   0x000fc3       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   ADRESH   0x000fc4       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   ADRESL   0x000fc3       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                  BAUDCON   0x000f7e       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 BAUDCON1   0x000f7e       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+             BAUDCON1bits   0x000f7e       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 BAUDCON2   0x000f7c       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+             BAUDCON2bits   0x000f7c       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+              BAUDCONbits   0x000f7e       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                      BSR   0x000fe0       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                  CCP1CON   0x000fbd       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+              CCP1CONbits   0x000fbd       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                  CCP2CON   0x000fba       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+              CCP2CONbits   0x000fba       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                  CCP3CON   0x000fb7       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+              CCP3CONbits   0x000fb7       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                  CCP4CON   0x000f73       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+              CCP4CONbits   0x000f73       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                  CCP5CON   0x000f70       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+              CCP5CONbits   0x000f70       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    CCPR1   0x000fbe       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   CCPR1H   0x000fbf       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   CCPR1L   0x000fbe       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    CCPR2   0x000fbb       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   CCPR2H   0x000fbc       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   CCPR2L   0x000fbb       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    CCPR3   0x000fb8       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   CCPR3H   0x000fb9       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   CCPR3L   0x000fb8       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    CCPR4   0x000f74       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   CCPR4H   0x000f75       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   CCPR4L   0x000f74       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    CCPR5   0x000f71       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   CCPR5H   0x000f72       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   CCPR5L   0x000f71       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    CMCON   0x000fb4       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                CMCONbits   0x000fb4       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   CVRCON   0x000fb5       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+               CVRCONbits   0x000fb5       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     DDRA   0x000f92       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 DDRAbits   0x000f92       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     DDRB   0x000f93       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 DDRBbits   0x000f93       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     DDRC   0x000f94       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 DDRCbits   0x000f94       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     DDRD   0x000f95       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 DDRDbits   0x000f95       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     DDRE   0x000f96       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 DDREbits   0x000f96       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     DDRF   0x000f97       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 DDRFbits   0x000f97       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     DDRG   0x000f98       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 DDRGbits   0x000f98       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     DDRH   0x000f99       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 DDRHbits   0x000f99       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     DDRJ   0x000f9a       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 DDRJbits   0x000f9a       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                  ECCP1AS   0x000fb6       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+              ECCP1ASbits   0x000fb6       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 ECCP1CON   0x000fbd       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+             ECCP1CONbits   0x000fbd       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 ECCP1DEL   0x000f79       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+             ECCP1DELbits   0x000f79       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                  ECCP2AS   0x000f68       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+              ECCP2ASbits   0x000f68       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 ECCP2CON   0x000fba       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+             ECCP2CONbits   0x000fba       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 ECCP2DEL   0x000f67       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+             ECCP2DELbits   0x000f67       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                  ECCP3AS   0x000f6a       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+              ECCP3ASbits   0x000f6a       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 ECCP3CON   0x000fb7       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+             ECCP3CONbits   0x000fb7       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 ECCP3DEL   0x000f69       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+             ECCP3DELbits   0x000f69       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    EEADR   0x000fa9       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   EEADRH   0x000faa       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   EECON1   0x000fa6       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+               EECON1bits   0x000fa6       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   EECON2   0x000fa7       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   EEDATA   0x000fa8       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+          Encoder_1_Count   0x0002f0       data     extern C:\FIRST\projects\3-9\source\encoder.c
+          Encoder_2_Count   0x0002f4       data     extern C:\FIRST\projects\3-9\source\encoder.c
+          Encoder_3_Count   0x0002f8       data     extern C:\FIRST\projects\3-9\source\encoder.c
+          Encoder_3_State   0x0000ff       data     extern C:\FIRST\projects\3-9\source\encoder.c
+                     FSR0   0x000fe9       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    FSR0H   0x000fea       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    FSR0L   0x000fe9       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     FSR1   0x000fe1       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    FSR1H   0x000fe2       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    FSR1L   0x000fe1       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     FSR2   0x000fd9       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    FSR2H   0x000fda       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    FSR2L   0x000fd9       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+         Gyro_Bias_Status   0x000385       data     extern C:\FIRST\projects\3-9\source\gyro.c
+               Gyro_Queue   0x00007d       data     extern C:\FIRST\projects\3-9\source\gyro.c
+         Gyro_Queue_Index   0x000386       data     extern C:\FIRST\projects\3-9\source\gyro.c
+                  HLVDCON   0x000fd2       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+              HLVDCONbits   0x000fd2       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    INDF0   0x000fef       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    INDF1   0x000fe7       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    INDF2   0x000fdf       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   INTCON   0x000ff2       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                  INTCON2   0x000ff1       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+              INTCON2bits   0x000ff1       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                  INTCON3   0x000ff0       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+              INTCON3bits   0x000ff0       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+               INTCONbits   0x000ff2       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     IPR1   0x000f9f       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 IPR1bits   0x000f9f       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     IPR2   0x000fa2       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 IPR2bits   0x000fa2       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     IPR3   0x000fa5       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 IPR3bits   0x000fa5       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     LATA   0x000f89       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 LATAbits   0x000f89       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     LATB   0x000f8a       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 LATBbits   0x000f8a       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     LATC   0x000f8b       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 LATCbits   0x000f8b       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     LATD   0x000f8c       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 LATDbits   0x000f8c       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     LATE   0x000f8d       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 LATEbits   0x000f8d       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     LATF   0x000f8e       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 LATFbits   0x000f8e       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     LATG   0x000f8f       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 LATGbits   0x000f8f       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     LATH   0x000f90       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 LATHbits   0x000f90       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     LATJ   0x000f91       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 LATJbits   0x000f91       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   LVDCON   0x000fd2       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+               LVDCONbits   0x000fd2       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   MEMCON   0x000f9c       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+               MEMCONbits   0x000f9c       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   OSCCON   0x000fd3       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+               OSCCONbits   0x000fd3       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                  OSCTUNE   0x000f9b       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+              OSCTUNEbits   0x000f9b       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+               Old_Port_B   0x0002fc       data     extern C:\FIRST\projects\3-9\source\ifi_frc.c
+                       PC   0x000ff9       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                      PCL   0x000ff9       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   PCLATH   0x000ffa       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   PCLATU   0x000ffb       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     PIE1   0x000f9d       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 PIE1bits   0x000f9d       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     PIE2   0x000fa0       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 PIE2bits   0x000fa0       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     PIE3   0x000fa3       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 PIE3bits   0x000fa3       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     PIR1   0x000f9e       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 PIR1bits   0x000f9e       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     PIR2   0x000fa1       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 PIR2bits   0x000fa1       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     PIR3   0x000fa4       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 PIR3bits   0x000fa4       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   PLUSW0   0x000feb       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   PLUSW1   0x000fe3       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   PLUSW2   0x000fdb       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    PORTA   0x000f80       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                PORTAbits   0x000f80       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    PORTB   0x000f81       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                PORTBbits   0x000f81       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    PORTC   0x000f82       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                PORTCbits   0x000f82       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    PORTD   0x000f83       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                PORTDbits   0x000f83       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    PORTE   0x000f84       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                PORTEbits   0x000f84       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    PORTF   0x000f85       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                PORTFbits   0x000f85       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    PORTG   0x000f86       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                PORTGbits   0x000f86       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    PORTH   0x000f87       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                PORTHbits   0x000f87       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    PORTJ   0x000f88       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                PORTJbits   0x000f88       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 POSTDEC0   0x000fed       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 POSTDEC1   0x000fe5       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 POSTDEC2   0x000fdd       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 POSTINC0   0x000fee       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 POSTINC1   0x000fe6       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 POSTINC2   0x000fde       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                      PR2   0x000fcb       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                      PR4   0x000f77       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                  PREINC0   0x000fec       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                  PREINC1   0x000fe4       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                  PREINC2   0x000fdc       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     PROD   0x000ff3       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    PRODH   0x000ff4       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    PRODL   0x000ff3       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   PSPCON   0x000fb0       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+               PSPCONbits   0x000fb0       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     RCON   0x000fd0       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 RCONbits   0x000fd0       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    RCREG   0x000fae       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   RCREG1   0x000fae       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   RCREG2   0x000f6e       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    RCSTA   0x000fab       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   RCSTA1   0x000fab       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+               RCSTA1bits   0x000fab       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   RCSTA2   0x000f6b       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+               RCSTA2bits   0x000f6b       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                RCSTAbits   0x000fab       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+      RX_1_Framing_Errors   0x0002de       data     extern C:\FIRST\projects\3-9\source\serial_ports.c
+      RX_1_Overrun_Errors   0x0002dd       data     extern C:\FIRST\projects\3-9\source\serial_ports.c
+      RX_2_Framing_Errors   0x0002ea       data     extern C:\FIRST\projects\3-9\source\serial_ports.c
+      RX_2_Overrun_Errors   0x0002e9       data     extern C:\FIRST\projects\3-9\source\serial_ports.c
+               Rx_1_Queue   0x000200       data     extern C:\FIRST\projects\3-9\source\serial_ports.c
+    Rx_1_Queue_Byte_Count   0x0002dc       data     extern C:\FIRST\projects\3-9\source\serial_ports.c
+         Rx_1_Queue_Empty   0x0002d9       data     extern C:\FIRST\projects\3-9\source\serial_ports.c
+          Rx_1_Queue_Full   0x0002d8       data     extern C:\FIRST\projects\3-9\source\serial_ports.c
+    Rx_1_Queue_Read_Index   0x0002da       data     extern C:\FIRST\projects\3-9\source\serial_ports.c
+   Rx_1_Queue_Write_Index   0x0002db       data     extern C:\FIRST\projects\3-9\source\serial_ports.c
+               Rx_2_Queue   0x000240       data     extern C:\FIRST\projects\3-9\source\serial_ports.c
+    Rx_2_Queue_Byte_Count   0x0002e8       data     extern C:\FIRST\projects\3-9\source\serial_ports.c
+         Rx_2_Queue_Empty   0x0002e5       data     extern C:\FIRST\projects\3-9\source\serial_ports.c
+          Rx_2_Queue_Full   0x0002e4       data     extern C:\FIRST\projects\3-9\source\serial_ports.c
+    Rx_2_Queue_Read_Index   0x0002e6       data     extern C:\FIRST\projects\3-9\source\serial_ports.c
+   Rx_2_Queue_Write_Index   0x0002e7       data     extern C:\FIRST\projects\3-9\source\serial_ports.c
+                     SIGN   0x000000       data     extern C:\MCC18\SRC\TRADIT~1\MATH\cmath18.asm
+                    SPBRG   0x000faf       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   SPBRG1   0x000faf       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   SPBRG2   0x000f6f       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   SPBRGH   0x000f7f       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                  SPBRGH1   0x000f7f       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                  SPBRGH2   0x000f7d       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+          SPI_Rx_Buffer_0   0x000140       data     extern C:\2008 FRC\frc_library\ifi_frc_library.c
+          SPI_Rx_Buffer_1   0x000160       data     extern C:\2008 FRC\frc_library\ifi_frc_library.c
+          SPI_Tx_Buffer_0   0x000100       data     extern C:\2008 FRC\frc_library\ifi_frc_library.c
+          SPI_Tx_Buffer_1   0x000120       data     extern C:\2008 FRC\frc_library\ifi_frc_library.c
+                  SSP1ADD   0x000fc8       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                  SSP1BUF   0x000fc9       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 SSP1CON1   0x000fc6       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+             SSP1CON1bits   0x000fc6       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 SSP1CON2   0x000fc5       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+             SSP1CON2bits   0x000fc5       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 SSP1STAT   0x000fc7       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+             SSP1STATbits   0x000fc7       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                  SSP2ADD   0x000f65       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                  SSP2BUF   0x000f66       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 SSP2CON1   0x000f63       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+             SSP2CON1bits   0x000f63       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 SSP2CON2   0x000f62       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+             SSP2CON2bits   0x000f62       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 SSP2STAT   0x000f64       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+             SSP2STATbits   0x000f64       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   SSPADD   0x000fc8       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   SSPBUF   0x000fc9       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                  SSPCON1   0x000fc6       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+              SSPCON1bits   0x000fc6       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                  SSPCON2   0x000fc5       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+              SSPCON2bits   0x000fc5       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                  SSPSTAT   0x000fc7       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+              SSPSTATbits   0x000fc7       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   STATUS   0x000fd8       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+               STATUSbits   0x000fd8       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   STKPTR   0x000ffc       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+               STKPTRbits   0x000ffc       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    T0CON   0x000fd5       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                T0CONbits   0x000fd5       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    T1CON   0x000fcd       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                T1CONbits   0x000fcd       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    T2CON   0x000fca       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                T2CONbits   0x000fca       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    T3CON   0x000fb1       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                T3CONbits   0x000fb1       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    T4CON   0x000f76       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                T4CONbits   0x000f76       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   TABLAT   0x000ff5       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   TBLPTR   0x000ff6       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                  TBLPTRH   0x000ff7       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                  TBLPTRL   0x000ff6       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                  TBLPTRU   0x000ff8       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    TMR0H   0x000fd7       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    TMR0L   0x000fd6       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    TMR1H   0x000fcf       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    TMR1L   0x000fce       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     TMR2   0x000fcc       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    TMR3H   0x000fb3       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    TMR3L   0x000fb2       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     TMR4   0x000f78       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                      TOS   0x000ffd       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     TOSH   0x000ffe       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     TOSL   0x000ffd       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     TOSU   0x000fff       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    TRISA   0x000f92       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                TRISAbits   0x000f92       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    TRISB   0x000f93       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                TRISBbits   0x000f93       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    TRISC   0x000f94       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                TRISCbits   0x000f94       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    TRISD   0x000f95       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                TRISDbits   0x000f95       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    TRISE   0x000f96       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                TRISEbits   0x000f96       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    TRISF   0x000f97       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                TRISFbits   0x000f97       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    TRISG   0x000f98       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                TRISGbits   0x000f98       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    TRISH   0x000f99       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                TRISHbits   0x000f99       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    TRISJ   0x000f9a       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                TRISJbits   0x000f9a       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    TXREG   0x000fad       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   TXREG1   0x000fad       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   TXREG2   0x000f6d       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    TXSTA   0x000fac       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   TXSTA1   0x000fac       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+               TXSTA1bits   0x000fac       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   TXSTA2   0x000f6c       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+               TXSTA2bits   0x000f6c       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                TXSTAbits   0x000fac       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+               Tx_1_Queue   0x000220       data     extern C:\FIRST\projects\3-9\source\serial_ports.c
+    Tx_1_Queue_Byte_Count   0x0002e3       data     extern C:\FIRST\projects\3-9\source\serial_ports.c
+         Tx_1_Queue_Empty   0x0002e0       data     extern C:\FIRST\projects\3-9\source\serial_ports.c
+          Tx_1_Queue_Full   0x0002df       data     extern C:\FIRST\projects\3-9\source\serial_ports.c
+    Tx_1_Queue_Read_Index   0x0002e1       data     extern C:\FIRST\projects\3-9\source\serial_ports.c
+   Tx_1_Queue_Write_Index   0x0002e2       data     extern C:\FIRST\projects\3-9\source\serial_ports.c
+               Tx_2_Queue   0x000260       data     extern C:\FIRST\projects\3-9\source\serial_ports.c
+    Tx_2_Queue_Byte_Count   0x0002ef       data     extern C:\FIRST\projects\3-9\source\serial_ports.c
+         Tx_2_Queue_Empty   0x0002ec       data     extern C:\FIRST\projects\3-9\source\serial_ports.c
+          Tx_2_Queue_Full   0x0002eb       data     extern C:\FIRST\projects\3-9\source\serial_ports.c
+    Tx_2_Queue_Read_Index   0x0002ed       data     extern C:\FIRST\projects\3-9\source\serial_ports.c
+   Tx_2_Queue_Write_Index   0x0002ee       data     extern C:\FIRST\projects\3-9\source\serial_ports.c
+                   WDTCON   0x000fd1       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+               WDTCONbits   0x000fd1       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     WREG   0x000fe8       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 __AARGB0   0x000009       data     extern C:\MCC18\SRC\TRADIT~1\MATH\aarg.asm
+                 __AARGB1   0x000008       data     extern C:\MCC18\SRC\TRADIT~1\MATH\aarg.asm
+                 __AARGB2   0x000007       data     extern C:\MCC18\SRC\TRADIT~1\MATH\aarg.asm
+                 __AARGB3   0x000006       data     extern C:\MCC18\SRC\TRADIT~1\MATH\aarg.asm
+                 __AARGB4   0x000005       data     extern C:\MCC18\SRC\TRADIT~1\MATH\aarg.asm
+                 __AARGB5   0x000004       data     extern C:\MCC18\SRC\TRADIT~1\MATH\aarg.asm
+                 __AARGB6   0x000003       data     extern C:\MCC18\SRC\TRADIT~1\MATH\aarg.asm
+                 __AARGB7   0x000002       data     extern C:\MCC18\SRC\TRADIT~1\MATH\aarg.asm
+                   __AEXP   0x00000a       data     extern C:\MCC18\SRC\TRADIT~1\MATH\aarg.asm
+                 __BARGB0   0x00000e       data     extern C:\MCC18\SRC\TRADIT~1\MATH\barg.asm
+                 __BARGB1   0x00000d       data     extern C:\MCC18\SRC\TRADIT~1\MATH\barg.asm
+                 __BARGB2   0x00000c       data     extern C:\MCC18\SRC\TRADIT~1\MATH\barg.asm
+                 __BARGB3   0x00000b       data     extern C:\MCC18\SRC\TRADIT~1\MATH\barg.asm
+                   __BEXP   0x00000f       data     extern C:\MCC18\SRC\TRADIT~1\MATH\barg.asm
+                __FPFLAGS   0x000001       data     extern C:\MCC18\SRC\TRADIT~1\MATH\cmath18.asm
+            __FPFLAGSbits   0x000001       data     extern C:\MCC18\SRC\TRADIT~1\MATH\cmath18.asm
+                  __REMB0   0x000005       data     extern C:\MCC18\SRC\TRADIT~1\MATH\aarg.asm
+                  __REMB1   0x000004       data     extern C:\MCC18\SRC\TRADIT~1\MATH\aarg.asm
+                  __REMB2   0x000003       data     extern C:\MCC18\SRC\TRADIT~1\MATH\aarg.asm
+                  __REMB3   0x000002       data     extern C:\MCC18\SRC\TRADIT~1\MATH\aarg.asm
+                   __TEMP   0x000013       data     extern C:\MCC18\SRC\TRADIT~1\MATH\temparg.asm
+                 __TEMPB0   0x000013       data     extern C:\MCC18\SRC\TRADIT~1\MATH\temparg.asm
+                 __TEMPB1   0x000012       data     extern C:\MCC18\SRC\TRADIT~1\MATH\temparg.asm
+                 __TEMPB2   0x000011       data     extern C:\MCC18\SRC\TRADIT~1\MATH\temparg.asm
+                 __TEMPB3   0x000010       data     extern C:\MCC18\SRC\TRADIT~1\MATH\temparg.asm
+                  __tmp_0   0x000014       data     static C:\MCC18\src\TRADIT~1\stdclib\printf.c
+                  __tmp_0   0x000014       data     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __tmp_0   0x000014       data     static C:\MCC18\src\TRADIT~1\stdclib\putc.c
+                  __tmp_0   0x000014       data     static C:\FIRST\projects\3-9\source\ifi_code.c
+                  __tmp_0   0x000014       data     static C:\FIRST\projects\3-9\source\gyro.c
+                  __tmp_0   0x000014       data     static C:\FIRST\projects\Post CT Changes\source\drive.c
+                  __tmp_0   0x000014       data     static C:\FIRST\projects\4-9\source\launcher.c
+                  __tmp_0   0x000014       data     static C:\FIRST\projects\3-9\source\pid.c
+                  __tmp_0   0x000014       data     static C:\FIRST\projects\3-9\source\pwm.c
+                  __tmp_0   0x000014       data     static C:\FIRST\projects\Post CT Changes\source\disabled.c
+                  __tmp_0   0x000014       data     static C:\FIRST\projects\4-9\source\autonomous.c
+                  __tmp_0   0x000014       data     static C:\FIRST\projects\3-9\source\adc.c
+                  __tmp_0   0x000014       data     static C:\FIRST\projects\Post CT Changes\source\robot.c
+                  __tmp_0   0x000014       data     static C:\FIRST\projects\Post CT Changes\source\teleop.c
+                  __tmp_1   0x000020       data     static C:\FIRST\projects\3-9\source\adc.c
+                    accel   0x0002c0       data     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+                    accum   0x000332       data     extern C:\FIRST\projects\3-9\source\adc.c
+              accumulator   0x000079       data     extern C:\FIRST\projects\3-9\source\gyro.c
+               adc_result   0x00033a       data     extern C:\FIRST\projects\3-9\source\adc.c
+       adc_result_divisor   0x000331       data     extern C:\FIRST\projects\3-9\source\adc.c
+          adc_sample_rate   0x00032c       data     extern C:\FIRST\projects\3-9\source\adc.c
+   adc_samples_per_update   0x00032e       data     extern C:\FIRST\projects\3-9\source\adc.c
+         adc_update_count   0x000387       data     extern C:\FIRST\projects\3-9\source\adc.c
+angle_correction_denominator   0x000074       data     extern C:\FIRST\projects\3-9\source\gyro.c
+angle_correction_numerator   0x000070       data     extern C:\FIRST\projects\3-9\source\gyro.c
+            angular_gains   0x0002a4       data     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+         angular_position   0x000286       data     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+                auto_flag   0x000315       data     extern C:\FIRST\projects\4-9\source\launcher.c
+     autonomous_init_flag   0x0002fe       data     static C:\FIRST\projects\3-9\source\ifi_frc.c
+                    brake   0x000318       data     extern C:\FIRST\projects\4-9\source\launcher.c
+              brake_ticks   0x000326       data     static C:\FIRST\projects\4-9\source\launcher.c
+           brakes_engaged   0x000285       data     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+                      cal   0x0002bc       data     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+                cal_ticks   0x000329       data     static C:\FIRST\projects\4-9\source\launcher.c
+           calc_gyro_bias   0x000078       data     extern C:\FIRST\projects\3-9\source\gyro.c
+                  channel   0x000340       data     extern C:\FIRST\projects\3-9\source\adc.c
+                   cmd_dn   0x0001fd       data     extern C:\FIRST\projects\CT Day 1\source\ir.c
+              cmd_dn_flag   0x00036e       data     static C:\FIRST\projects\CT Day 1\source\ir.c
+             cmd_dn_ticks   0x00036a       data     static C:\FIRST\projects\CT Day 1\source\ir.c
+                    cmd_l   0x0001fe       data     extern C:\FIRST\projects\CT Day 1\source\ir.c
+               cmd_l_flag   0x00036f       data     static C:\FIRST\projects\CT Day 1\source\ir.c
+              cmd_l_ticks   0x00036b       data     static C:\FIRST\projects\CT Day 1\source\ir.c
+                    cmd_r   0x0001ff       data     extern C:\FIRST\projects\CT Day 1\source\ir.c
+               cmd_r_flag   0x000370       data     static C:\FIRST\projects\CT Day 1\source\ir.c
+              cmd_r_ticks   0x00036c       data     static C:\FIRST\projects\CT Day 1\source\ir.c
+                   cmd_up   0x0001fc       data     extern C:\FIRST\projects\CT Day 1\source\ir.c
+              cmd_up_flag   0x00036d       data     static C:\FIRST\projects\CT Day 1\source\ir.c
+             cmd_up_ticks   0x000369       data     static C:\FIRST\projects\CT Day 1\source\ir.c
+ compressor_override_flag   0x000372       data     extern C:\FIRST\projects\Post CT Changes\source\robot.c
+                 controls   0x000354       data     extern C:\FIRST\projects\Post CT Changes\source\robot.c
+                    count   0x00018a       data     static C:\2008 FRC\frc_library\ifi_frc_library.c
+             cur_distance   0x00037b       data     static C:\FIRST\projects\Post CT Changes\source\drive.c
+                curr_byte   0x000362       data     static C:\FIRST\projects\3-9\source\ifi_frc.c
+               curr_entry   0x000364       data     static C:\FIRST\projects\3-9\source\ifi_frc.c
+        current_auto_mode   0x000371       data     extern C:\FIRST\projects\Post CT Changes\source\robot.c
+                        d   0x0002cc       data     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+                        d   0x0001e0       data     static C:\FIRST\projects\4-9\source\autonomous.c
+                    d_cmd   0x000348       data     static C:\FIRST\projects\4-9\source\autonomous.c
+                 data_ptr   0x000366       data     static C:\FIRST\projects\3-9\source\ifi_frc.c
+              delta_error   0x0001e4       data     static C:\FIRST\projects\4-9\source\autonomous.c
+               delta_rate   0x0002d0       data     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+       disabled_init_flag   0x0002fd       data     static C:\FIRST\projects\3-9\source\ifi_frc.c
+                     done   0x000377       data     static C:\FIRST\projects\Post CT Changes\source\robot.c
+        drive_initialized   0x000284       data     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+                    error   0x0001d0       data     static C:\FIRST\projects\4-9\source\autonomous.c
+                     gear   0x000378       data     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+           good_to_launch   0x000317       data     extern C:\FIRST\projects\4-9\source\launcher.c
+               gyro_angle   0x000064       data     extern C:\FIRST\projects\3-9\source\gyro.c
+                gyro_bias   0x000060       data     extern C:\FIRST\projects\3-9\source\gyro.c
+                gyro_rate   0x000062       data     extern C:\FIRST\projects\3-9\source\gyro.c
+          home_lock_ticks   0x00032a       data     static C:\FIRST\projects\4-9\source\launcher.c
+               home_ticks   0x00032b       data     static C:\FIRST\projects\4-9\source\launcher.c
+                        i   0x000373       data     static C:\FIRST\projects\Post CT Changes\source\robot.c
+                        i   0x00037d       data     static C:\FIRST\projects\Post CT Changes\source\disabled.c
+                   inited   0x0001cf       data     static C:\FIRST\projects\4-9\source\autonomous.c
+                   ir_cmd   0x0001f8       data     static C:\FIRST\projects\4-9\source\autonomous.c
+                        j   0x00037f       data     static C:\FIRST\projects\Post CT Changes\source\disabled.c
+                        j   0x000375       data     static C:\FIRST\projects\Post CT Changes\source\robot.c
+                 joystick   0x00031e       data     static C:\FIRST\projects\4-9\source\launcher.c
+                   l_temp   0x0002d5       data     static C:\FIRST\projects\Post CT Changes\source\drive.c
+               last_error   0x0001d8       data     static C:\FIRST\projects\4-9\source\autonomous.c
+                 last_vel   0x0001ec       data     static C:\FIRST\projects\4-9\source\autonomous.c
+           last_vel_error   0x0001f4       data     static C:\FIRST\projects\4-9\source\autonomous.c
+                    latch   0x000352       data     static C:\FIRST\projects\4-9\source\autonomous.c
+             launch_stick   0x000341       data     static C:\FIRST\projects\4-9\source\autonomous.c
+                 launcher   0x000306       data     extern C:\FIRST\projects\4-9\source\launcher.c
+             launcher_pot   0x000304       data     extern C:\FIRST\projects\4-9\source\launcher.c
+         launcher_pot_old   0x00031c       data     static C:\FIRST\projects\4-9\source\launcher.c
+           launcher_ticks   0x000328       data     static C:\FIRST\projects\4-9\source\launcher.c
+      launching_from_home   0x000327       data     static C:\FIRST\projects\4-9\source\launcher.c
+            limited_value   0x000381       data     static C:\FIRST\projects\3-9\source\ifi_code.c
+             linear_gains   0x0002ae       data     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+          linear_position   0x000295       data     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+                  motor_g   0x000302       data     extern C:\FIRST\projects\4-9\source\launcher.c
+                  motor_l   0x000300       data     extern C:\FIRST\projects\4-9\source\launcher.c
+         num_adc_channels   0x000330       data     extern C:\FIRST\projects\3-9\source\adc.c
+               old_ir_cmd   0x0001fa       data     static C:\FIRST\projects\4-9\source\autonomous.c
+                 old_rate   0x0002c4       data     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+                old_wheel   0x0002d4       data     static C:\FIRST\projects\Post CT Changes\source\drive.c
+              orientation   0x000379       data     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+                      out   0x000347       data     static C:\FIRST\projects\4-9\source\autonomous.c
+            override_flag   0x00037a       data     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+                        p   0x0002c8       data     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+                        p   0x0001dc       data     static C:\FIRST\projects\4-9\source\autonomous.c
+               pot_bottom   0x000322       data     static C:\FIRST\projects\4-9\source\launcher.c
+                pot_delta   0x000324       data     static C:\FIRST\projects\4-9\source\launcher.c
+                  pot_top   0x000320       data     static C:\FIRST\projects\4-9\source\launcher.c
+                  pressed   0x000350       data     static C:\FIRST\projects\4-9\source\autonomous.c
+                     prom   0x00035f       data     static C:\FIRST\projects\3-9\source\ifi_frc.c
+                   r_temp   0x0002d6       data     static C:\FIRST\projects\Post CT Changes\source\drive.c
+                     rate   0x0002b8       data     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+rate_correction_denominator   0x00006c       data     extern C:\FIRST\projects\3-9\source\gyro.c
+rate_correction_numerator   0x000068       data     extern C:\FIRST\projects\3-9\source\gyro.c
+                    rxPtr   0x000182       data     static C:\2008 FRC\frc_library\ifi_frc_library.c
+                   rxdata   0x0001ac       data     extern C:\2008 FRC\frc_library\ifi_frc_library.c
+                rxferbufr   0x000188       data     static C:\2008 FRC\frc_library\ifi_frc_library.c
+                  samples   0x00033e       data     extern C:\FIRST\projects\3-9\source\adc.c
+                    speed   0x000343       data     static C:\FIRST\projects\4-9\source\autonomous.c
+                    state   0x00031a       data     static C:\FIRST\projects\4-9\source\launcher.c
+                    state   0x000345       data     static C:\FIRST\projects\4-9\source\autonomous.c
+               statusflag   0x0001cc       data     extern C:\2008 FRC\frc_library\ifi_frc_library.c
+                   stdout   0x000383       data     extern C:\MCC18\src\TRADIT~1\stdclib\stdout.c
+       stdout_serial_port   0x0002d7       data     extern C:\FIRST\projects\3-9\source\serial_ports.c
+                  stopped   0x000349       data     static C:\FIRST\projects\4-9\source\autonomous.c
+                sum_error   0x0001d4       data     static C:\FIRST\projects\4-9\source\autonomous.c
+         teleop_init_flag   0x0002ff       data     static C:\FIRST\projects\3-9\source\ifi_frc.c
+                     temp   0x00018b       data     static C:\2008 FRC\frc_library\ifi_frc_library.c
+                    ticks   0x000316       data     extern C:\FIRST\projects\4-9\source\launcher.c
+                    ticks   0x0000fd       data     static C:\FIRST\projects\Post CT Changes\source\teleop.c
+                    ticks   0x00034e       data     static C:\FIRST\projects\4-9\source\autonomous.c
+                   tilter   0x000319       data     extern C:\FIRST\projects\4-9\source\launcher.c
+                   turn_r   0x0001cd       data     static C:\FIRST\projects\4-9\source\autonomous.c
+               turn_ticks   0x00034a       data     static C:\FIRST\projects\4-9\source\autonomous.c
+                    txPtr   0x000184       data     static C:\2008 FRC\frc_library\ifi_frc_library.c
+                   txdata   0x00018c       data     extern C:\2008 FRC\frc_library\ifi_frc_library.c
+                txferbufr   0x000186       data     static C:\2008 FRC\frc_library\ifi_frc_library.c
+                      vel   0x0001e8       data     static C:\FIRST\projects\4-9\source\autonomous.c
+                vel_error   0x0001f0       data     static C:\FIRST\projects\4-9\source\autonomous.c
+                  wheel_l   0x000280       data     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+                  wheel_r   0x000282       data     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+                 xferbufr   0x000180       data     static C:\2008 FRC\frc_library\ifi_frc_library.c
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                   _entry   0x000800    program     extern C:\FIRST\projects\3-9\source\ifi_frc.c
+       ___return_lbl00029   0x000804    program     static                          
+    Interrupt_Vector_High   0x000808    program     extern C:\2008 FRC\frc_library\ifi_frc_library.c
+       ___return_lbl00058   0x00080c    program     static                          
+     Interrupt_Vector_Low   0x000818    program     extern C:\FIRST\projects\3-9\source\ifi_frc.c
+       ___return_lbl00013   0x00081c    program     static                          
+            s_put_n_chars   0x0008b0    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                 vfprintf   0x0008dc    program     extern C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+              __tmplbl_85   0x000906    program     static                          
+              __tmplbl_44   0x0011b4    program     static                          
+              __tmplbl_43   0x0011ce    program     static                          
+                   __pa_0   0x0011f0    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                   __pa_1   0x0011f8    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                   __pa_2   0x001202    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                   __pa_3   0x00120c    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                   __pa_4   0x001224    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                   __pa_5   0x001238    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                   __pa_6   0x001254    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                   __pa_7   0x00125e    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                   __pa_8   0x00126a    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                   __pa_9   0x00128c    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_10   0x0012ac    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_11   0x0012ba    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_12   0x0012d0    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_13   0x0012ea    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_14   0x001302    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_15   0x001312    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_16   0x001328    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_17   0x00133a    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_18   0x00134c    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_19   0x001356    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_20   0x001366    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_21   0x001376    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+              __tmplbl_42   0x001386    program     static                          
+                  __pa_22   0x001386    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_23   0x001392    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_24   0x0013a0    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_25   0x0013a8    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_26   0x0013b2    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_27   0x0013bc    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_28   0x0013c4    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_29   0x0013d2    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_30   0x0013ee    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_31   0x001408    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_32   0x001422    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_33   0x00143a    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_34   0x001444    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_35   0x001452    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_36   0x00145a    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_37   0x001464    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_38   0x001474    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_39   0x001482    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_40   0x00148e    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_41   0x00149a    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_42   0x0014a2    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_43   0x0014ac    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_44   0x0014b2    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_45   0x0014bc    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __pa_46   0x0014c8    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+         Initialize_Drive   0x0014d2    program     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+   ResetDriveDependancies   0x001584    program     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+                TankDrive   0x001590    program     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+                    Drive   0x0016a2    program     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+        DifferentialDrive   0x00181e    program     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+                 ShiftLow   0x00196e    program     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+                ShiftHigh   0x001974    program     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+              SwitchGears   0x00197c    program     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+               SwitchGear   0x00198c    program     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+           OrientationFwd   0x0019a2    program     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+           OrientationRev   0x0019aa    program     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+            TurnToHeading   0x0019b0    program     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+            DriveStraight   0x001a8e    program     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+            DriveDistance   0x001af2    program     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+      Human_Brake_Handler   0x001c02    program     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+             EngageBrakes   0x001c1a    program     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+               StopBrakes   0x001c22    program     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+               LimitSpeed   0x001c28    program     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+            DriveOverride   0x001cca    program     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+             DriveHandler   0x001cd2    program     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+       IFI_Initialization   0x001d6c    program     extern C:\2008 FRC\frc_library\ifi_frc_library.c
+     Initialize_Registers   0x001de6    program     extern C:\2008 FRC\frc_library\ifi_frc_library.c
+       User_Proc_Is_Ready   0x001e52    program     extern C:\2008 FRC\frc_library\ifi_frc_library.c
+                  Getdata   0x001e5c    program     extern C:\2008 FRC\frc_library\ifi_frc_library.c
+                  Putdata   0x001ece    program     extern C:\2008 FRC\frc_library\ifi_frc_library.c
+       Clear_SPIdata_flag   0x001f88    program     extern C:\2008 FRC\frc_library\ifi_frc_library.c
+      Configuration_Check   0x001f92    program     extern C:\2008 FRC\frc_library\ifi_frc_library.c
+   Interrupt_Handler_High   0x00236c    program     extern C:\2008 FRC\frc_library\ifi_frc_library.c
+      Launcher_Autonomous   0x002440    program     extern C:\FIRST\projects\4-9\source\launcher.c
+         Launcher_Handler   0x002466    program     extern C:\FIRST\projects\4-9\source\launcher.c
+               SetGripper   0x0024b6    program     extern C:\FIRST\projects\4-9\source\launcher.c
+   Launcher_State_Machine   0x0024d2    program     extern C:\FIRST\projects\4-9\source\launcher.c
+             ToggleTilter   0x00293a    program     extern C:\FIRST\projects\4-9\source\launcher.c
+                SetTilter   0x00294a    program     extern C:\FIRST\projects\4-9\source\launcher.c
+                OpenBrake   0x002972    program     extern C:\FIRST\projects\4-9\source\launcher.c
+               CloseBrake   0x002978    program     extern C:\FIRST\projects\4-9\source\launcher.c
+      Initialize_Launcher   0x00297e    program     extern C:\FIRST\projects\4-9\source\launcher.c
+                      abs   0x0029aa    program     extern C:\FIRST\projects\Post CT Changes\source\robot.c
+            Get_Auto_Mode   0x0029fa    program     extern C:\FIRST\projects\Post CT Changes\source\robot.c
+                LimitChar   0x002a02    program     extern C:\FIRST\projects\Post CT Changes\source\robot.c
+   Auto_Selection_Handler   0x002a90    program     extern C:\FIRST\projects\Post CT Changes\source\robot.c
+           Button_Handler   0x002ada    program     extern C:\FIRST\projects\Post CT Changes\source\robot.c
+      Calculate_Gyro_Bias   0x002d60    program     extern C:\FIRST\projects\Post CT Changes\source\robot.c
+        Enable_Compressor   0x002eae    program     extern C:\FIRST\projects\Post CT Changes\source\robot.c
+      Compressor_Override   0x002eb4    program     extern C:\FIRST\projects\Post CT Changes\source\robot.c
+       Compressor_Handler   0x002ebc    program     extern C:\FIRST\projects\Post CT Changes\source\robot.c
+   Disable_Drive_Encoders   0x002ed4    program     extern C:\FIRST\projects\Post CT Changes\source\robot.c
+        Disable_Encoder_1   0x002eda    program     extern C:\FIRST\projects\Post CT Changes\source\robot.c
+        Disable_Encoder_2   0x002ede    program     extern C:\FIRST\projects\Post CT Changes\source\robot.c
+      Disable_Encoder_3_6   0x002ee2    program     extern C:\FIRST\projects\Post CT Changes\source\robot.c
+          Default_Routine   0x002ee6    program     extern C:\FIRST\projects\3-9\source\ifi_code.c
+           Update_OI_LEDs   0x0031d8    program     extern C:\FIRST\projects\3-9\source\ifi_code.c
+         Limit_Switch_Max   0x003330    program     extern C:\FIRST\projects\3-9\source\ifi_code.c
+         Limit_Switch_Min   0x003368    program     extern C:\FIRST\projects\3-9\source\ifi_code.c
+                Limit_Mix   0x0033a4    program     extern C:\FIRST\projects\3-9\source\ifi_code.c
+                   GetPID   0x003420    program     extern C:\FIRST\projects\3-9\source\pid.c
+                  InitPID   0x003882    program     extern C:\FIRST\projects\3-9\source\pid.c
+          Initialize_Gyro   0x003942    program     extern C:\FIRST\projects\3-9\source\gyro.c
+            Get_Gyro_Rate   0x00397e    program     extern C:\FIRST\projects\3-9\source\gyro.c
+           Get_Gyro_Angle   0x003a8e    program     extern C:\FIRST\projects\3-9\source\gyro.c
+     Start_Gyro_Bias_Calc   0x003b8c    program     extern C:\FIRST\projects\3-9\source\gyro.c
+      Stop_Gyro_Bias_Calc   0x003ba8    program     extern C:\FIRST\projects\3-9\source\gyro.c
+     Get_Gyro_Bias_Status   0x003c20    program     extern C:\FIRST\projects\3-9\source\gyro.c
+            Get_Gyro_Bias   0x003c28    program     extern C:\FIRST\projects\3-9\source\gyro.c
+            Set_Gyro_Bias   0x003c34    program     extern C:\FIRST\projects\3-9\source\gyro.c
+         Reset_Gyro_Angle   0x003c50    program     extern C:\FIRST\projects\3-9\source\gyro.c
+        Process_Gyro_Data   0x003c5c    program     extern C:\FIRST\projects\3-9\source\gyro.c
+                 FLO0832U   0x003d56    program     extern C:\MCC18\SRC\TRADIT~1\MATH\cast08FP.asm
+                 FLO0832S   0x003d5a    program     extern C:\MCC18\SRC\TRADIT~1\MATH\cast08FP.asm
+                jI2F08Beg   0x003d64    program     static C:\MCC18\SRC\TRADIT~1\MATH\cast08FP.asm
+                    FPD32   0x003d78    program     extern C:\MCC18\SRC\TRADIT~1\MATH\divFP.asm
+                 jANotInf   0x003d96    program     static C:\MCC18\SRC\TRADIT~1\MATH\divFP.asm
+              jSignedZero   0x003da0    program     static C:\MCC18\SRC\TRADIT~1\MATH\divFP.asm
+                jANotZero   0x003daa    program     static C:\MCC18\SRC\TRADIT~1\MATH\divFP.asm
+                    jLoop   0x003dd2    program     static C:\MCC18\SRC\TRADIT~1\MATH\divFP.asm
+                jNoAdjust   0x003df6    program     static C:\MCC18\SRC\TRADIT~1\MATH\divFP.asm
+                    jNext   0x003df8    program     static C:\MCC18\SRC\TRADIT~1\MATH\divFP.asm
+                    FPM32   0x003e1e    program     extern C:\MCC18\SRC\TRADIT~1\MATH\mulFP.asm
+                 jANotInf   0x003e3c    program     static C:\MCC18\SRC\TRADIT~1\MATH\mulFP.asm
+              jBothFinite   0x003e4a    program     static C:\MCC18\SRC\TRADIT~1\MATH\mulFP.asm
+                jHaveZero   0x003e52    program     static C:\MCC18\SRC\TRADIT~1\MATH\mulFP.asm
+             jBothNotZero   0x003e56    program     static C:\MCC18\SRC\TRADIT~1\MATH\mulFP.asm
+                 FXD1616S   0x003ef8    program     extern C:\MCC18\SRC\TRADIT~1\MATH\fxd1616s.asm
+                  DA1616S   0x003f0a    program     static C:\MCC18\SRC\TRADIT~1\MATH\fxd1616s.asm
+                   D1616S   0x003f1a    program     static C:\MCC18\SRC\TRADIT~1\MATH\fxd1616s.asm
+                 D1616SOK   0x003f24    program     static C:\MCC18\SRC\TRADIT~1\MATH\fxd1616s.asm
+                D1616SNEG   0x003f28    program     static C:\MCC18\SRC\TRADIT~1\MATH\fxd1616s.asm
+                  D1616SX   0x003f3a    program     static C:\MCC18\SRC\TRADIT~1\MATH\fxd1616s.asm
+                 FXD3232S   0x003f44    program     extern C:\MCC18\SRC\TRADIT~1\MATH\fxd3232s.asm
+                  DA3232S   0x003f5e    program     static C:\MCC18\SRC\TRADIT~1\MATH\fxd3232s.asm
+                   D3232S   0x003f74    program     static C:\MCC18\SRC\TRADIT~1\MATH\fxd3232s.asm
+                 D3232SOK   0x003f7e    program     static C:\MCC18\SRC\TRADIT~1\MATH\fxd3232s.asm
+                D3232SNEG   0x003f82    program     static C:\MCC18\SRC\TRADIT~1\MATH\fxd3232s.asm
+                  D3232SX   0x003fa2    program     static C:\MCC18\SRC\TRADIT~1\MATH\fxd3232s.asm
+                 FXM1616S   0x003fac    program     extern C:\MCC18\SRC\TRADIT~1\MATH\fxm1616s.asm
+               TSIGN1616A   0x003ff8    program     static C:\MCC18\SRC\TRADIT~1\MATH\fxm1616s.asm
+                  INT3208   0x004006    program     extern C:\MCC18\SRC\TRADIT~1\MATH\castFP08.asm
+                     jMax   0x004016    program     static C:\MCC18\SRC\TRADIT~1\MATH\castFP08.asm
+                  jMaxPos   0x00401a    program     static C:\MCC18\SRC\TRADIT~1\MATH\castFP08.asm
+                  jMaxNeg   0x004020    program     static C:\MCC18\SRC\TRADIT~1\MATH\castFP08.asm
+                    jZero   0x004026    program     static C:\MCC18\SRC\TRADIT~1\MATH\castFP08.asm
+                  jNotInf   0x00402a    program     static C:\MCC18\SRC\TRADIT~1\MATH\castFP08.asm
+                    jLoop   0x00403a    program     static C:\MCC18\SRC\TRADIT~1\MATH\castFP08.asm
+                jLoopExit   0x004048    program     static C:\MCC18\SRC\TRADIT~1\MATH\castFP08.asm
+                    jExit   0x004052    program     static C:\MCC18\SRC\TRADIT~1\MATH\castFP08.asm
+            __FpReturnNaN   0x004054    program     extern C:\MCC18\SRC\TRADIT~1\MATH\packFP.asm
+                 __FpExit   0x004060    program     extern C:\MCC18\SRC\TRADIT~1\MATH\packFP.asm
+        __FpReturnSignInf   0x004062    program     extern C:\MCC18\SRC\TRADIT~1\MATH\packFP.asm
+         __FpReturnNegInf   0x004066    program     extern C:\MCC18\SRC\TRADIT~1\MATH\packFP.asm
+         __FpReturnPosInf   0x00406c    program     extern C:\MCC18\SRC\TRADIT~1\MATH\packFP.asm
+           jReturnPosInf0   0x004070    program     static C:\MCC18\SRC\TRADIT~1\MATH\packFP.asm
+               jZero1and2   0x004074    program     static C:\MCC18\SRC\TRADIT~1\MATH\packFP.asm
+       __FpReturnSignZero   0x00407a    program     extern C:\MCC18\SRC\TRADIT~1\MATH\packFP.asm
+        __FpReturnNegZero   0x00407e    program     extern C:\MCC18\SRC\TRADIT~1\MATH\packFP.asm
+        __FpReturnPosZero   0x004086    program     extern C:\MCC18\SRC\TRADIT~1\MATH\packFP.asm
+                 __FpPack   0x00408c    program     extern C:\MCC18\SRC\TRADIT~1\MATH\packFP.asm
+                  jPkLoop   0x00409a    program     static C:\MCC18\SRC\TRADIT~1\MATH\packFP.asm
+             jPkShiftDone   0x0040b6    program     static C:\MCC18\SRC\TRADIT~1\MATH\packFP.asm
+               jPkRoundIt   0x0040cc    program     static C:\MCC18\SRC\TRADIT~1\MATH\packFP.asm
+              __FpReturnW   0x0040e4    program     extern C:\MCC18\SRC\TRADIT~1\MATH\packFP.asm
+             jPkRoundDone   0x0040e4    program     static C:\MCC18\SRC\TRADIT~1\MATH\packFP.asm
+              __FpUnPackA   0x004104    program     extern C:\MCC18\SRC\TRADIT~1\MATH\UnpackFP.asm
+                  jUnpkA1   0x00410e    program     static C:\MCC18\SRC\TRADIT~1\MATH\UnpackFP.asm
+                 jUnpkANZ   0x00411c    program     static C:\MCC18\SRC\TRADIT~1\MATH\UnpackFP.asm
+                  jUnpkA2   0x004126    program     static C:\MCC18\SRC\TRADIT~1\MATH\UnpackFP.asm
+                 jUnpkNaN   0x004130    program     static C:\MCC18\SRC\TRADIT~1\MATH\UnpackFP.asm
+              __FpUnPackB   0x004134    program     extern C:\MCC18\SRC\TRADIT~1\MATH\UnpackFP.asm
+                  jUnpkB1   0x00413e    program     static C:\MCC18\SRC\TRADIT~1\MATH\UnpackFP.asm
+                 jUnpkBNZ   0x00414c    program     static C:\MCC18\SRC\TRADIT~1\MATH\UnpackFP.asm
+                  jUnpkB2   0x004156    program     static C:\MCC18\SRC\TRADIT~1\MATH\UnpackFP.asm
+           Initialize_ADC   0x004160    program     extern C:\FIRST\projects\3-9\source\adc.c
+              Disable_ADC   0x004246    program     extern C:\FIRST\projects\3-9\source\adc.c
+           Get_ADC_Result   0x004260    program     extern C:\FIRST\projects\3-9\source\adc.c
+        Convert_ADC_to_mV   0x0042ca    program     extern C:\FIRST\projects\3-9\source\adc.c
+     Get_ADC_Result_Count   0x004352    program     extern C:\FIRST\projects\3-9\source\adc.c
+   Reset_ADC_Result_Count   0x004372    program     extern C:\FIRST\projects\3-9\source\adc.c
+              Timer_4_ISR   0x00437c    program     extern C:\FIRST\projects\3-9\source\adc.c
+     Init_Serial_Port_One   0x0044ec    program     extern C:\FIRST\projects\3-9\source\serial_ports.c
+     Init_Serial_Port_Two   0x004576    program     extern C:\FIRST\projects\3-9\source\serial_ports.c
+Serial_Port_One_Byte_Count   0x004600    program     extern C:\FIRST\projects\3-9\source\serial_ports.c
+Serial_Port_Two_Byte_Count   0x004620    program     extern C:\FIRST\projects\3-9\source\serial_ports.c
+     Read_Serial_Port_One   0x004640    program     extern C:\FIRST\projects\3-9\source\serial_ports.c
+     Read_Serial_Port_Two   0x00468c    program     extern C:\FIRST\projects\3-9\source\serial_ports.c
+    Write_Serial_Port_One   0x0046d8    program     extern C:\FIRST\projects\3-9\source\serial_ports.c
+    Write_Serial_Port_Two   0x00471a    program     extern C:\FIRST\projects\3-9\source\serial_ports.c
+                 Rx_1_ISR   0x00475c    program     extern C:\FIRST\projects\3-9\source\serial_ports.c
+                 Rx_2_ISR   0x00479a    program     extern C:\FIRST\projects\3-9\source\serial_ports.c
+                 Tx_1_ISR   0x0047d8    program     extern C:\FIRST\projects\3-9\source\serial_ports.c
+                 Tx_2_ISR   0x004808    program     extern C:\FIRST\projects\3-9\source\serial_ports.c
+               _user_putc   0x004838    program     extern C:\FIRST\projects\3-9\source\serial_ports.c
+          Autonomous_Init   0x00486e    program     extern C:\FIRST\projects\4-9\source\autonomous.c
+               Autonomous   0x004870    program     extern C:\FIRST\projects\4-9\source\autonomous.c
+          Autonomous_Spin   0x004be0    program     extern C:\FIRST\projects\4-9\source\autonomous.c
+                     main   0x004bec    program     extern C:\FIRST\projects\3-9\source\ifi_frc.c
+    Interrupt_Handler_Low   0x004d44    program     extern C:\FIRST\projects\3-9\source\ifi_frc.c
+     Initialize_Encoder_1   0x004e22    program     extern C:\FIRST\projects\3-9\source\encoder.c
+     Initialize_Encoder_2   0x004e2e    program     extern C:\FIRST\projects\3-9\source\encoder.c
+   Initialize_Encoder_3_6   0x004e3a    program     extern C:\FIRST\projects\3-9\source\encoder.c
+      Get_Encoder_1_Count   0x004e4a    program     extern C:\FIRST\projects\3-9\source\encoder.c
+    Reset_Encoder_1_Count   0x004e9a    program     extern C:\FIRST\projects\3-9\source\encoder.c
+                Int_1_ISR   0x004eaa    program     extern C:\FIRST\projects\3-9\source\encoder.c
+      Get_Encoder_2_Count   0x004eca    program     extern C:\FIRST\projects\3-9\source\encoder.c
+    Reset_Encoder_2_Count   0x004f1a    program     extern C:\FIRST\projects\3-9\source\encoder.c
+                Int_2_ISR   0x004f2a    program     extern C:\FIRST\projects\3-9\source\encoder.c
+      Get_Encoder_3_Count   0x004f4a    program     extern C:\FIRST\projects\3-9\source\encoder.c
+    Reset_Encoder_3_Count   0x004f9a    program     extern C:\FIRST\projects\3-9\source\encoder.c
+                Int_3_ISR   0x004faa    program     extern C:\FIRST\projects\3-9\source\encoder.c
+            Disabled_Init   0x004ff8    program     extern C:\FIRST\projects\Post CT Changes\source\disabled.c
+                 Disabled   0x004ffa    program     extern C:\FIRST\projects\Post CT Changes\source\disabled.c
+            Disabled_Spin   0x0051b8    program     extern C:\FIRST\projects\Post CT Changes\source\disabled.c
+               __string_0   0x0051c4    program     static C:\FIRST\projects\4-9\source\autonomous.c
+               __string_5   0x0051d1    program     static C:\FIRST\projects\Post CT Changes\source\disabled.c
+               __string_4   0x0051ef    program     static C:\FIRST\projects\Post CT Changes\source\disabled.c
+               __string_3   0x005226    program     static C:\FIRST\projects\Post CT Changes\source\disabled.c
+               __string_2   0x005236    program     static C:\FIRST\projects\Post CT Changes\source\disabled.c
+               __string_1   0x005245    program     static C:\FIRST\projects\Post CT Changes\source\disabled.c
+               __string_0   0x005254    program     static C:\FIRST\projects\Post CT Changes\source\disabled.c
+               __string_0   0x005271    program     static C:\FIRST\projects\4-9\source\launcher.c
+               __string_4   0x0052b7    program     static C:\FIRST\projects\Post CT Changes\source\robot.c
+               __string_3   0x0052c9    program     static C:\FIRST\projects\Post CT Changes\source\robot.c
+               __string_2   0x0052d9    program     static C:\FIRST\projects\Post CT Changes\source\robot.c
+               __string_1   0x0052e9    program     static C:\FIRST\projects\Post CT Changes\source\robot.c
+               __string_0   0x0052ef    program     static C:\FIRST\projects\Post CT Changes\source\robot.c
+               __string_1   0x005309    program     static C:\FIRST\projects\Post CT Changes\source\teleop.c
+               __string_0   0x00532e    program     static C:\FIRST\projects\Post CT Changes\source\teleop.c
+           Initialize_PWM   0x00533c    program     extern C:\FIRST\projects\3-9\source\pwm.c
+                      PWM   0x005354    program     extern C:\FIRST\projects\3-9\source\pwm.c
+                _do_cinit   0x0054a0    program     extern C:\FIRST\projects\3-9\source\ifi_frc.c
+                zero_test   0x0054ba    program     static                          
+                get_entry   0x0054c2    program     static                          
+                copy_loop   0x005512    program     static                          
+            copy_one_byte   0x005518    program     static                          
+             done_copying   0x005526    program     static                          
+       ___return_lbl00031   0x00553c    program     static                          
+                     done   0x00553c    program     static                          
+            Reset_Outputs   0x00553e    program     extern C:\FIRST\projects\3-9\source\ifi_frc.c
+           Initialization   0x005584    program     extern C:\FIRST\projects\Post CT Changes\source\teleop.c
+              Teleop_Init   0x005602    program     extern C:\FIRST\projects\Post CT Changes\source\teleop.c
+                   Teleop   0x005604    program     extern C:\FIRST\projects\Post CT Changes\source\teleop.c
+              Teleop_Spin   0x00565c    program     extern C:\FIRST\projects\Post CT Changes\source\teleop.c
+            Get_IR_Result   0x005668    program     extern C:\FIRST\projects\CT Day 1\source\ir.c
+                   printf   0x005712    program     extern C:\MCC18\src\TRADIT~1\stdclib\printf.c
+                     putc   0x0057aa    program     extern C:\MCC18\src\TRADIT~1\stdclib\putc.c
+                  FXM3232   0x00582e    program     extern C:\MCC18\src\TRADIT~1\math\fxm3232.c
+       ___return_lbl00000   0x00589c    program     static                          
+                   strlen   0x00589e    program     extern C:\MCC18\SRC\TRADIT~1\STDCLIB\strlen.asm
+                    jLoop   0x0058ae    program     static C:\MCC18\SRC\TRADIT~1\STDCLIB\strlen.asm
+                     jEnd   0x0058b8    program     static C:\MCC18\SRC\TRADIT~1\STDCLIB\strlen.asm
+                strlenpgm   0x0058ba    program     extern C:\MCC18\SRC\TRADIT~1\STDCLIB\slenpgm.asm
+                    jLoop   0x0058d8    program     static C:\MCC18\SRC\TRADIT~1\STDCLIB\slenpgm.asm
+                   _2jEnd   0x0058ee    program     static C:\MCC18\SRC\TRADIT~1\STDCLIB\slenpgm.asm
+                     jEnd   0x0058f0    program     static C:\MCC18\SRC\TRADIT~1\STDCLIB\slenpgm.asm
+                 FXD3232U   0x005904    program     extern C:\MCC18\src\TRADIT~1\math\fxd3232u.c
+                     loop   0x005912    program     static                          
+                   _false   0x005946    program     static                          
+       ___return_lbl00000   0x00594a    program     static                          
+                copyright   0x00594c    program     extern C:\2008 FRC\frc_library\ifi_frc_library.c
+                 FXD1616U   0x005986    program     extern C:\MCC18\src\TRADIT~1\math\fxd1616u.c
+                     loop   0x005990    program     static                          
+                  endloop   0x0059ac    program     static                          
+       ___return_lbl00000   0x0059b0    program     static                          
+                 _startup   0x0059b2    program     extern C:\FIRST\projects\3-9\source\ifi_frc.c
+               clear_loop   0x0059c4    program     static                          
+                     loop   0x0059ce    program     static                          
+       ___return_lbl00030   0x0059d4    program     static                          
+                  isdigit   0x0059d6    program     extern C:\MCC18\SRC\TRADIT~1\STDCLIB\isdigit.asm
+                   jMatch   0x0059f6    program     static C:\MCC18\SRC\TRADIT~1\STDCLIB\isdigit.asm
+                 jNoMatch   0x0059f8    program     static C:\MCC18\SRC\TRADIT~1\STDCLIB\isdigit.asm
+              _usart_putc   0x0059fa    program     extern C:\MCC18\SRC\TRADIT~1\PMC\USART\_usartpc.asm
+                     loop   0x005a0a    program     static C:\MCC18\SRC\TRADIT~1\PMC\USART\_usartpc.asm
+                 s_digits   0x005a16    program     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+               __config_0   0x300001    program     static C:\2008 FRC\frc_library\ifi_frc_library.c
+               __config_1   0x300002    program     static C:\2008 FRC\frc_library\ifi_frc_library.c
+               __config_2   0x300003    program     static C:\2008 FRC\frc_library\ifi_frc_library.c
+               __config_3   0x300004    program     static C:\2008 FRC\frc_library\ifi_frc_library.c
+               __config_4   0x300005    program     static C:\2008 FRC\frc_library\ifi_frc_library.c
+               __config_5   0x300006    program     static C:\2008 FRC\frc_library\ifi_frc_library.c
+               __config_6   0x300008    program     static C:\2008 FRC\frc_library\ifi_frc_library.c
+               __config_7   0x300009    program     static C:\2008 FRC\frc_library\ifi_frc_library.c
+               __config_8   0x30000a    program     static C:\2008 FRC\frc_library\ifi_frc_library.c
+               __config_9   0x30000b    program     static C:\2008 FRC\frc_library\ifi_frc_library.c
+              __config_10   0x30000c    program     static C:\2008 FRC\frc_library\ifi_frc_library.c
+              __config_11   0x30000d    program     static C:\2008 FRC\frc_library\ifi_frc_library.c
+                     SIGN   0x000000       data     extern C:\MCC18\SRC\TRADIT~1\MATH\cmath18.asm
+            __FPFLAGSbits   0x000001       data     extern C:\MCC18\SRC\TRADIT~1\MATH\cmath18.asm
+                __FPFLAGS   0x000001       data     extern C:\MCC18\SRC\TRADIT~1\MATH\cmath18.asm
+                  __REMB3   0x000002       data     extern C:\MCC18\SRC\TRADIT~1\MATH\aarg.asm
+                 __AARGB7   0x000002       data     extern C:\MCC18\SRC\TRADIT~1\MATH\aarg.asm
+                  __REMB2   0x000003       data     extern C:\MCC18\SRC\TRADIT~1\MATH\aarg.asm
+                 __AARGB6   0x000003       data     extern C:\MCC18\SRC\TRADIT~1\MATH\aarg.asm
+                  __REMB1   0x000004       data     extern C:\MCC18\SRC\TRADIT~1\MATH\aarg.asm
+                 __AARGB5   0x000004       data     extern C:\MCC18\SRC\TRADIT~1\MATH\aarg.asm
+                  __REMB0   0x000005       data     extern C:\MCC18\SRC\TRADIT~1\MATH\aarg.asm
+                 __AARGB4   0x000005       data     extern C:\MCC18\SRC\TRADIT~1\MATH\aarg.asm
+                 __AARGB3   0x000006       data     extern C:\MCC18\SRC\TRADIT~1\MATH\aarg.asm
+                 __AARGB2   0x000007       data     extern C:\MCC18\SRC\TRADIT~1\MATH\aarg.asm
+                 __AARGB1   0x000008       data     extern C:\MCC18\SRC\TRADIT~1\MATH\aarg.asm
+                 __AARGB0   0x000009       data     extern C:\MCC18\SRC\TRADIT~1\MATH\aarg.asm
+                   __AEXP   0x00000a       data     extern C:\MCC18\SRC\TRADIT~1\MATH\aarg.asm
+                 __BARGB3   0x00000b       data     extern C:\MCC18\SRC\TRADIT~1\MATH\barg.asm
+                 __BARGB2   0x00000c       data     extern C:\MCC18\SRC\TRADIT~1\MATH\barg.asm
+                 __BARGB1   0x00000d       data     extern C:\MCC18\SRC\TRADIT~1\MATH\barg.asm
+                 __BARGB0   0x00000e       data     extern C:\MCC18\SRC\TRADIT~1\MATH\barg.asm
+                   __BEXP   0x00000f       data     extern C:\MCC18\SRC\TRADIT~1\MATH\barg.asm
+                 __TEMPB3   0x000010       data     extern C:\MCC18\SRC\TRADIT~1\MATH\temparg.asm
+                 __TEMPB2   0x000011       data     extern C:\MCC18\SRC\TRADIT~1\MATH\temparg.asm
+                 __TEMPB1   0x000012       data     extern C:\MCC18\SRC\TRADIT~1\MATH\temparg.asm
+                   __TEMP   0x000013       data     extern C:\MCC18\SRC\TRADIT~1\MATH\temparg.asm
+                 __TEMPB0   0x000013       data     extern C:\MCC18\SRC\TRADIT~1\MATH\temparg.asm
+                  __tmp_0   0x000014       data     static C:\FIRST\projects\Post CT Changes\source\teleop.c
+                  __tmp_0   0x000014       data     static C:\FIRST\projects\Post CT Changes\source\robot.c
+                  __tmp_0   0x000014       data     static C:\FIRST\projects\3-9\source\adc.c
+                  __tmp_0   0x000014       data     static C:\FIRST\projects\4-9\source\autonomous.c
+                  __tmp_0   0x000014       data     static C:\FIRST\projects\Post CT Changes\source\disabled.c
+                  __tmp_0   0x000014       data     static C:\FIRST\projects\3-9\source\pwm.c
+                  __tmp_0   0x000014       data     static C:\FIRST\projects\3-9\source\pid.c
+                  __tmp_0   0x000014       data     static C:\FIRST\projects\4-9\source\launcher.c
+                  __tmp_0   0x000014       data     static C:\MCC18\src\TRADIT~1\stdclib\printf.c
+                  __tmp_0   0x000014       data     static C:\MCC18\src\TRADIT~1\stdclib\vfprintf.c
+                  __tmp_0   0x000014       data     static C:\MCC18\src\TRADIT~1\stdclib\putc.c
+                  __tmp_0   0x000014       data     static C:\FIRST\projects\3-9\source\ifi_code.c
+                  __tmp_0   0x000014       data     static C:\FIRST\projects\3-9\source\gyro.c
+                  __tmp_0   0x000014       data     static C:\FIRST\projects\Post CT Changes\source\drive.c
+                  __tmp_1   0x000020       data     static C:\FIRST\projects\3-9\source\adc.c
+                gyro_bias   0x000060       data     extern C:\FIRST\projects\3-9\source\gyro.c
+                gyro_rate   0x000062       data     extern C:\FIRST\projects\3-9\source\gyro.c
+               gyro_angle   0x000064       data     extern C:\FIRST\projects\3-9\source\gyro.c
+rate_correction_numerator   0x000068       data     extern C:\FIRST\projects\3-9\source\gyro.c
+rate_correction_denominator   0x00006c       data     extern C:\FIRST\projects\3-9\source\gyro.c
+angle_correction_numerator   0x000070       data     extern C:\FIRST\projects\3-9\source\gyro.c
+angle_correction_denominator   0x000074       data     extern C:\FIRST\projects\3-9\source\gyro.c
+           calc_gyro_bias   0x000078       data     extern C:\FIRST\projects\3-9\source\gyro.c
+              accumulator   0x000079       data     extern C:\FIRST\projects\3-9\source\gyro.c
+               Gyro_Queue   0x00007d       data     extern C:\FIRST\projects\3-9\source\gyro.c
+                    ticks   0x0000fd       data     static C:\FIRST\projects\Post CT Changes\source\teleop.c
+          Encoder_3_State   0x0000ff       data     extern C:\FIRST\projects\3-9\source\encoder.c
+          SPI_Tx_Buffer_0   0x000100       data     extern C:\2008 FRC\frc_library\ifi_frc_library.c
+          SPI_Tx_Buffer_1   0x000120       data     extern C:\2008 FRC\frc_library\ifi_frc_library.c
+          SPI_Rx_Buffer_0   0x000140       data     extern C:\2008 FRC\frc_library\ifi_frc_library.c
+          SPI_Rx_Buffer_1   0x000160       data     extern C:\2008 FRC\frc_library\ifi_frc_library.c
+                 xferbufr   0x000180       data     static C:\2008 FRC\frc_library\ifi_frc_library.c
+                    rxPtr   0x000182       data     static C:\2008 FRC\frc_library\ifi_frc_library.c
+                    txPtr   0x000184       data     static C:\2008 FRC\frc_library\ifi_frc_library.c
+                txferbufr   0x000186       data     static C:\2008 FRC\frc_library\ifi_frc_library.c
+                rxferbufr   0x000188       data     static C:\2008 FRC\frc_library\ifi_frc_library.c
+                    count   0x00018a       data     static C:\2008 FRC\frc_library\ifi_frc_library.c
+                     temp   0x00018b       data     static C:\2008 FRC\frc_library\ifi_frc_library.c
+                   txdata   0x00018c       data     extern C:\2008 FRC\frc_library\ifi_frc_library.c
+                   rxdata   0x0001ac       data     extern C:\2008 FRC\frc_library\ifi_frc_library.c
+               statusflag   0x0001cc       data     extern C:\2008 FRC\frc_library\ifi_frc_library.c
+                   turn_r   0x0001cd       data     static C:\FIRST\projects\4-9\source\autonomous.c
+                   inited   0x0001cf       data     static C:\FIRST\projects\4-9\source\autonomous.c
+                    error   0x0001d0       data     static C:\FIRST\projects\4-9\source\autonomous.c
+                sum_error   0x0001d4       data     static C:\FIRST\projects\4-9\source\autonomous.c
+               last_error   0x0001d8       data     static C:\FIRST\projects\4-9\source\autonomous.c
+                        p   0x0001dc       data     static C:\FIRST\projects\4-9\source\autonomous.c
+                        d   0x0001e0       data     static C:\FIRST\projects\4-9\source\autonomous.c
+              delta_error   0x0001e4       data     static C:\FIRST\projects\4-9\source\autonomous.c
+                      vel   0x0001e8       data     static C:\FIRST\projects\4-9\source\autonomous.c
+                 last_vel   0x0001ec       data     static C:\FIRST\projects\4-9\source\autonomous.c
+                vel_error   0x0001f0       data     static C:\FIRST\projects\4-9\source\autonomous.c
+           last_vel_error   0x0001f4       data     static C:\FIRST\projects\4-9\source\autonomous.c
+                   ir_cmd   0x0001f8       data     static C:\FIRST\projects\4-9\source\autonomous.c
+               old_ir_cmd   0x0001fa       data     static C:\FIRST\projects\4-9\source\autonomous.c
+                   cmd_up   0x0001fc       data     extern C:\FIRST\projects\CT Day 1\source\ir.c
+                   cmd_dn   0x0001fd       data     extern C:\FIRST\projects\CT Day 1\source\ir.c
+                    cmd_l   0x0001fe       data     extern C:\FIRST\projects\CT Day 1\source\ir.c
+                    cmd_r   0x0001ff       data     extern C:\FIRST\projects\CT Day 1\source\ir.c
+               Rx_1_Queue   0x000200       data     extern C:\FIRST\projects\3-9\source\serial_ports.c
+               Tx_1_Queue   0x000220       data     extern C:\FIRST\projects\3-9\source\serial_ports.c
+               Rx_2_Queue   0x000240       data     extern C:\FIRST\projects\3-9\source\serial_ports.c
+               Tx_2_Queue   0x000260       data     extern C:\FIRST\projects\3-9\source\serial_ports.c
+                  wheel_l   0x000280       data     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+                  wheel_r   0x000282       data     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+        drive_initialized   0x000284       data     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+           brakes_engaged   0x000285       data     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+         angular_position   0x000286       data     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+          linear_position   0x000295       data     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+            angular_gains   0x0002a4       data     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+             linear_gains   0x0002ae       data     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+                     rate   0x0002b8       data     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+                      cal   0x0002bc       data     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+                    accel   0x0002c0       data     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+                 old_rate   0x0002c4       data     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+                        p   0x0002c8       data     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+                        d   0x0002cc       data     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+               delta_rate   0x0002d0       data     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+                old_wheel   0x0002d4       data     static C:\FIRST\projects\Post CT Changes\source\drive.c
+                   l_temp   0x0002d5       data     static C:\FIRST\projects\Post CT Changes\source\drive.c
+                   r_temp   0x0002d6       data     static C:\FIRST\projects\Post CT Changes\source\drive.c
+       stdout_serial_port   0x0002d7       data     extern C:\FIRST\projects\3-9\source\serial_ports.c
+          Rx_1_Queue_Full   0x0002d8       data     extern C:\FIRST\projects\3-9\source\serial_ports.c
+         Rx_1_Queue_Empty   0x0002d9       data     extern C:\FIRST\projects\3-9\source\serial_ports.c
+    Rx_1_Queue_Read_Index   0x0002da       data     extern C:\FIRST\projects\3-9\source\serial_ports.c
+   Rx_1_Queue_Write_Index   0x0002db       data     extern C:\FIRST\projects\3-9\source\serial_ports.c
+    Rx_1_Queue_Byte_Count   0x0002dc       data     extern C:\FIRST\projects\3-9\source\serial_ports.c
+      RX_1_Overrun_Errors   0x0002dd       data     extern C:\FIRST\projects\3-9\source\serial_ports.c
+      RX_1_Framing_Errors   0x0002de       data     extern C:\FIRST\projects\3-9\source\serial_ports.c
+          Tx_1_Queue_Full   0x0002df       data     extern C:\FIRST\projects\3-9\source\serial_ports.c
+         Tx_1_Queue_Empty   0x0002e0       data     extern C:\FIRST\projects\3-9\source\serial_ports.c
+    Tx_1_Queue_Read_Index   0x0002e1       data     extern C:\FIRST\projects\3-9\source\serial_ports.c
+   Tx_1_Queue_Write_Index   0x0002e2       data     extern C:\FIRST\projects\3-9\source\serial_ports.c
+    Tx_1_Queue_Byte_Count   0x0002e3       data     extern C:\FIRST\projects\3-9\source\serial_ports.c
+          Rx_2_Queue_Full   0x0002e4       data     extern C:\FIRST\projects\3-9\source\serial_ports.c
+         Rx_2_Queue_Empty   0x0002e5       data     extern C:\FIRST\projects\3-9\source\serial_ports.c
+    Rx_2_Queue_Read_Index   0x0002e6       data     extern C:\FIRST\projects\3-9\source\serial_ports.c
+   Rx_2_Queue_Write_Index   0x0002e7       data     extern C:\FIRST\projects\3-9\source\serial_ports.c
+    Rx_2_Queue_Byte_Count   0x0002e8       data     extern C:\FIRST\projects\3-9\source\serial_ports.c
+      RX_2_Overrun_Errors   0x0002e9       data     extern C:\FIRST\projects\3-9\source\serial_ports.c
+      RX_2_Framing_Errors   0x0002ea       data     extern C:\FIRST\projects\3-9\source\serial_ports.c
+          Tx_2_Queue_Full   0x0002eb       data     extern C:\FIRST\projects\3-9\source\serial_ports.c
+         Tx_2_Queue_Empty   0x0002ec       data     extern C:\FIRST\projects\3-9\source\serial_ports.c
+    Tx_2_Queue_Read_Index   0x0002ed       data     extern C:\FIRST\projects\3-9\source\serial_ports.c
+   Tx_2_Queue_Write_Index   0x0002ee       data     extern C:\FIRST\projects\3-9\source\serial_ports.c
+    Tx_2_Queue_Byte_Count   0x0002ef       data     extern C:\FIRST\projects\3-9\source\serial_ports.c
+          Encoder_1_Count   0x0002f0       data     extern C:\FIRST\projects\3-9\source\encoder.c
+          Encoder_2_Count   0x0002f4       data     extern C:\FIRST\projects\3-9\source\encoder.c
+          Encoder_3_Count   0x0002f8       data     extern C:\FIRST\projects\3-9\source\encoder.c
+               Old_Port_B   0x0002fc       data     extern C:\FIRST\projects\3-9\source\ifi_frc.c
+       disabled_init_flag   0x0002fd       data     static C:\FIRST\projects\3-9\source\ifi_frc.c
+     autonomous_init_flag   0x0002fe       data     static C:\FIRST\projects\3-9\source\ifi_frc.c
+         teleop_init_flag   0x0002ff       data     static C:\FIRST\projects\3-9\source\ifi_frc.c
+                  motor_l   0x000300       data     extern C:\FIRST\projects\4-9\source\launcher.c
+                  motor_g   0x000302       data     extern C:\FIRST\projects\4-9\source\launcher.c
+             launcher_pot   0x000304       data     extern C:\FIRST\projects\4-9\source\launcher.c
+                 launcher   0x000306       data     extern C:\FIRST\projects\4-9\source\launcher.c
+                auto_flag   0x000315       data     extern C:\FIRST\projects\4-9\source\launcher.c
+                    ticks   0x000316       data     extern C:\FIRST\projects\4-9\source\launcher.c
+           good_to_launch   0x000317       data     extern C:\FIRST\projects\4-9\source\launcher.c
+                    brake   0x000318       data     extern C:\FIRST\projects\4-9\source\launcher.c
+                   tilter   0x000319       data     extern C:\FIRST\projects\4-9\source\launcher.c
+                    state   0x00031a       data     static C:\FIRST\projects\4-9\source\launcher.c
+         launcher_pot_old   0x00031c       data     static C:\FIRST\projects\4-9\source\launcher.c
+                 joystick   0x00031e       data     static C:\FIRST\projects\4-9\source\launcher.c
+                  pot_top   0x000320       data     static C:\FIRST\projects\4-9\source\launcher.c
+               pot_bottom   0x000322       data     static C:\FIRST\projects\4-9\source\launcher.c
+                pot_delta   0x000324       data     static C:\FIRST\projects\4-9\source\launcher.c
+              brake_ticks   0x000326       data     static C:\FIRST\projects\4-9\source\launcher.c
+      launching_from_home   0x000327       data     static C:\FIRST\projects\4-9\source\launcher.c
+           launcher_ticks   0x000328       data     static C:\FIRST\projects\4-9\source\launcher.c
+                cal_ticks   0x000329       data     static C:\FIRST\projects\4-9\source\launcher.c
+          home_lock_ticks   0x00032a       data     static C:\FIRST\projects\4-9\source\launcher.c
+               home_ticks   0x00032b       data     static C:\FIRST\projects\4-9\source\launcher.c
+          adc_sample_rate   0x00032c       data     extern C:\FIRST\projects\3-9\source\adc.c
+   adc_samples_per_update   0x00032e       data     extern C:\FIRST\projects\3-9\source\adc.c
+         num_adc_channels   0x000330       data     extern C:\FIRST\projects\3-9\source\adc.c
+       adc_result_divisor   0x000331       data     extern C:\FIRST\projects\3-9\source\adc.c
+                    accum   0x000332       data     extern C:\FIRST\projects\3-9\source\adc.c
+               adc_result   0x00033a       data     extern C:\FIRST\projects\3-9\source\adc.c
+                  samples   0x00033e       data     extern C:\FIRST\projects\3-9\source\adc.c
+                  channel   0x000340       data     extern C:\FIRST\projects\3-9\source\adc.c
+             launch_stick   0x000341       data     static C:\FIRST\projects\4-9\source\autonomous.c
+                    speed   0x000343       data     static C:\FIRST\projects\4-9\source\autonomous.c
+                    state   0x000345       data     static C:\FIRST\projects\4-9\source\autonomous.c
+                      out   0x000347       data     static C:\FIRST\projects\4-9\source\autonomous.c
+                    d_cmd   0x000348       data     static C:\FIRST\projects\4-9\source\autonomous.c
+                  stopped   0x000349       data     static C:\FIRST\projects\4-9\source\autonomous.c
+               turn_ticks   0x00034a       data     static C:\FIRST\projects\4-9\source\autonomous.c
+                    ticks   0x00034e       data     static C:\FIRST\projects\4-9\source\autonomous.c
+                  pressed   0x000350       data     static C:\FIRST\projects\4-9\source\autonomous.c
+                    latch   0x000352       data     static C:\FIRST\projects\4-9\source\autonomous.c
+                 controls   0x000354       data     extern C:\FIRST\projects\Post CT Changes\source\robot.c
+                     prom   0x00035f       data     static C:\FIRST\projects\3-9\source\ifi_frc.c
+                curr_byte   0x000362       data     static C:\FIRST\projects\3-9\source\ifi_frc.c
+               curr_entry   0x000364       data     static C:\FIRST\projects\3-9\source\ifi_frc.c
+                 data_ptr   0x000366       data     static C:\FIRST\projects\3-9\source\ifi_frc.c
+             cmd_up_ticks   0x000369       data     static C:\FIRST\projects\CT Day 1\source\ir.c
+             cmd_dn_ticks   0x00036a       data     static C:\FIRST\projects\CT Day 1\source\ir.c
+              cmd_l_ticks   0x00036b       data     static C:\FIRST\projects\CT Day 1\source\ir.c
+              cmd_r_ticks   0x00036c       data     static C:\FIRST\projects\CT Day 1\source\ir.c
+              cmd_up_flag   0x00036d       data     static C:\FIRST\projects\CT Day 1\source\ir.c
+              cmd_dn_flag   0x00036e       data     static C:\FIRST\projects\CT Day 1\source\ir.c
+               cmd_l_flag   0x00036f       data     static C:\FIRST\projects\CT Day 1\source\ir.c
+               cmd_r_flag   0x000370       data     static C:\FIRST\projects\CT Day 1\source\ir.c
+        current_auto_mode   0x000371       data     extern C:\FIRST\projects\Post CT Changes\source\robot.c
+ compressor_override_flag   0x000372       data     extern C:\FIRST\projects\Post CT Changes\source\robot.c
+                        i   0x000373       data     static C:\FIRST\projects\Post CT Changes\source\robot.c
+                        j   0x000375       data     static C:\FIRST\projects\Post CT Changes\source\robot.c
+                     done   0x000377       data     static C:\FIRST\projects\Post CT Changes\source\robot.c
+                     gear   0x000378       data     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+              orientation   0x000379       data     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+            override_flag   0x00037a       data     extern C:\FIRST\projects\Post CT Changes\source\drive.c
+             cur_distance   0x00037b       data     static C:\FIRST\projects\Post CT Changes\source\drive.c
+                        i   0x00037d       data     static C:\FIRST\projects\Post CT Changes\source\disabled.c
+                        j   0x00037f       data     static C:\FIRST\projects\Post CT Changes\source\disabled.c
+            limited_value   0x000381       data     static C:\FIRST\projects\3-9\source\ifi_code.c
+                   stdout   0x000383       data     extern C:\MCC18\src\TRADIT~1\stdclib\stdout.c
+         Gyro_Bias_Status   0x000385       data     extern C:\FIRST\projects\3-9\source\gyro.c
+         Gyro_Queue_Index   0x000386       data     extern C:\FIRST\projects\3-9\source\gyro.c
+         adc_update_count   0x000387       data     extern C:\FIRST\projects\3-9\source\adc.c
+                 SSP2CON2   0x000f62       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+             SSP2CON2bits   0x000f62       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 SSP2CON1   0x000f63       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+             SSP2CON1bits   0x000f63       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 SSP2STAT   0x000f64       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+             SSP2STATbits   0x000f64       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                  SSP2ADD   0x000f65       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                  SSP2BUF   0x000f66       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 ECCP2DEL   0x000f67       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+             ECCP2DELbits   0x000f67       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                  ECCP2AS   0x000f68       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+              ECCP2ASbits   0x000f68       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+             ECCP3DELbits   0x000f69       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 ECCP3DEL   0x000f69       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                  ECCP3AS   0x000f6a       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+              ECCP3ASbits   0x000f6a       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+               RCSTA2bits   0x000f6b       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   RCSTA2   0x000f6b       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+               TXSTA2bits   0x000f6c       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   TXSTA2   0x000f6c       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   TXREG2   0x000f6d       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   RCREG2   0x000f6e       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   SPBRG2   0x000f6f       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+              CCP5CONbits   0x000f70       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                  CCP5CON   0x000f70       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    CCPR5   0x000f71       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   CCPR5L   0x000f71       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   CCPR5H   0x000f72       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                  CCP4CON   0x000f73       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+              CCP4CONbits   0x000f73       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    CCPR4   0x000f74       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   CCPR4L   0x000f74       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   CCPR4H   0x000f75       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    T4CON   0x000f76       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                T4CONbits   0x000f76       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                      PR4   0x000f77       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     TMR4   0x000f78       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+             ECCP1DELbits   0x000f79       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 ECCP1DEL   0x000f79       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 BAUDCON2   0x000f7c       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+             BAUDCON2bits   0x000f7c       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                  SPBRGH2   0x000f7d       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+             BAUDCON1bits   0x000f7e       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 BAUDCON1   0x000f7e       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                  BAUDCON   0x000f7e       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+              BAUDCONbits   0x000f7e       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   SPBRGH   0x000f7f       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                  SPBRGH1   0x000f7f       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                PORTAbits   0x000f80       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    PORTA   0x000f80       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                PORTBbits   0x000f81       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    PORTB   0x000f81       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    PORTC   0x000f82       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                PORTCbits   0x000f82       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                PORTDbits   0x000f83       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    PORTD   0x000f83       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    PORTE   0x000f84       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                PORTEbits   0x000f84       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                PORTFbits   0x000f85       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    PORTF   0x000f85       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    PORTG   0x000f86       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                PORTGbits   0x000f86       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                PORTHbits   0x000f87       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    PORTH   0x000f87       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    PORTJ   0x000f88       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                PORTJbits   0x000f88       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     LATA   0x000f89       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 LATAbits   0x000f89       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     LATB   0x000f8a       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 LATBbits   0x000f8a       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     LATC   0x000f8b       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 LATCbits   0x000f8b       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     LATD   0x000f8c       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 LATDbits   0x000f8c       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 LATEbits   0x000f8d       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     LATE   0x000f8d       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     LATF   0x000f8e       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 LATFbits   0x000f8e       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     LATG   0x000f8f       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 LATGbits   0x000f8f       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     LATH   0x000f90       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 LATHbits   0x000f90       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     LATJ   0x000f91       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 LATJbits   0x000f91       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 DDRAbits   0x000f92       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     DDRA   0x000f92       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                TRISAbits   0x000f92       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    TRISA   0x000f92       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    TRISB   0x000f93       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                TRISBbits   0x000f93       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     DDRB   0x000f93       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 DDRBbits   0x000f93       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    TRISC   0x000f94       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                TRISCbits   0x000f94       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 DDRCbits   0x000f94       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     DDRC   0x000f94       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    TRISD   0x000f95       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                TRISDbits   0x000f95       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     DDRD   0x000f95       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 DDRDbits   0x000f95       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 DDREbits   0x000f96       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     DDRE   0x000f96       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    TRISE   0x000f96       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                TRISEbits   0x000f96       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     DDRF   0x000f97       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 DDRFbits   0x000f97       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                TRISFbits   0x000f97       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    TRISF   0x000f97       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                TRISGbits   0x000f98       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     DDRG   0x000f98       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    TRISG   0x000f98       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 DDRGbits   0x000f98       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    TRISH   0x000f99       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                TRISHbits   0x000f99       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     DDRH   0x000f99       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 DDRHbits   0x000f99       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                TRISJbits   0x000f9a       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    TRISJ   0x000f9a       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     DDRJ   0x000f9a       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 DDRJbits   0x000f9a       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                  OSCTUNE   0x000f9b       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+              OSCTUNEbits   0x000f9b       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   MEMCON   0x000f9c       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+               MEMCONbits   0x000f9c       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 PIE1bits   0x000f9d       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     PIE1   0x000f9d       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 PIR1bits   0x000f9e       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     PIR1   0x000f9e       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 IPR1bits   0x000f9f       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     IPR1   0x000f9f       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 PIE2bits   0x000fa0       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     PIE2   0x000fa0       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     PIR2   0x000fa1       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 PIR2bits   0x000fa1       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     IPR2   0x000fa2       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 IPR2bits   0x000fa2       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 PIE3bits   0x000fa3       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     PIE3   0x000fa3       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 PIR3bits   0x000fa4       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     PIR3   0x000fa4       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 IPR3bits   0x000fa5       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     IPR3   0x000fa5       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   EECON1   0x000fa6       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+               EECON1bits   0x000fa6       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   EECON2   0x000fa7       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   EEDATA   0x000fa8       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    EEADR   0x000fa9       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   EEADRH   0x000faa       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+               RCSTA1bits   0x000fab       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                RCSTAbits   0x000fab       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    RCSTA   0x000fab       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   RCSTA1   0x000fab       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    TXSTA   0x000fac       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   TXSTA1   0x000fac       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+               TXSTA1bits   0x000fac       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                TXSTAbits   0x000fac       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   TXREG1   0x000fad       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    TXREG   0x000fad       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    RCREG   0x000fae       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   RCREG1   0x000fae       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    SPBRG   0x000faf       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   SPBRG1   0x000faf       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+               PSPCONbits   0x000fb0       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   PSPCON   0x000fb0       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    T3CON   0x000fb1       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                T3CONbits   0x000fb1       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    TMR3L   0x000fb2       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    TMR3H   0x000fb3       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    CMCON   0x000fb4       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                CMCONbits   0x000fb4       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   CVRCON   0x000fb5       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+               CVRCONbits   0x000fb5       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+              ECCP1ASbits   0x000fb6       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                  ECCP1AS   0x000fb6       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 ECCP3CON   0x000fb7       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+             ECCP3CONbits   0x000fb7       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+              CCP3CONbits   0x000fb7       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                  CCP3CON   0x000fb7       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   CCPR3L   0x000fb8       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    CCPR3   0x000fb8       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   CCPR3H   0x000fb9       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+              CCP2CONbits   0x000fba       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                  CCP2CON   0x000fba       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 ECCP2CON   0x000fba       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+             ECCP2CONbits   0x000fba       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   CCPR2L   0x000fbb       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    CCPR2   0x000fbb       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   CCPR2H   0x000fbc       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 ECCP1CON   0x000fbd       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+             ECCP1CONbits   0x000fbd       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                  CCP1CON   0x000fbd       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+              CCP1CONbits   0x000fbd       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    CCPR1   0x000fbe       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   CCPR1L   0x000fbe       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   CCPR1H   0x000fbf       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+               ADCON2bits   0x000fc0       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   ADCON2   0x000fc0       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+               ADCON1bits   0x000fc1       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   ADCON1   0x000fc1       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+               ADCON0bits   0x000fc2       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   ADCON0   0x000fc2       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   ADRESL   0x000fc3       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    ADRES   0x000fc3       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   ADRESH   0x000fc4       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 SSP1CON2   0x000fc5       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+             SSP1CON2bits   0x000fc5       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+              SSPCON2bits   0x000fc5       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                  SSPCON2   0x000fc5       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                  SSPCON1   0x000fc6       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+             SSP1CON1bits   0x000fc6       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 SSP1CON1   0x000fc6       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+              SSPCON1bits   0x000fc6       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+              SSPSTATbits   0x000fc7       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                  SSPSTAT   0x000fc7       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+             SSP1STATbits   0x000fc7       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 SSP1STAT   0x000fc7       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                  SSP1ADD   0x000fc8       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   SSPADD   0x000fc8       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                  SSP1BUF   0x000fc9       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   SSPBUF   0x000fc9       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    T2CON   0x000fca       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                T2CONbits   0x000fca       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                      PR2   0x000fcb       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     TMR2   0x000fcc       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    T1CON   0x000fcd       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                T1CONbits   0x000fcd       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    TMR1L   0x000fce       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    TMR1H   0x000fcf       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 RCONbits   0x000fd0       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     RCON   0x000fd0       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   WDTCON   0x000fd1       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+               WDTCONbits   0x000fd1       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   LVDCON   0x000fd2       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+               LVDCONbits   0x000fd2       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+              HLVDCONbits   0x000fd2       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                  HLVDCON   0x000fd2       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   OSCCON   0x000fd3       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+               OSCCONbits   0x000fd3       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                T0CONbits   0x000fd5       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    T0CON   0x000fd5       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    TMR0L   0x000fd6       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    TMR0H   0x000fd7       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   STATUS   0x000fd8       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+               STATUSbits   0x000fd8       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     FSR2   0x000fd9       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    FSR2L   0x000fd9       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    FSR2H   0x000fda       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   PLUSW2   0x000fdb       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                  PREINC2   0x000fdc       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 POSTDEC2   0x000fdd       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 POSTINC2   0x000fde       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    INDF2   0x000fdf       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                      BSR   0x000fe0       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     FSR1   0x000fe1       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    FSR1L   0x000fe1       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    FSR1H   0x000fe2       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   PLUSW1   0x000fe3       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                  PREINC1   0x000fe4       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 POSTDEC1   0x000fe5       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 POSTINC1   0x000fe6       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    INDF1   0x000fe7       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     WREG   0x000fe8       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    FSR0L   0x000fe9       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     FSR0   0x000fe9       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    FSR0H   0x000fea       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   PLUSW0   0x000feb       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                  PREINC0   0x000fec       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 POSTDEC0   0x000fed       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                 POSTINC0   0x000fee       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    INDF0   0x000fef       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                  INTCON3   0x000ff0       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+              INTCON3bits   0x000ff0       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+              INTCON2bits   0x000ff1       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                  INTCON2   0x000ff1       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   INTCON   0x000ff2       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+               INTCONbits   0x000ff2       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     PROD   0x000ff3       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    PRODL   0x000ff3       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                    PRODH   0x000ff4       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   TABLAT   0x000ff5       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   TBLPTR   0x000ff6       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                  TBLPTRL   0x000ff6       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                  TBLPTRH   0x000ff7       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                  TBLPTRU   0x000ff8       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                       PC   0x000ff9       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                      PCL   0x000ff9       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   PCLATH   0x000ffa       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   PCLATU   0x000ffb       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+               STKPTRbits   0x000ffc       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                   STKPTR   0x000ffc       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                      TOS   0x000ffd       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     TOSL   0x000ffd       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     TOSH   0x000ffe       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+                     TOSU   0x000fff       data     extern C:\MCC18\SRC\TRADIT~1\PROC\p18f8722.asm
+
+
